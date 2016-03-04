@@ -14,8 +14,7 @@
 | path to your installation.
 |
 */
-// $config['base_url'] = 'http://localhost/web/';
-$config['base_url']	= 'http://localhost/php/webmdcn/';
+$config['base_url'] = 'http://localhost/web/';
 
 /*
 |--------------------------------------------------------------------------
