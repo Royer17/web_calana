@@ -1,0 +1,895 @@
+*{
+	margin:0 ;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	
+	font-family: 'Open Sans' , Sans-Serif;
+	color:#34495e;
+		-webkit-font-smoothing: antialiased;
+	border-radius: 0 !important;
+
+}
+
+
+
+a:hover img {
+	border: 1px solid #ffcfca;
+	opacity: 0.6;
+}
+
+ul li a{
+	color: #ecf0f1;
+}
+
+.background{
+	background: url("../img/fondo2.png") no-repeat  center center fixed ;
+	background-size: cover; 
+	-moz-background-size: cover; 
+	-webkit-background-size: cover; 
+	-o-background-size: cover;
+	}
+
+.bg{
+  width: 960px;
+  height:onmouseout="this.start();">							
+							 auto;
+  margin: 0 auto;
+  padding: 0px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+
+}
+.header-toolbar{
+	  font-size: 11px;
+	  font-weight: 600px;
+	  color: #78899b !important;
+	 
+	  padding-top: 10px;
+	  padding-bottom: 0px; 
+}
+
+.header-toolbar>ul.list-inline{
+	padding-right: 6px;
+ 	padding-left: 6px;
+}
+
+.header-toolbar>ul.list-inline>li{
+	margin-bottom: 0;
+	color:#ecf0f1 !important;
+}
+
+.header-toolbar>ul.list-inline>li a{
+	margin-bottom: 0;
+	color:#ecf0f1 !important;
+}
+
+.row{
+	margin-left: -5px;
+ 	margin-right: -5px;
+ 	border-radius: 0 !important;
+}
+ 	
+.sticky-header{
+	background: white;
+}
+.header{
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+.banner {
+	width:  960px;
+	height: 7.7em;
+	margin-top: 0px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	background: url('../img/BAN1.jpg') center center white no-repeat;
+	background-size: 80%;
+	padding: 5;
+
+}
+
+.contenedor{
+	
+	height: auto;
+	margin-top: 0px;
+	padding-top: 10px;
+	border-radius: 0 !important;
+
+}
+
+.b-bot{
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ededed;
+}
+
+.abajo{
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+	
+}
+
+.bordered{
+	border:1px solid #ededed;
+	padding: 5px 5px 0 5px;
+}
+.article{
+	border-bottom: 1px solid #ededed;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.article-title{
+
+	border-left: solid 2px #2980b9;
+	position: relative;
+	z-index: 1;
+	background-color: #2980b9;
+	float: left;
+	margin :0 5px; 
+	border-bottom: none;
+	padding: 0 10px 0 5px;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: left;
+	color: #fff;
+	height: 36px;
+	line-height: 36px;
+	width: auto;
+}
+
+.article-descripcion{
+	position: absolute;
+	padding: 10px;
+}
+
+.as{
+	margin :5px;
+}
+
+.vid-thumbnail{
+	margin-bottom: 6px;
+
+}
+
+.img-thumbnail{
+	background-color: #f8f8f8;
+	border:1px solid #ededed;
+}
+
+
+.item4{
+	width: 290px;
+	margin-bottom: 10px;
+}
+.item2{
+	width: 210px;
+}
+.item3{
+	width: 130px;
+	margin: 5px;
+	margin-left: -5px;
+}
+
+.margin-top{
+	margin-top: 10px;
+}
+
+
+
+.top{
+	margin-top: -10px;	
+}
+.col{
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+}
+
+.carousel-caption {
+  right: 0 !important;
+  left: 0 !important;
+  bottom: 5px;
+  height: auto;
+  z-index: 1;
+  padding-top: 8px;
+  padding-bottom: 18px;
+  text-align: center;
+  text-shadow:none;
+  position: absolute;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 25px;
+  background-color: black;
+  opacity: 0.8;
+  padding-left: 8px;
+  border-radius: none;
+
+}
+.carousel-indicators {
+ 	margin-bottom: -15px;
+
+
+}
+.opaco2{
+	background: #2c3e50;
+	opacity: 4;
+	color: #fff;
+}
+
+.title-caorusel{
+	margin:5px;
+	padding: 5px;
+	font-size: 12px !important;
+	color: white !important;
+
+}
+
+
+/* -----------*/
+#owl-demo .item img{
+    display: block;
+    width: 940px;
+    height: auto;
+}
+
+
+
+.nav-tabs>li.active>a {
+	background: #2980b9 !important;
+	border-radius: 0 !important;
+}
+
+.nav>li>a {
+	background: #2980b9 !important;
+	color:#ecf0f1 !important;
+}
+
+
+
+.owl-item2{
+	margin-top: 10px;
+	padding: 5px;
+}
+
+
+.noticias{
+	color: #34495e !important;
+	font-weight: bold;
+
+}
+
+.text-title{
+	text-decoration: none !important;
+	font-size: 10px !important;
+	font-weight: bold;
+	text-transform: uppercase !important;
+	text-align: left;
+}
+.text-none{
+	text-align: justify;
+}
+.text-ancla{
+	color: #2980b9 ;
+	font-size: 11px;
+
+}
+
+.fecha{
+	font-size: 10px;
+	font-weight: normal;
+}
+
+.contenedor-noticias{
+	border-bottom: 2px solid #bdc3c7;
+	margin-bottom: 5px;
+	
+}
+
+.contenedor-videos{
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+.fontblack{
+	color: black;
+}
+
+/*------------------------------------*\
+    5-NAVIGATION
+\*------------------------------------*/
+
+/*5-1 PARENT NAVIGATION*/
+
+.inicio{
+	
+	font-weight: bold;
+	font-family: 'Open Sans' , Sans-Serif;
+}
+.sticky-header {
+	background: #fff;
+}
+.navbar-fixed-top {
+	top: -60px;
+	transition: top 800ms ease 0s;
+}
+.show-2 {
+	transition: bottom 800ms ease 0s;
+}
+.show {
+	top: 0;
+}
+.navbar-collapse {
+	padding-left: 0;
+	padding-right: 0;
+}
+.navbar {
+	margin-bottom: 0;
+}
+.navbar-inverse {
+	background-color: #185CB5;
+	border-top: none;
+	border-bottom: 3px solid #2980b9;
+	border-right: none;
+	border-left: none;
+}
+.navbar-inverse .navbar-nav li:first-child a {
+	padding-left: 0;
+}
+.navbar-inverse .navbar-nav li a {
+	color: #fff;
+	font-weight: bold;
+
+
+}
+.navbar-inverse .navbar-nav li a:hover {
+	color: #111;
+}
+.navbar-inverse .navbar-nav .open a, .navbar-inverse .navbar-nav .open a:hover, .navbar-inverse .navbar-nav .open a:focus {
+	color: #000;
+	background: none;
+}
+.navbar-inverse .navbar-nav li a, .navbar-inverse .navbar-nav li a:hover, .navbar-inverse .navbar-nav li a:focus {
+	border-right: 1px solid #bdc3c7;
+	margin:1px;
+
+
+}
+.navbar-inverse .navbar-nav li:last-child a {
+	border-right: none;
+}
+.navbar-inverse .navbar-nav li.active a, .navbar-inverse .navbar-nav li.active a:hover, .navbar-inverse .navbar-nav li.active a:focus {
+	background: none;
+	color: #2980b9;
+}
+.navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+	border: none;
+	background: #2980b9;
+	float: left;
+}
+/*5-2 CHILD NAVIGATION*/
+.navbar-inverse .dropdown-menu {
+	background: #2980b9;
+	border: none;
+}
+.navbar-inverse .dropdown-menu li a {
+	color: #fff !important;
+	font-weight: normal;
+	border-right: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.navbar-inverse .dropdown-menu li a:hover, .navbar-inverse .dropdown-menu li a:focus {
+	background-color: #185CB5 !important;
+	color: #eee !important;
+	border-right: none !important;
+}
+.navbar-inverse .dropdown-menu li:first-child a {
+	padding-left: 20px;
+}
+.dropdown-menu > li > a {
+	color: #fff;
+}
+.nav-icn {
+	margin-left: 5px;
+}
+.nav-sub-icn {
+	margin-right: 5px;
+}
+.mega-menu {
+	min-width: 784px;
+	padding: 10px 0;
+}
+.mega-sub {
+	list-style: none;
+	padding: 0;
+	border-right: 1px solid #da4839;
+	margin-right: 10px;
+	min-height: 170px;
+}
+.mega-sub a {
+	display: block;
+	padding: 10px 20px;
+}
+.mega-sub-topics {
+	padding-right: 20px;
+}
+.mega-sub-topics h4 {
+	color: #fff;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 0 0 5px 0;
+}
+.mega-sub-topics a {
+	padding: 0 !important;
+}
+.mega-sub-topics a:hover img {
+	opacity: 1;
+}
+.badge {
+	background-color: #3d566e;
+}
+
+
+/*------------------------------------*\
+    6-social nav vertical 
+\*------------------------------------*/
+
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left:30 !important; /* Establecemos la barra en la izquierda */
+	top:340px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 15000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+ 
+	.social ul {
+		list-style: none;
+	}
+ 
+	.social ul li a {
+		width: 50px;
+		height: 50px;
+		font-size: 27px;
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 10px 15px;
+		text-decoration: none;
+		opacity: 0.9;
+		color:#ecf0f1 !important;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+
+ 
+	.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li .icon-twitter {background: #00abf0;}
+	.social ul li .icon-googleplus {background: #d95232;}
+	.social ul li .icon-youtube {background: #ae181f;}
+	.social ul li .icon-mail {background: #666666;}
+ 
+	.social ul li a:hover {
+		background: #3c546c; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+
+
+/*------------------------------------*\
+    6-fin social nav vertical 
+\*------------------------------------*/
+
+/*------------------------------------*\
+    6-social nav vertical izquierda
+\*------------------------------------*/
+
+.social-right {
+	right: 0;
+	top: 150px;
+	color: #fff;
+	font-weight: 18px;
+	cursor: pointer;
+	z-index: 1500px;
+	position: fixed;
+	box-shadow: 5px -4px 3px #A9A9A9;
+	-webkit-border-radius: 200px 0px 0px 200px;
+  	border: 0px solid #000000;
+  	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;	
+	-webkit-transform: rotate(-90deg);
+	  -moz-transform: rotate(-90deg);
+	  -o-transform: rotate(-90deg);
+	  -ms-transform: rotate(-90deg);	
+}
+
+.sociales-right{
+	right: -80px ;
+	top: 300px;
+	position: fixed;
+	z-index: 500px;
+	background: #2c3e50;
+	font-weight: bold;
+	opacity: 0.7;
+	font-family: arial;
+	text-transform: uppercase;
+	-webkit-transform: rotate(-90deg);
+	  -moz-transform: rotate(-90deg);
+	  -o-transform: rotate(-90deg);
+	  -ms-transform: rotate(-90deg);
+
+
+}
+
+
+/*------------------------------------*\
+    6-fin social nav vertical izquierda
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+    6-contenedor footer
+\*------------------------------------*/
+
+
+
+.contenedor-footer{
+	background-color: #2980b9;
+	border-bottom: 1px solid #ffffff;
+	margin-top: -10px;
+	color: #ecf0f1;
+	font-size: 14px;
+}
+
+.logo-footer{
+	padding: 10px;
+	margin:10px;
+}
+
+.title-foot{
+	padding-top: 1px;
+	text-transform: uppercase;
+	font-weight:bold;
+	font-size: 14px;
+	color: #ecf0f1;
+	text-decoration: none;
+	text-align: center;
+
+}
+
+.body-foot{
+	color:#ecf0f1;
+}
+
+.body-foot li {
+  padding: 2px 0px 2px 5px; 
+  list-style: none;
+  text-align: center;
+  font-size: 16px;
+}
+
+
+/*------------------------------------*\
+    6-fin footer
+\*------------------------------------*/
+
+/*------------------------------------*\
+    6-Miga de Pan
+\*------------------------------------*/
+ 
+.miga li a{
+	color: #3498db !important;
+	font-weight: bold;
+}
+
+
+/*------------------------------------*\
+    6-Miga de Pan
+\*------------------------------------*/
+
+/*------------------------------------*\
+    6-Miga de Pan
+\*------------------------------------*/
+ 
+.miga li a{
+	color: #3498db !important;
+	font-weight: bold;
+}
+
+
+/*------------------------------------*\
+    6-Miga de Pan
+\*------------------------------------*/
+
+.contenido-bg{
+	width: 200px;
+	height: auto;
+}
+
+
+.bannernoti{
+	width: 960px !important;
+	height: 360px !important;
+}
+
+
+/*------------------------------------*\
+    6-alcalde y funcionario
+\*------------------------------------*/
+.sombra{
+	 box-shadow: 2px 2px 5px #999;
+}
+
+.text-titulo{
+	text-align: center;
+	padding: 10px; 
+	font-size: 15px;
+	font-weight: bold;
+
+
+}
+
+.text-descripcion{
+	text-align: justify;
+	
+}
+
+
+.tcuerpo{
+
+	  border-color: inherit;
+
+}
+
+.cardprofile{
+	background: #ecf0f1 ;
+}
+
+
+/*------------------------------------*\
+    5-obras
+\*------------------------------------*/
+
+table.lista{
+  margin-bottom: 12px !important;
+  border-collapse: collapse;
+}
+.listado{
+	margin-bottom: 50px !important;
+}
+
+table.lista tbody tr {
+  border-bottom: 1px solid #2980b9;
+  font-size: 12px;
+}
+
+.img-obra{
+	background-color: #f8f8f8;
+	border:1px solid #ededed;
+	width: 300px;
+	height: 120px;
+}
+
+
+
+
+/*------------------------------------*\
+    5-flecha pa arriba
+\*------------------------------------*/
+
+
+.ir-arriba {
+	display: none;
+	padding:20px;
+	background:transparent;	
+	font-size:60px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	margin-top:560px;
+	bottom:20px;
+	right:20px;
+}	
+
+.negrita{
+	font-weight: bold;
+	text-align: justify;
+}
+
+
+
+.panel-heading{
+	background: #3599db !important;
+	color:#ecf0f1 !important;
+
+
+}
+
+.panel-title{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.white{
+	color: white !important;
+}
+
+
+
+.blueimp-gallery>.indicator>li:hover, .blueimp-gallery>.indicator>.active {
+  background-color: #fff;
+  border-color: #fff;
+  opacity: 1;
+}
+.blueimp-gallery>.indicator>li {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin: 6px 3px 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: 1px solid transparent;
+  background: #ccc;
+  background: rgba(255,255,255,.25)center no-repeat;
+  border-radius: 5px;
+  box-shadow: 0 0 2px #000;
+  opacity: .5;
+  cursor: pointer;
+}
+
+
+
+/*------------------------------------*\
+    5-portal transpaencia costado
+\*------------------------------------*/
+
+#flotante_transparencia {
+  position: fixed;
+  top: 130px;
+  left: -246px;
+  float: left;
+  width: 219px;
+  display: block;
+  padding: 0;
+
+  border-radius: 0px;
+  z-index: 10000;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  background: white;
+  color: #2c3e50 !important;
+}
+
+
+#flotante_transparencia:hover {
+  left: 0px;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.float_transparencia{
+	position: absolute;
+	float: right;
+	margin-left: 244px;
+}
+.content-transparencia{
+	background: white !important;
+	height: 250px;
+	padding: 18px 15px 10px -5px;
+	border-radius: 0px 0px 10px 0px;
+}
+
+.box-tex{
+
+  margin-top: -5px;
+  margin-left: -250px;
+  width: 238px;
+  height: 200px;
+  background-color: black !important;
+  color: #fff;
+  overflow: hidden;
+  border-radius: 10px;
+  font-size: 12px;
+
+}
+
+/*------------------------------------*\
+    5-fin portal transpaencia costado
+\*------------------------------------*/
+			
+
+.article-mensaje{
+
+	margin-top:-70px;
+	padding:10px; 
+	text-align:center !important;
+	background: black;
+	opacity: 0.8;
+	z-index: 17;
+}
+
+.descripcion-mensaje{
+	margin: -5px;
+	display:inline-block;
+}
+
+
+.descripcion-mensaje:hover{
+	color:#2980b9; 
+}
+
+
+
+
+/* ------------------  */ 
+
+
+.negrita{
+	font-weight: bold;
+	text-align: justify;
+}
+
+
+.bs-callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+
+.bs-callout-info {
+  border-left-color: #3498db;
+}
+
+
+#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+#owl-demo2 .item{
+  margin: 3px;
+}
+#owl-demo2 .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#owl-demo3 .item{
+  margin: 3px;
+}
+#owl-demo3 .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#owl-demo4 .item{
+  margin: 3px;
+}
+#owl-demo4 .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
