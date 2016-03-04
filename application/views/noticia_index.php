@@ -2,7 +2,7 @@
 					<div class="row as">
 						<div class="article pull-left">
 							<div class="article-title">
-								noticias
+								noticias MDCN
 							</div>
 						</div>															
 						<div class="row as">	<!-- contenido de noticias -->	
