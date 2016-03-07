@@ -31,6 +31,7 @@ class Home extends CI_Controller {
 	public function acceso_denegado() {
 		$data['contenido'] = 'home/acceso_denegado';
 		$data['titulo'] = 'Denegado';
+		
 		$this->load->view('header', $data);
 		$this->load->view('template2', $data);
 		$this->load->view('footer', $data);	
