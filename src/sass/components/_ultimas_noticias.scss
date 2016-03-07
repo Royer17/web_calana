@@ -1,0 +1,47 @@
+.ultimas-noticias {
+	// background-color: red;
+	border-radius: 5px;
+	.noticia {
+		border-radius: 5px;
+		background-color: #fafafa;
+		padding-top: 0;
+		h4.titulo {
+			color: $primary-color;
+			padding: 20px 10px;
+			margin: 0;
+			font-family: $lato-font;
+			font-size: 15px;
+			text-align: center;
+		}
+		p.fecha {
+			font-family: $lato-font;
+			color: #9e9e9e;
+			font-size: 12px;
+			display: flex;
+			margin: 0;
+			margin-bottom: 5px;
+			i {
+				// margin-right: 5px;
+				margin-right: 5px;
+			}
+		}
+		img {
+			border-radius: 3px;
+			margin-bottom: 10px;
+		}
+		p.descripcion {
+			margin: 0;
+			text-align: justify;
+		}
+		a {
+			padding: 5px;
+			border-radius: 3px;
+			display: flex;
+			align-items: center;
+			i {
+				margin-right: 1px;
+				font-size: 18px;
+			}
+		}
+	}
+}

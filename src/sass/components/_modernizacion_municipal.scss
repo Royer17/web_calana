@@ -1,0 +1,23 @@
+.modernizacion-municipal {
+	border-radius: 5px;
+  margin-top: 20px;
+  a.boton-modernizacion {
+    border-radius: 3px;
+    max-width: 100%;
+    transition: all .25s;
+    width: 100%;
+    &:hover {
+      transition: all .25s;
+      background-color: color("teal", "lighten-2");
+      color: white;
+    }
+    i {
+      // font-size: 36px;
+      font-size: 40px;
+    }
+    p {
+      font-size: 12px;
+      margin: 5px 0;
+    }
+  }
+}

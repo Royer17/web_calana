@@ -1,0 +1,37 @@
+.alcalde {
+	background-color: #eeeeee;
+	border-radius: 5px;
+	padding: 0px;
+
+	img {
+		margin: 0;
+		padding: 0;
+	}
+	p.mensaje, p.nombre {
+		font-family: $lato-font;
+		padding-left: 10px;
+		padding-right: 10px;
+		text-align: center;
+	}
+	p.mensaje {
+		color: #4F4F4F;
+		margin: 0;
+		font-size: 12px;
+		margin-top: 0;
+		margin-bottom: 0;
+		&:hover {
+			color: $primary-color;
+			// text-shadow: 0 0 1px black;
+		}
+	}
+	p.nombre {
+		color: white;
+		font-size: 12px;
+		background-color: $primary-color;
+		border-radius: 0 0 5px 5px;
+		margin: 0;
+		margin-top: 5px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+}
