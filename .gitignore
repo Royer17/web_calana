@@ -1,4 +1,5 @@
 .DS_Store
+node_modules/
 user_guide/
 application/config/config.php
 thumbs

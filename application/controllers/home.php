@@ -15,9 +15,20 @@ class Home extends CI_Controller {
 
 	public function index() {
 		
-		$this->load->view('header');
-		$this->load->view('template');
-		$this->load->view('footer');
+		// $this->load->view('header');
+		// $this->load->view('template');
+		// $this->load->view('footer');
+
+		$this->load_view('inicio');
+	}
+
+	function load_view($template)
+	{
+		$this->load->view('layout_index/head');
+		$this->load->view('layout_index/header');
+		$this->load->view('layout_index/navbar');
+		$this->load->view($template);
+		$this->load->view('layout_index/footer');
 	}
 
 	public function acerca_de() {
