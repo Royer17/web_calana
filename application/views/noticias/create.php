@@ -21,12 +21,8 @@
 
 		<div class="control-group row as">
 		<?= form_label('CONTENIDO(TODA LA NOTA)', 'tx_contenido_informacion', array('class'=>'control-label')); ?>
-		<?= form_input(array(
-		'type'=>'text',
-		'name'=>'tx_contenido_informacion',
-		'id'=>'tx_contenido_informacion',
-		'placeholder'=>'tx_contenido_informacion....', 
-		'value'=>set_value('tx_contenido_informacion'))); ?>
+		<?= form_input(array('type'=>'text','name'=>'tx_contenido_informacion',	'id'=>'tx_contenido_informacion',
+		'placeholder'=>'tx_contenido_informacion....', 'value'=>set_value('tx_contenido_informacion'))); ?>
 		
 		</div>
 
@@ -64,6 +60,7 @@
 		<div class="control-group row as">
 		<?= form_label('AÑO', 'ano', array('class'=>'control-label')); ?>
 		<?= form_input(array('type'=>'text','name'=>'ano','id'=>'ano','placeholder'=>'ano....', 'value'=>set_value('ano'))); ?>
+
 		</div>
 
 		<div class="control-group row as">
@@ -94,8 +91,7 @@
 
 		<input type="file" id="prueba" onChange="cargar_otro_file()"-->
 		<div id="loader"></div>
-		<input id="agregar" type="button" value="agregar otro archivo" onclick="carga_otro_file()">
-
+		<input id="agregar" type="button" value="agregar otro archivo" onclick="carga_otro_file()"> 
 		<div class="form-actions">
 		<?= form_button(array('type'=>'submit', 'content'=>'Aceptar', 'class'=>'btn btn-primary')); ?>
 
@@ -123,4 +119,4 @@
 			$('#loader').append('<div class="control-group row as"><label>foto nº '+(i+1)+'</label><input type="file" name="userfile['+i+']"></div>');
 		}
 	}
-</script>	
+</script>

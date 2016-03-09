@@ -32,7 +32,7 @@ class Model_Noticia extends CI_Model {
     }
 
     function find($id) {
-        $this->db->where('id', $id);
+        $this->db->where('in_id_informacion', $id);
         return $this->db->get('info_informacion')->row();
     }
 
@@ -43,12 +43,12 @@ class Model_Noticia extends CI_Model {
 
     function update($registro) {
         $this->db->set($registro);
-        $this->db->where('id', $registro['id']);
+        $this->db->where('in_id_informacion', $registro['in_id_informacion']);
         $this->db->update('info_informacion');
     }
 
     function delete($id) {
-        $this->db->where('id', $id);
+        $this->db->where('in_id_informacion', $id);
         $this->db->delete('info_informacion');
     }
 

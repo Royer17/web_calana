@@ -18,6 +18,7 @@
 
 						
 			</ol>
+
 						
 
 			<div>
@@ -35,6 +36,12 @@
 
 
 											      <div class="item active">
+											            <img width="500" height="300" src=<?= base_url('img/noticia/'.$registro->foto ); ?>  /></a>
+
+											      </div>
+											  
+
+											      <div class="item ">
 											            <img width="500" height="300" src=<?= base_url('img/noticia/'.$registro->foto1 ); ?>  /></a>
 
 											      </div>
@@ -49,6 +56,13 @@
 											        <img width="500" height="300" src=<?= base_url('img/noticia/'.$registro->foto3 ); ?> alt="imagen noticias" />
 
 											      </div>
+
+
+											      <div class="item">
+											        <img width="500" height="300" src=<?= base_url('img/noticia/'.$registro->foto4 ); ?> alt="imagen noticias" />
+
+											      </div>
+
 
 
 

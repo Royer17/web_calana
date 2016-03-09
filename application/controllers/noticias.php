@@ -8,9 +8,9 @@ class Noticias extends CI_Controller {
 
 		$this->load->model('Model_Noticia');
 		
-	//	  $this->form_validation->set_message('required', 'Debe ingresar campo %s');
-    //    $this->form_validation->set_message('valid_email', 'Campo %s no es un eMail valido');
-    //    $this->form_validation->set_message('my_validation', 'Existe otro registro con el mismo nombre');
+		//$this->form_validation->set_message('required', 'Debe ingresar campo %s');
+        //$this->form_validation->set_message('valid_email', 'Campo %s no es un eMail valido');
+       // $this->form_validation->set_message('my_validation', 'Existe otro registro con el mismo nombre');
     }
 
 	public function index() {
@@ -68,11 +68,10 @@ class Noticias extends CI_Controller {
 	
 		if ( ! $this->upload->do_multi_upload('userfile'))
 		{
-			$data = array('error' => $this->upload->display_errors());
+		$data = array('error' => $this->upload->display_errors());
 		$data['contenido'] = 'noticias/edit';
-		//$data['titulo'] = 'Actualizar Obras';
-		$data['registro'] = $this->Model_Obras->find(29);
-
+		//$data['titulo'] = 'Noticias';
+		$data['registro'] = $this->Model_Noticia->find($id);
 
 		$this->load->view('template2', $data);
 
@@ -95,15 +94,16 @@ class Noticias extends CI_Controller {
 					'dia'=>$this->input->post('dia'),
 					'mes'=>$this->input->post('mes'),
 					'ano'=>$this->input->post('ano'),
-					'ano'=>$this->input->post('ano'),
 					'foto'=>isset($datos_archivo[0])?$datos_archivo[0]['file_name']:'',
 					'foto1'=>isset($datos_archivo[1])?$datos_archivo[1]['file_name']:'',
 					'foto2'=>isset($datos_archivo[2])?$datos_archivo[2]['file_name']:'',
+					'foto3'=>isset($datos_archivo[3])?$datos_archivo[3]['file_name']:'',
+					'foto4'=>isset($datos_archivo[4])?$datos_archivo[4]['file_name']:'',
 						
 				);
 			//$this->load->view('upload_success', $data);	
-			$this->Model_Obras->update($registro);
-			redirect('Obras/index');
+			$this->Model_Noticia->update($registro);
+			redirect('noticias/index');
 		}
 		
 	}
@@ -114,27 +114,12 @@ class Noticias extends CI_Controller {
 		redirect('noticias/index');
 	}
 
-	/* public function insert_obra(){
-		//$id = $this->uri->segment(3);
-		$registro = $this->input->post();			
-		//$this->form_validation->set_rules('name', 'Nombre', 'required|callback_norep');			
-		if ($this->form_validation->run()==FALSE) {
-			$this->create_obra();
-		}
-		else{
-			$registro['created'] = date('Y/m/d H:i');
-			$registro['updated'] = date('Y/m/d H:i');
-			$this->Model_Noticia->insert($registro);
-			redirect('noticias/index');
-		}
-	} */
-
 
 
 	public function insert() {
 
 		//$registro = $this->input->post();
-		$config['upload_path'] = './noticias';
+		$config['upload_path'] = './img/noticia';
 		$config['allowed_types'] = 'gif|jpg|png|pdf';
 		//$config['max_size']	= '100';
 		//$config['max_width']  = '1024';
@@ -142,18 +127,20 @@ class Noticias extends CI_Controller {
 		
 		$this->load->library('upload', $config);
 	
-		if ( ! $this->upload->do_upload())
+		if ( ! $this->upload->do_multi_upload('userfile'))
 		{
 			$data = array('error' => $this->upload->display_errors());
 
-			$data['contenido'] ='noticias/create';
-			$data['titulo'] = 'Crear noticias';
+			$data['contenido'] ='obras/create';
+			$data['titulo'] = 'Crear Obras';
 			$this->load->view('template2', $data);
 		}	
 		else
 		{
 			//$data = array('upload_data' => $this->upload->data());
-			$datos_archivo=$this->upload->data();
+			//$datos_archivo=$this->upload->data(); //cambiar 
+			$datos_archivo=$this->upload->get_multi_upload_data();
+
 			$registro=array(
 					'vc_titulo_informacion'=>$this->input->post('vc_titulo_informacion'),
 					'vc_resumen_informacion'=>$this->input->post('vc_resumen_informacion'),
@@ -165,11 +152,13 @@ class Noticias extends CI_Controller {
 					'autor'=>$this->input->post('autor'),
 					'dia'=>$this->input->post('dia'),
 					'mes'=>$this->input->post('mes'),
-					'ano'=>$this->input->post('ano'),
-					'ano'=>$this->input->post('ano'),
-					'foto1'=>isset($datos_archivo[0])?$datos_archivo[0]['file_name']:'',
-					'foto2'=>isset($datos_archivo[1])?$datos_archivo[1]['file_name']:'',
-					'foto3'=>isset($datos_archivo[2])?$datos_archivo[2]['file_name']:'',				
+					'ano'=>$this->input->post('ano'),					
+					'foto'=>isset($datos_archivo[0])?$datos_archivo[0]['file_name']:'',
+					'foto1'=>isset($datos_archivo[1])?$datos_archivo[1]['file_name']:'',
+					'foto2'=>isset($datos_archivo[2])?$datos_archivo[2]['file_name']:'',
+					'foto3'=>isset($datos_archivo[3])?$datos_archivo[3]['file_name']:'',
+					'foto4'=>isset($datos_archivo[4])?$datos_archivo[4]['file_name']:'',
+				
 				);
 			$this->Model_Noticia->insert($registro);
 			redirect('noticias/index');
