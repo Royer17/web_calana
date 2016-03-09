@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-03-2016 a las 18:40:21
+-- Tiempo de generación: 09-03-2016 a las 21:51:23
 -- Versión del servidor: 5.6.21
 -- Versión de PHP: 5.6.3
 
@@ -194,10 +194,20 @@ CREATE TABLE IF NOT EXISTS `info_informacion` (
   `mes` text COLLATE latin1_spanish_ci NOT NULL,
   `ano` text COLLATE latin1_spanish_ci NOT NULL,
   `video` text COLLATE latin1_spanish_ci NOT NULL,
+  `foto` varchar(250) COLLATE latin1_spanish_ci NOT NULL,
   `foto2` text COLLATE latin1_spanish_ci NOT NULL,
   `foto3` text COLLATE latin1_spanish_ci NOT NULL,
+  `foto4` text COLLATE latin1_spanish_ci NOT NULL,
   `categoria` text COLLATE latin1_spanish_ci NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=1113 DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=1116 DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `info_informacion`
+--
+
+INSERT INTO `info_informacion` (`in_id_informacion`, `vc_titulo_informacion`, `vc_resumen_informacion`, `tx_contenido_informacion`, `dt_fecha_informacion`, `in_hits_informacion`, `foto1`, `tipo`, `fecha`, `autor`, `dia`, `mes`, `ano`, `video`, `foto`, `foto2`, `foto3`, `foto4`, `categoria`) VALUES
+(1115, 'afasasd', 'dasd', 'dasd', '2016-03-09 00:00:00', 0, '154376.jpg', 'sad', '2016-03-09', 'dasd', '11', '12', '1234', '', '524ac22a5742a.jpg', 'Noticia-42242-uportada.jpg', '6514001.jpg', 'foto8.JPG', ''),
+(1114, 'adsd', 'dasd', 'dasda', '2016-03-09 00:00:00', 0, '', 'asdasd', '2016-03-09', 'asd', '1', '1', '1234', '', '6966congre6.jpg', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -907,6 +917,39 @@ INSERT INTO `normas` (`idnor`, `tipodocu`, `fechaemi`, `depeorig`, `numdoc`, `re
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `obra`
+--
+
+CREATE TABLE IF NOT EXISTS `obra` (
+`id` int(11) NOT NULL,
+  `programa` varchar(200) COLLATE utf8_spanish2_ci NOT NULL,
+  `actividad` text COLLATE utf8_spanish2_ci NOT NULL,
+  `localizacion` text COLLATE utf8_spanish2_ci NOT NULL,
+  `fechaini` date NOT NULL,
+  `plazo` text COLLATE utf8_spanish2_ci NOT NULL,
+  `fechater` date NOT NULL,
+  `responsable` text COLLATE utf8_spanish2_ci NOT NULL,
+  `inspector` text COLLATE utf8_spanish2_ci NOT NULL,
+  `descripcion` text COLLATE utf8_spanish2_ci NOT NULL,
+  `foto` text COLLATE utf8_spanish2_ci NOT NULL,
+  `foto1` text COLLATE utf8_spanish2_ci NOT NULL,
+  `foto2` text COLLATE utf8_spanish2_ci NOT NULL,
+  `foto3` text COLLATE utf8_spanish2_ci NOT NULL,
+  `foto4` text COLLATE utf8_spanish2_ci NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+
+--
+-- Volcado de datos para la tabla `obra`
+--
+
+INSERT INTO `obra` (`id`, `programa`, `actividad`, `localizacion`, `fechaini`, `plazo`, `fechater`, `responsable`, `inspector`, `descripcion`, `foto`, `foto1`, `foto2`, `foto3`, `foto4`) VALUES
+(1, 'adsd', 'dasd', 'dasd', '2016-03-08', 'asd', '2016-03-08', 'asd', 'das', 'dasdasd', '6966congre.jpg', '6966congre1.jpg', '6966congre2.jpg', '6966congre3.jpg', '6966congre4.jpg'),
+(2, 'asdasd', 'dasd', 'dasd', '2016-03-08', 'adasd', '2016-03-08', 'asdad', 'dasd', 'dasda', '524ac22a5742a1.jpg', '25111.jpg', '154376.jpg', 'Noticia-42242-uportada.jpg', 'descarga1.jpg'),
+(3, 'sdf', 'fsf', 'fs', '2016-03-08', 'asd', '2016-03-08', 'asd', 'dasd', 'dasda', '9205009.jpg', '', '', '', '');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `obras`
 --
 
@@ -1009,6 +1052,24 @@ INSERT INTO `procesos` (`id`, `titulo`, `detalle`, `archivo`, `dia`, `mes`, `ano
 (13, 'AMC - Nº  0013-2011-MDCN', 'PRIMERA CONVOCATORIA \r<br>ADQUISICIÓN DE MOTONIVELADORA \r<br>OBRA ''MEJORAMIENTO DEL CAMPO DEPORTIVO EN LA ASOC. DE VIV. 28 DE AGOSTO DEL DISTRITO DE CIUDAD NUEVA'' \r<br>', '8532Bases_AMC_13-11-alquiler_de_motoniveladora_28-08.pdf', '27', '09', '2011', '2011-09-27'),
 (14, '', 'PRIMERA CONVOCATORIA \r\n<br>ALQUILER DE RODILLO LISO VIBRATORIO \r\n<br>OBRA ''MEJORAMIENTO DEL CAMPO DEPORTIVO EN LA ASOC. DE VIV. 28 DE AGOSTO DEL DISTRITO DE CIUDAD NUEVA'' \r\n<br>', '6687Bases_AMC_14-11-alquiler_de_rodillo_28-08.pdf', '27', '09', '2011', '2011-09-27'),
 (15, '', 'PRIMERA CONVOCATORIA  \r\n<br>ADQUISICION DE MAQUINARIA \r\n<br>OPROYECTO "FORTALECIMIENTO DEL SERVICIO DE EQUIPO MECANICO DE LA MUNICIPALIDAD DISTRITAL DE CIUDAD NUEVA - TACNA" \r\n<br>', 'LP_N_0002-2011-Maquinaria.pdf', '03', '10', '2011', '2011-10-03');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `slide`
+--
+
+CREATE TABLE IF NOT EXISTS `slide` (
+`id_slide` int(10) NOT NULL,
+  `titulo_slide` text COLLATE utf8_spanish2_ci NOT NULL,
+  `orden_slide` int(10) NOT NULL,
+  `img_slide` varchar(2000) COLLATE utf8_spanish2_ci NOT NULL,
+  `visitas` int(3) NOT NULL,
+  `anno` text COLLATE utf8_spanish2_ci NOT NULL,
+  `mes` text COLLATE utf8_spanish2_ci NOT NULL,
+  `dia` text COLLATE utf8_spanish2_ci NOT NULL,
+  `hora` text COLLATE utf8_spanish2_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
 -- --------------------------------------------------------
 
@@ -1611,7 +1672,7 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 --
 
 INSERT INTO `usuario` (`id`, `name`, `created`, `updated`, `login`, `password`, `email`, `perfil_id`) VALUES
-(1, 'Administrador', '2014-07-07 10:55:40', '2015-04-20 10:00:00', 'admin', 'admin', 'admin@gmail.com', 1),
+(1, 'Administrador', '2014-07-07 10:55:40', '2015-04-20 10:00:00', 'admin', 'munimdcn', 'admin@gmail.com', 1),
 (6, 'Emperatriz', '2014-07-07 22:57:00', '2015-03-27 15:58:00', 'secretaria', 'muni2015', 'emperatriz@gmail.com', 9),
 (8, 'Jefe Imagen', '2015-03-27 15:59:00', '2015-04-16 10:50:00', 'imagen', 'muni2015', 'imagen@mdcn.gob.pe', 18);
 
@@ -1823,6 +1884,12 @@ ALTER TABLE `normas`
  ADD PRIMARY KEY (`idnor`);
 
 --
+-- Indices de la tabla `obra`
+--
+ALTER TABLE `obra`
+ ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `obras`
 --
 ALTER TABLE `obras`
@@ -1845,6 +1912,12 @@ ALTER TABLE `popup`
 --
 ALTER TABLE `procesos`
  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `slide`
+--
+ALTER TABLE `slide`
+ ADD PRIMARY KEY (`id_slide`);
 
 --
 -- Indices de la tabla `tdocumento`
@@ -1921,7 +1994,7 @@ MODIFY `id` int(2) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT de la tabla `info_informacion`
 --
 ALTER TABLE `info_informacion`
-MODIFY `in_id_informacion` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1113;
+MODIFY `in_id_informacion` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1116;
 --
 -- AUTO_INCREMENT de la tabla `matrimonio`
 --
@@ -1948,6 +2021,11 @@ MODIFY `idnoti` int(8) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=51;
 ALTER TABLE `normas`
 MODIFY `idnor` int(8) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2309;
 --
+-- AUTO_INCREMENT de la tabla `obra`
+--
+ALTER TABLE `obra`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
 -- AUTO_INCREMENT de la tabla `obras`
 --
 ALTER TABLE `obras`
@@ -1967,6 +2045,11 @@ MODIFY `id` int(6) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=44;
 --
 ALTER TABLE `procesos`
 MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=16;
+--
+-- AUTO_INCREMENT de la tabla `slide`
+--
+ALTER TABLE `slide`
+MODIFY `id_slide` int(10) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `tdocumento`
 --
