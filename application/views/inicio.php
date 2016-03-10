@@ -31,7 +31,7 @@
         <div class="container z-depth-2 ultimas-noticias">
           <h3 class="titulo">ULTIMAS NOTICIAS</h3>
 
-                    <?= $this->load->view($contenido) ?>
+              <?= $this->load->view($contenido) ?>
         </div>
       </div>
       <div class="col s12 m3">

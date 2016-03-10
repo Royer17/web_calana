@@ -33,6 +33,18 @@ class Slide extends CI_Controller {
 		$this->load->view('footer', $data);	
 	}
 
+	public function inicio_slide() {
+		$data['contenido'] = 'noticias/inicio';
+		$data['titulo'] = 'noticias';
+		$data['query'] = $this->Model_Slide->cinco_ultimos();
+		$this->load->view('layout_index/head', $data);
+		$this->load->view('layout_index/header', $data);
+		$this->load->view('layout_index/navbar', $data);
+		$this->load->view('inicio_slide', $data);
+		$this->load->view('layout_index/footer', $data);	
+	}
+
+
 	public function create(){
 		//$id = $this->uri->segment(3);
 		$data['contenido'] ='slide/create';

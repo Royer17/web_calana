@@ -24,17 +24,13 @@ class Noticias extends CI_Controller {
 
 	public function inicio() {
 		$data['contenido'] = 'noticias/inicio';
-		$data['titulo'] = '';
+		$data['titulo'] = 'noticias';
 		$data['query'] = $this->Model_Noticia->cinco_ultimos();
-		/*$this->load->view('header');
-		$this->load->view('template');
-		$this->load->view('footer');*/
-		$this->load->view('layout_index/head');
-		$this->load->view('layout_index/header');
-		$this->load->view('layout_index/navbar');
-		$this->load->view('inicio',$data);
-		//$this->load->view($template);
-		$this->load->view('layout_index/footer');	
+		$this->load->view('layout_index/head', $data);
+		$this->load->view('layout_index/header', $data);
+		$this->load->view('layout_index/navbar', $data);
+		$this->load->view('inicio', $data);
+		$this->load->view('layout_index/footer', $data);	
 	}
 
 
@@ -76,8 +72,8 @@ class Noticias extends CI_Controller {
 		//$registro = $this->input->post();
 		$config['upload_path'] = './img/noticia';
 		$config['allowed_types'] = 'gif|jpg|png';
-		//$config['max_size']	= '100';
-		//$config['max_width']  = '1024';
+		$config['max_size']	= '1000';
+		//$config['max_width']  = '200';
 		//$config['max_height']  = '768';
 		
 		$this->load->library('upload', $config);

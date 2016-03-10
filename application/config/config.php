@@ -18,7 +18,7 @@
 $config['base_url'] = '';
 //$config['base_url'] = 'http://localhost/php/webmdcn/';
 //=======
-$config['base_url'] = 'http://localhost/webmdcn/';
+//$config['base_url'] = 'http://localhost/webmdcn/';
 //8b21168832cde8adcfe67c444eecf3c85c70dcc8
 
 /*

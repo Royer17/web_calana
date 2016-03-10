@@ -7,6 +7,7 @@ class Model_Noticia extends CI_Model {
     }
 
     function all() {
+        $this->db->order_by('in_id_informacion','desc');
         $query = $this->db->get('info_informacion');
         return $query->result();
     }

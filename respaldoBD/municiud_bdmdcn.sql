@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-03-2016 a las 21:51:23
+-- Tiempo de generación: 10-03-2016 a las 22:34:08
 -- Versión del servidor: 5.6.21
 -- Versión de PHP: 5.6.3
 
@@ -199,7 +199,7 @@ CREATE TABLE IF NOT EXISTS `info_informacion` (
   `foto3` text COLLATE latin1_spanish_ci NOT NULL,
   `foto4` text COLLATE latin1_spanish_ci NOT NULL,
   `categoria` text COLLATE latin1_spanish_ci NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=1116 DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=1118 DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `info_informacion`
@@ -207,7 +207,9 @@ CREATE TABLE IF NOT EXISTS `info_informacion` (
 
 INSERT INTO `info_informacion` (`in_id_informacion`, `vc_titulo_informacion`, `vc_resumen_informacion`, `tx_contenido_informacion`, `dt_fecha_informacion`, `in_hits_informacion`, `foto1`, `tipo`, `fecha`, `autor`, `dia`, `mes`, `ano`, `video`, `foto`, `foto2`, `foto3`, `foto4`, `categoria`) VALUES
 (1115, 'afasasd', 'dasd', 'dasd', '2016-03-09 00:00:00', 0, '154376.jpg', 'sad', '2016-03-09', 'dasd', '11', '12', '1234', '', '524ac22a5742a.jpg', 'Noticia-42242-uportada.jpg', '6514001.jpg', 'foto8.JPG', ''),
-(1114, 'adsd', 'dasd', 'dasda', '2016-03-09 00:00:00', 0, '', 'asdasd', '2016-03-09', 'asd', '1', '1', '1234', '', '6966congre6.jpg', '', '', '', '');
+(1114, 'adsd', 'dasd', 'dasda', '2016-03-09 00:00:00', 0, '', 'asdasd', '2016-03-09', 'asd', '1', '1', '1234', '', '6966congre6.jpg', '', '', '', ''),
+(1116, 'asd', 'dasf', 'fasf', '2016-03-09 00:00:00', 0, '25111.jpg', 'czxc', '2016-03-09', 'dasd', '12', '3', '2016', '', '1543761.jpg', 'jean-paul-santa-maria.jpg', 'images_(1).jpg', 'images.jpg', ''),
+(1117, 'asdasd', 'adasd', 'asdasd', '2016-03-10 00:00:00', 0, '', 'asdas', '2016-03-10', 'asd', '12', '12', '2016', '', '154363.jpg', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -1994,7 +1996,7 @@ MODIFY `id` int(2) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT de la tabla `info_informacion`
 --
 ALTER TABLE `info_informacion`
-MODIFY `in_id_informacion` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1116;
+MODIFY `in_id_informacion` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1118;
 --
 -- AUTO_INCREMENT de la tabla `matrimonio`
 --
