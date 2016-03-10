@@ -69,7 +69,7 @@
 																<td>:
 																	<i><?= $registro->in_id_informacion ?></i>
 
-																	 <i><?= $registro->vc_titulo_informacion ?></i>
+																	<i><?= $registro->vc_titulo_informacion ?></i>
 																</td>
 																<td width="15">														
 																</td>

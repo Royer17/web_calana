@@ -22,6 +22,22 @@ class Noticias extends CI_Controller {
 		$this->load->view('footer', $data);	
 	}
 
+	public function inicio() {
+		$data['contenido'] = 'noticias/inicio';
+		$data['titulo'] = '';
+		$data['query'] = $this->Model_Noticia->cinco_ultimos();
+		/*$this->load->view('header');
+		$this->load->view('template');
+		$this->load->view('footer');*/
+		$this->load->view('layout_index/head');
+		$this->load->view('layout_index/header');
+		$this->load->view('layout_index/navbar');
+		$this->load->view('inicio',$data);
+		//$this->load->view($template);
+		$this->load->view('layout_index/footer');	
+	}
+
+
 
 	public function detalle($id){
 		$data['contenido'] = 'noticias/detalle';

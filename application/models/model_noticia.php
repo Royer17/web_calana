@@ -21,6 +21,23 @@ class Model_Noticia extends CI_Model {
         }    
     }
 
+    function cinco_ultimos() {
+        $this->db->select('*');
+        $this->db->from('info_informacion');
+        $this->db->order_by('in_id_informacion','desc');
+        $this->db->limit(3);
+        $query=$this->db->get();
+        return $query->result();
+       // return $this->db->get('info_informacion')->row();
+    }
+
+   /* $sel = "SELECT * FROM usuarios LIMIT 3";
+    $query = mysql_query($sel) or die(mysql_error());
+    while ($row = mysql_fetch_assoc($query) {
+    echo $row['nick'];
+    }
+    */
+
     function totalResultados($field, $value) {
         $this->db->like($field, $value);
         $query = $this->db->get('info_informacion');
@@ -53,3 +70,8 @@ class Model_Noticia extends CI_Model {
     }
 
 }
+
+
+
+
+

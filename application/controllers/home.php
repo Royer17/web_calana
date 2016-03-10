@@ -5,6 +5,7 @@ class Home extends CI_Controller {
 	// Constructor de Clase
 	function __construct() {
 		parent::__construct();
+		$this->load->model('Model_Noticia');
 
 		$this->load->library('usuarioLib');
 		$this->form_validation->set_message('required', 'Debe ingresar un valor para %s');
@@ -14,22 +15,31 @@ class Home extends CI_Controller {
 	}
 
 	public function index() {
-		
-		// $this->load->view('header');
-		// $this->load->view('template');
-		// $this->load->view('footer');
 
-		$this->load_view('inicio');
+		$data['contenido'] = 'noticias/inicio';
+		$data['titulo'] = '';
+		$data['query'] = $this->Model_Noticia->cinco_ultimos();
+		/*$this->load->view('header');
+		$this->load->view('template');
+		$this->load->view('footer');*/
+		$this->load->view('layout_index/head');
+		$this->load->view('layout_index/header');
+		$this->load->view('layout_index/navbar');
+		$this->load->view('inicio',$data);
+		//$this->load->view($template);
+		$this->load->view('layout_index/footer');
+
+		
 	}
 
-	function load_view($template)
+	/*function load_view($template,$data)
 	{
 		$this->load->view('layout_index/head');
 		$this->load->view('layout_index/header');
 		$this->load->view('layout_index/navbar');
-		$this->load->view($template);
+		$this->load->view($template,$data);
 		$this->load->view('layout_index/footer');
-	}
+	}*/
 
 	public function acerca_de() {
 		$data['contenido'] = 'home/acerca_de';
