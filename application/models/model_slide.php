@@ -11,6 +11,17 @@ class Model_Slide extends CI_Model {
         return $query->result();
     }
 
+    function cinco_ultimos() {
+        $this->db->select('*');
+        $this->db->from('slide');
+        $this->db->order_by('id_slide','desc');
+        $this->db->limit(5);
+        $query=$this->db->get();
+        return $query->result();
+       // return $this->db->get('slide')->row();
+    }
+
+
     function allFiltered($field, $value) {
         $this->db->like($field, $value);
         $query = $this->db->get('slide');
@@ -27,7 +38,7 @@ class Model_Slide extends CI_Model {
         if ($query->result()>0) {
             return $query->num_rows();
         }else{
-            return FALSE ; 
+            return FALSE ;
         }
     }
 

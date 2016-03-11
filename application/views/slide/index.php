@@ -2,8 +2,7 @@
 						
 						<ol class="miga breadcrumb">
 						  <li><a href="http://www.municiudadnueva.gob.pe/">Inicio</a></li>
-						  <li><a href="#">slide</a></li>
-						  <li class="active">Notas de Prensa</li>
+						  <li class="active">Sliders</li>
 						</ol>
 						<button value="create">
 							<a style="color:#2980b9 !important;font-weight:bold;" >
@@ -39,7 +38,7 @@
 											<div style="text-align:justify;margin-right:10px;">
 												<b>	<span style="color:#2980b9;font-family:Verdana;font-size:12px;">
 												<a style="color:#2980b9 !important;font-weight:bold;" >
-													<?= anchor('noticia/detalle/'.$registro->in_id_informacion,$registro->vc_titulo_informacion) ; ?></a> 
+													<?= anchor('noticia/detalle/'.$registro->id_slide,$registro->titulo_slide) ; ?></a> 
 												</span></b>
 											</div>
 											<br>
@@ -53,21 +52,21 @@
 																	<i><b>titulo</b></i>
 																</td>
 																<td>:
-																	<i><?= $registro->in_id_informacion ?></i>
+																	<i><?= $registro->id_slide ?></i>
 
-																	 <i><?= $registro->vc_titulo_informacion ?></i>
+																	 <i><?= $registro->titulo_slide ?></i>
 																</td>
 																<td width="15">														
 																</td>
-																<td><b><i>Inicio</i></b>
+																<td><b><i>Orden</i></b>
 																</td>
-																<td>: <?= $registro->dt_fecha_informacion ?></a></td>
+																<td>: <?= $registro->orden_slide ?></a></td>
 															</tr>
 															<tr>
-																<td><i><b>Categoría</b></i>
+																<td><i><b>Enlace</b></i>
 																</td>
 																<td>:
-																 <i><?= $registro->tipo ?></i></td><td width="15"></td><td><b>
+																 <i><?= $registro->enlace ?></i></td><td width="15"></td><td><b>
 																 <!-- <i>Inicio </i></b></td><td>:03 de marzo 2015 -->
 																</td>
 															</tr>
@@ -76,7 +75,7 @@
 												</div>
 											</span>
 											<span style="float:right;margin-right:20px">
-												<a style="color:#2980b9 !important;font-weight:bold;" ><?= anchor('slide/detalle/'.$registro->in_id_informacion,"Ver Más") ; ?> </a>
+												<a style="color:#2980b9 !important;font-weight:bold;" ><?= anchor('slide/detalle/'.$registro->id_slide,"Ver Más") ; ?> </a>
 											</span>
 
 											</td>

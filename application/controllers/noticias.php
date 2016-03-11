@@ -10,13 +10,13 @@ class Noticias extends CI_Controller {
 		
 		//$this->form_validation->set_message('required', 'Debe ingresar campo %s');
         //$this->form_validation->set_message('valid_email', 'Campo %s no es un eMail valido');
-       // $this->form_validation->set_message('my_validation', 'Existe otro registro con el mismo nombre');
+        //$this->form_validation->set_message('my_validation', 'Existe otro registro con el mismo nombre');
     }
 
 	public function index() {
 		$data['contenido'] = 'noticias/index';
 		$data['titulo'] = 'noticias';
-		$data['query'] = $this->Model_Noticia->all();
+		$data['llave'] = $this->Model_Noticia->all();
 		$this->load->view('header', $data);
 		$this->load->view('template2', $data);
 		$this->load->view('footer', $data);	
@@ -25,7 +25,7 @@ class Noticias extends CI_Controller {
 	public function inicio() {
 		$data['contenido'] = 'noticias/inicio';
 		$data['titulo'] = 'noticias';
-		$data['query'] = $this->Model_Noticia->cinco_ultimos();
+		$data['llave'] = $this->Model_Noticia->cinco_ultimos();
 		$this->load->view('layout_index/head', $data);
 		$this->load->view('layout_index/header', $data);
 		$this->load->view('layout_index/navbar', $data);

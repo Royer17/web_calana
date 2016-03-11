@@ -1,7 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Slide extends CI_Controller {
-
 	// Constructor de la clase
 	function __construct() {
 		parent::__construct();
@@ -10,7 +9,7 @@ class Slide extends CI_Controller {
 		
 		//$this->form_validation->set_message('required', 'Debe ingresar campo %s');
         //$this->form_validation->set_message('valid_email', 'Campo %s no es un eMail valido');
-       // $this->form_validation->set_message('my_validation', 'Existe otro registro con el mismo nombre');
+ 		// $this->form_validation->set_message('my_validation', 'Existe otro registro con el mismo nombre');
     }
 
 	public function index() {
@@ -22,6 +21,15 @@ class Slide extends CI_Controller {
 		$this->load->view('footer', $data);	
 	}
 
+	public function inicio() {
+		$data['contenido'] = 'slide/inicio';
+		$data['query'] = $this->Model_Slide->cinco_ultimos();
+		$this->load->view('layout_index/head', $data);
+		$this->load->view('layout_index/header', $data);
+		$this->load->view('layout_index/navbar', $data);
+		$this->load->view('inicio', $data);
+		$this->load->view('layout_index/footer', $data);	
+	}
 
 	public function detalle($id){
 		$data['contenido'] = 'slide/detalle';
@@ -31,17 +39,6 @@ class Slide extends CI_Controller {
 		$this->load->view('header', $data);
 		$this->load->view('template2', $data);
 		$this->load->view('footer', $data);	
-	}
-
-	public function inicio_slide() {
-		$data['contenido'] = 'noticias/inicio';
-		$data['titulo'] = 'noticias';
-		$data['query'] = $this->Model_Slide->cinco_ultimos();
-		$this->load->view('layout_index/head', $data);
-		$this->load->view('layout_index/header', $data);
-		$this->load->view('layout_index/navbar', $data);
-		$this->load->view('inicio_slide', $data);
-		$this->load->view('layout_index/footer', $data);	
 	}
 
 
@@ -143,8 +140,8 @@ class Slide extends CI_Controller {
 		{
 			$data = array('error' => $this->upload->display_errors());
 
-			$data['contenido'] ='obras/create';
-			$data['titulo'] = 'Crear Obras';
+			$data['contenido'] ='slide/create';
+			$data['titulo'] = 'Crear slide';
 			$this->load->view('template2', $data);
 		}	
 		else

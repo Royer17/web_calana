@@ -8,15 +8,15 @@ class Model_Noticia extends CI_Model {
 
     function all() {
         $this->db->order_by('in_id_informacion','desc');
-        $query = $this->db->get('info_informacion');
-        return $query->result();
+        $llave = $this->db->get('info_informacion');
+        return $llave->result();
     }
 
     function allFiltered($field, $value) {
         $this->db->like($field, $value);
-        $query = $this->db->get('info_informacion');
-        if ($query->result()>0) {
-            return $query->result();
+        $llave = $this->db->get('info_informacion');
+        if ($llave->result()>0) {
+            return $llave->result();
         }else{
             return FALSE ; 
         }    
@@ -26,24 +26,24 @@ class Model_Noticia extends CI_Model {
         $this->db->select('*');
         $this->db->from('info_informacion');
         $this->db->order_by('in_id_informacion','desc');
-        $this->db->limit(3);
-        $query=$this->db->get();
-        return $query->result();
+        $this->db->limit(5);
+        $llave=$this->db->get();
+        return $llave->result();
        // return $this->db->get('info_informacion')->row();
     }
 
    /* $sel = "SELECT * FROM usuarios LIMIT 3";
-    $query = mysql_query($sel) or die(mysql_error());
-    while ($row = mysql_fetch_assoc($query) {
+    $llave = mysql_llave($sel) or die(mysql_error());
+    while ($row = mysql_fetch_assoc($llave) {
     echo $row['nick'];
     }
     */
 
     function totalResultados($field, $value) {
         $this->db->like($field, $value);
-        $query = $this->db->get('info_informacion');
-        if ($query->result()>0) {
-            return $query->num_rows();
+        $llave = $this->db->get('info_informacion');
+        if ($llave->result()>0) {
+            return $llave->num_rows();
         }else{
             return FALSE ; 
         }
