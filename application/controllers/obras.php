@@ -60,7 +60,7 @@ class Obras extends CI_Controller {
 		//$registro = $this->input->post();
 		$config['upload_path'] = './img/obra';
 		$config['allowed_types'] = 'gif|jpg|png';
-		//$config['max_size']	= '100';
+		//$config['max_size']	= '1024';
 		//$config['max_width']  = '1024';
 		//$config['max_height']  = '768';
 		
@@ -69,12 +69,12 @@ class Obras extends CI_Controller {
 		if ( ! $this->upload->do_multi_upload('userfile'))
 		{
 			$data = array('error' => $this->upload->display_errors());
-		$data['contenido'] = 'obras/edit';
-		//$data['titulo'] = 'Actualizar Obras';
-		$data['registro'] = $this->Model_Obras->find(29);
+			$data['contenido'] = 'obras/edit';
+			//$data['titulo'] = 'Actualizar Obras';
+			$data['registro'] = $this->Model_Obras->find($id);
 
 
-		$this->load->view('template2', $data);
+			$this->load->view('template2', $data);
 
 			//echo "error";
 		}	
@@ -84,6 +84,7 @@ class Obras extends CI_Controller {
 			$datos_archivo=$this->upload->get_multi_upload_data();
 
 			$registro=array(
+					'id'=>$this->input->post('id'),
 					'programa'=>$this->input->post('programa'),
 					'actividad'=>$this->input->post('actividad'),
 					'localizacion'=>$this->input->post('localizacion'),
@@ -100,6 +101,11 @@ class Obras extends CI_Controller {
 					'foto4'=>isset($datos_archivo[4])?$datos_archivo[4]['file_name']:'',		
 				);
 			//$this->load->view('upload_success', $data);	
+
+			$query = $this->db->query("Select * from obra where id = '$registro[id]'");
+			foreach ($query->results() as $row) {
+				unlink('./img/obra/'.$row->foto);
+			}
 			$this->Model_Obras->update($registro);
 			redirect('Obras/index');
 		}
@@ -164,10 +170,6 @@ class Obras extends CI_Controller {
 					'foto2'=>isset($datos_archivo[2])?$datos_archivo[2]['file_name']:'',
 					'foto3'=>isset($datos_archivo[3])?$datos_archivo[3]['file_name']:'',
 					'foto4'=>isset($datos_archivo[4])?$datos_archivo[4]['file_name']:'',
-
-					
-
-
 					
 			);
 			$this->Model_Obras->insert($registro);

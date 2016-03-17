@@ -62,8 +62,6 @@ class Perfil extends CI_Controller {
 
 	public function edit($id){
 		//$id = $this->uri->segment(3);
-		
-		
 		$data['contenido'] = 'perfil/edit';
 		$data['titulo'] = 'Actualizar Perfil';
 		$data['registro'] = $this->Model_Perfil->find($id);

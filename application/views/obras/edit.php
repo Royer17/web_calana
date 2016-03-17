@@ -67,9 +67,9 @@
 		<?= form_input(array('type'=>'text','name'=>'descripcion','id'=>'descripcion','value'=>$registro->descripcion)); ?>
 	</div>
 
-	<!--div class="form-group">
+	<div class="form-group">
 		<?= form_label('foto', 'foto', array('class'=>'form-label')); ?>
-		<?= form_input(array('type'=>'file','name'=>'foto','id'=>'foto','value'=>$registro->foto)); ?>
+		<img width="320px" high="150" src="<?php echo base_url().'img/obra/'.$registro->foto ?> ">
 	</div>
 
 	<div class="form-group">
@@ -92,17 +92,15 @@
 	<div class="form-group">
 		<?= form_label('foto4', 'foto4', array('class'=>'form-label')); ?>
 		<?= form_input(array('type'=>'file','name'=>'foto4','id'=>'foto4','value'=>$registro->foto4)); ?>
-	</div-->
+	</div>
+	<!--
+
 
 	<div id="loader"></div>
 	<label for="">Id de foto</label><input type="text" id="numero">
 	<input type="button" value="cargar input" onClick="carga_input()">
 
-	<div class="form-actions">
-		<?= form_button(array('type'=>'submit', 'content'=>'Aceptar', 'class'=>'btn btn-primary')); ?>		
-		<?= anchor('obras/index', 'Cancelar', array('class'=>'btn')); ?>
-		<?= anchor('obras/delete/'.$registro->id , 'Eliminar', array('class'=>'btn btn-warning','onClick'=>"return confirm('¿Está Seguro?')")); ?>	
-	</div>
+
 
 <?= form_close(); ?>
 	<script>
@@ -113,5 +111,14 @@
 			}
 		}
 	</script>
+
+	-->
+
+		<div class="form-actions">
+		<?= form_button(array('type'=>'submit', 'content'=>'Aceptar', 'class'=>'btn btn-primary')); ?>		
+		<?= anchor('obras/index', 'Cancelar', array('class'=>'btn')); ?>
+		<?= anchor('obras/delete/'.$registro->id , 'Eliminar', array('class'=>'btn btn-warning','onClick'=>"return confirm('¿Está Seguro?')")); ?>	
+	</div>
+
 
 </div>

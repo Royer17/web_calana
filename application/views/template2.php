@@ -16,7 +16,7 @@
 	<div class="bg ">
 		<div>
 		<!-- <base href="http://www.municiudadnueva.gob.pe/" /> -->
-		<?php include("parte-marque.php"); ?>
+		<!-- <?php include("parte-marque.php"); ?>  -->
 
 		</div>	
 	</div>

@@ -25,6 +25,7 @@ class Home extends CI_Controller {
 		$this->load->view('layout_index/head');
 		$this->load->view('layout_index/header');
 		$this->load->view('layout_index/navbar');
+		$this->load->view('layout_index/slider-principal');
 		$this->load->view('inicio',$data);
 		//$this->load->view($template);
 		$this->load->view('layout_index/footer');

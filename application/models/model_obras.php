@@ -31,7 +31,6 @@ class Model_Obras extends CI_Model {
         }
     }
 
-
     function find($id) {
         $this->db->where('id', $id);
         return $this->db->get('obra')->row();
@@ -42,7 +41,6 @@ class Model_Obras extends CI_Model {
         $this->db->insert('obra');
     }
 
-
     function update($registro) {
         $this->db->set($registro);
         $this->db->where('id', $registro['id']);
@@ -52,6 +50,7 @@ class Model_Obras extends CI_Model {
     function delete($id) {
         $this->db->where('id', $id);
         $this->db->delete('obra');
+
     }
 
 }

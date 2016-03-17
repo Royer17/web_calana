@@ -2,21 +2,13 @@
     <div class="row">
       <div class="col s12 m9">
         <div class="container z-depth-2 ultimas-noticias">
-          <h3 class="titulo">ULTIMAS NOTICIAS</h3>
+          <h3 class="titulo">CONTENIDO</h3>
           
             <?= $this->load->view($contenido) ?>
 
         </div>
       </div>
       <div class="col s12 m3">
-
-        <div class="alcalde z-depth-2">
-          <h3 class="titulo">NUESTRO ALCALDE</h3>
-          <img class="responsive-img" src="<?php echo(base_url()); ?>dist/img/alcalde.png">
-          <a href="#!"><p class="mensaje">Estimados vecinos: Quiero expresarles mis más cordiales saludos y reiterar el sentimiento que hoy nos une, que es sacar adelante al distrito ... VER MÁS</p></a>
-          <!-- <p class="nombre">MED. EDGAR ROGELIO CONCORI COAQUIRA</p> -->
-          <p class="nombre">ING. JOSÉ GREGORIO ROQUE MAMANI</p>
-        </div>
 
         <div class="z-depth-2 modernizacion-municipal">
           <h3 class="titulo">MODERNIZACIÓN MUNICIPAL</h3>
@@ -100,5 +92,36 @@
         </div>
 
       </div>
+
+      <div class="col s12 m3">
+
+        <div class="z-depth-2 modernizacion-municipal">
+          <h3 class="titulo">REDES SOCIALES</h3>
+          
+          <div class="row center">
+            
+				<div id="fb-root"></div>
+				<script>(function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.3";
+                    fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script>
+
+                <div class="fb-page" data-href="https://www.facebook.com/muniCiudadNueva?fref=ts" 
+                ta-width="100%" data-height="600" data-hide-cover="false" data-show-facepile="true" 
+                data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote 
+                cite="https://www.facebook.com/muniCiudadNueva?fref=ts"><a 
+                href="https://www.facebook.com/muniCiudadNueva?fref=ts">
+                Municipalidad Distrital de Ciudad Nueva</a></blockquote></div></div>
+       
+
+      		
+          </div>
+        </div>
+
+      </div>
+
     </div>
   </section>

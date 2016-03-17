@@ -19,7 +19,7 @@
 						<!-- contenido -->
 			
 							<!--  table -->
-							<table id="tabla_convoca" class="table table-bordered" cellspacing="0" width="100%">
+							<table id="tabla_convoca" class="table table-bordered" cellspacing="0" width="80%">
 								<thead>
 									<tr>
 										<th>Nº</th>
@@ -85,7 +85,7 @@
 
 					<script>
 						$(document).ready(function() {
-						    $('#tabla_convoca').dataTable( {
+						    $('#tabla_convoca').DataTable( {
 						        "language": {
 						            "lengthMenu": "Visualizando _MENU_ Registros por Página",
 						            "zeroRecords": "Ningun Registro Encontrado",
@@ -96,3 +96,6 @@
 						    } );
 						} );
 					</script>
+					
+
+

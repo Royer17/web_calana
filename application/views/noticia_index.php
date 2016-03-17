@@ -1,95 +1,108 @@
-				<div class="bordered">
-					<div class="row as">
-						<div class="article pull-left">
-							<div class="article-title">
-								noticias MDCN
-							</div>
-						</div>															
-						<div class="row as">	<!-- contenido de noticias -->	
-							
-								<ul class="list-unstyled">
+ <section class="container">
+    <div class="row">
+      <div class="col s12 m9">
+        <div class="container z-depth-2 ultimas-noticias">
+          <h3 class="titulo">ULTIMAS NOTICIAS</h3>
+          <div class="row noticia">
+            <h4 class="titulo">350 MENORES DE EDAD RECIBIRÁN DNI GRATUITO EN EL DISTRITO DE CIUDAD NUEVA</h4>
+            <div class="col s12 m4">
+              <img class="responsive-img z-depth-1 hoverable materialboxed" src="https://scontent-mia1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/1186912_1688543931433688_1292899946868305588_n.jpg?oh=0177712cd8e1b63fc19d948821c3bce5&oe=5771B076" alt="">
+            </div>
+            <div class="col s12 m8">
+              <p class="fecha"><i class="icon-calendar"></i>18 de febrero del 2016</p>
+              <p class="descripcion">Ciudad Nueva.- La municipalidad distrital de Ciudad Nueva en coordinación con el Registro Nacional de Identificación y Estado Civil (RENIEC), relaizarán este miércoles 24 de febrero de 09:00 a.m. a 1:00 p.m. la entrega de 350 DNI a todos los padres de familia que posteriormente hayan realizado el tramite gratuito documentario de sus menores hijos durante el año 2015.</p>
+              <a class="right waves-effect waves-teal" href="#!"><i class="icon-enlace left"></i>VER MÁS</a>
+            </div>
+          </div>
 
-									<li class="contenedor-noticias">
-										<div class="row ">
-														
-												<div class="col-sm-12 col-md-12 col-xs-12">
-													<div class="text-title">
-													
-													</div>
-													<div class="fecha text ancla">
-														<span class="glyphicon glyphicon-calendar">
-															CÁMARAS DE SEGURIDAD CIUDADANA CAPTAN ACCIDENTE DE TRANSITO
-														</span>
-														26 de julio del 2015
-													</div>
-													<img class="img-thumbnail " src="img/noticia/np94.jpg" 	 alt="" width="300" height="200"  >
+          <div class="divider"></div>
 
-													 <h6 class="text-none">
-															Ciudad Nueva.- Fueron las cámaras de seguridad ciudadana del distrito de Ciudad Nueva
-															las que registraron el choque vehicular que ocurrió el último domingo 25 de octubre entre
-															la ruta 15 de placa Z1P-780 y un auto de placa A9P-400 en la intersección de la Av. Internacional 
-													  		con la calle Baquijano y Carrillo al promediar las 15:00 horas, dejando como saldo de seis personas heridas.
-														<a class="noticias " href="https://www.facebook.com/media/set/?set=a.1616644495290299.1073742009.1521070898180993&type=3" target="_blank">
-															<div class="text-ancla" >
-																ver mas ... 
-															</div>
-														</a>
-													</h6>
-												
-												</div>	
+          <div class="row noticia">
+            <h4 class="titulo">350 MENORES DE EDAD RECIBIRÁN DNI GRATUITO EN EL DISTRITO DE CIUDAD NUEVA</h4>
+            <div class="col s12 m4">
+              <img class="responsive-img z-depth-1 hoverable materialboxed" src="https://scontent-mia1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/1186912_1688543931433688_1292899946868305588_n.jpg?oh=0177712cd8e1b63fc19d948821c3bce5&oe=5771B076" alt="">
+            </div>
+            <div class="col s12 m8">
+              <p class="fecha"><i class="icon-calendar"></i>18 de febrero del 2016</p>
+              <p class="descripcion">Ciudad Nueva.- La municipalidad distrital de Ciudad Nueva en coordinación con el Registro Nacional de Identificación y Estado Civil (RENIEC), relaizarán este miércoles 24 de febrero de 09:00 a.m. a 1:00 p.m. la entrega de 350 DNI a todos los padres de familia que posteriormente hayan realizado el tramite gratuito documentario de sus menores hijos durante el año 2015.</p>
+              <a class="right waves-effect waves-teal" href="#!"><i class="icon-enlace left"></i>VER MÁS</a>
+            </div>
+          </div>
 
-										</div>										
-									</li>
-									
+          <div class="divider"></div>
 
-									
-									<a class="noticias" href="http://www.municiudadnueva.gob.pe/noticias/muninoti_ver05.php" target="_blank">
-										<div class="text-ancla">
-												ver Todas ... 
-										</div>
-									</a>
+          <div class="row noticia">
+            <h4 class="titulo">350 MENORES DE EDAD RECIBIRÁN DNI GRATUITO EN EL DISTRITO DE CIUDAD NUEVA</h4>
+            <div class="col s12 m4">
+              <img class="responsive-img z-depth-1 hoverable materialboxed" src="https://scontent-mia1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/1186912_1688543931433688_1292899946868305588_n.jpg?oh=0177712cd8e1b63fc19d948821c3bce5&oe=5771B076" alt="">
+            </div>
+            <div class="col s12 m8">
+              <p class="fecha"><i class="icon-calendar"></i>18 de febrero del 2016</p>
+              <p class="descripcion">Ciudad Nueva.- La municipalidad distrital de Ciudad Nueva en coordinación con el Registro Nacional de Identificación y Estado Civil (RENIEC), relaizarán este miércoles 24 de febrero de 09:00 a.m. a 1:00 p.m. la entrega de 350 DNI a todos los padres de familia que posteriormente hayan realizado el tramite gratuito documentario de sus menores hijos durante el año 2015.</p>
+              <a class="right waves-effect waves-teal" href="#!"><i class="icon-enlace left"></i>VER MÁS</a>
+            </div>
+          </div>
 
-								
-								</ul>							
-							
-						</div><!--termina contenido de noticias	-->		
-					</div>
+          <div class="divider"></div>
 
-					<div class="row as">
-						<div class="article pull-left">
-							<div class="article-title" >
-								videos
-							</div>
+          <div class="row noticia">
+            <h4 class="titulo">350 MENORES DE EDAD RECIBIRÁN DNI GRATUITO EN EL DISTRITO DE CIUDAD NUEVA</h4>
+            <div class="col s12 m4 foto">
+              <img class="responsive-img z-depth-1 hoverable materialboxed" src="https://scontent-mia1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/1186912_1688543931433688_1292899946868305588_n.jpg?oh=0177712cd8e1b63fc19d948821c3bce5&oe=5771B076" alt="">
+            </div>
+            <div class="col s12 m8">
+              <p class="fecha"><i class="icon-calendar"></i>18 de febrero del 2016</p>
+              <p class="descripcion">Ciudad Nueva.- La municipalidad distrital de Ciudad Nueva en coordinación con el Registro Nacional de Identificación y Estado Civil (RENIEC), relaizarán este miércoles 24 de febrero de 09:00 a.m. a 1:00 p.m. la entrega de 350 DNI a todos los padres de familia que posteriormente hayan realizado el tramite gratuito documentario de sus menores hijos durante el año 2015.</p>
+              <a class="right waves-effect waves-teal" href="#!"><i class="icon-enlace left"></i>VER MÁS</a>
+            </div>
+          </div>
 
-						</div>
-						<div class="row"><!-- comienza  videos -->
-							<!-- contenido de videos -->
-							<div class="col col-md-12 col-sm-12">
-								<div class="contenedor-videos">
-								
-									<iframe width="340" height="190" src="https://www.youtube.com/embed/lxiRO1jyKbM?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
-								</div>
-								<a class="noticias" href="https://www.youtube.com/channel/UCjNJlPotdUA_zf0SRF1Qdzg" target="_blank">
-									<div class="text-ancla" style="color:red">
-										ver Todos ... 
-									</div>
-								</a>	
-							</div>
+          <div class="divider"></div>
 
-							<!-- 
-							<div class="col col-md-16 col-sm-16 col-lg-16">
-								<div class="col col-md-8 col-sm-8 col-lg-8">
-									<div class="contenedor-videos">
-									   <iframe width="340" height="190" src="https://www.youtube.com/embed/T_oGqSfTS5I?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
-									</div>
-								</div>
-								<div class="col col-md-8 col-sm-8 col-lg-8">
-									<div class="contenedor-videos">
-										
-								<iframe width="340" height="190" src="https://www.youtube.com/embed/lxiRO1jyKbM?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
-									</div>
-								</div>
-							</div>-->
-						</div><!-- termina videos -->
-					</div>
-				</div>	
+        </div>
+      </div>
+      <div class="col s12 m3">
+
+        <div class="alcalde z-depth-2">
+          <h3 class="titulo">NUESTRO ALCALDE</h3>
+          <img class="responsive-img" src="<?php echo(base_url()); ?>dist/img/alcalde.png">
+          <a href="#!"><p class="mensaje">Estimados vecinos: Quiero expresarles mis más cordiales saludos y reiterar el sentimiento que hoy nos une, que es sacar adelante al distrito ... VER MÁS</p></a>
+          <!-- <p class="nombre">MED. EDGAR ROGELIO CONCORI COAQUIRA</p> -->
+          <p class="nombre">ING. JOSÉ GREGORIO ROQUE MAMANI</p>
+        </div>
+
+        <div class="z-depth-2 modernizacion-municipal">
+          <h3 class="titulo">MODERNIZACIÓN MUNICIPAL</h3>
+          <div class="row">
+            <div class="col s6">
+              <a class="center waves-effect waves-light hoverable boton-modernizacion" href="#!">
+                <i class="icon-tributos"></i>
+                <p>TRIBUTOS MUNICIPALES</p>
+              </a>
+            </div>
+            <div class="col s6">
+              <a class="center waves-effect waves-light hoverable boton-modernizacion" href="#!">
+                <i class="icon-tienda"></i>
+                <p>LICENCIA DE FUNCIONAMIENTO</p>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s6">
+              <a class="center waves-effect waves-light hoverable boton-modernizacion" href="#!">
+                <i class="icon-edificios"></i>
+                <p>LICENCIA DE EDIFICACIONES</p>
+              </a>
+            </div>
+            <div class="col s6">
+              <a class="center waves-effect waves-light hoverable boton-modernizacion" href="#!">
+                <i class="icon-book"></i>
+                <p>LIBRO DE RECLAMACIONES</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>

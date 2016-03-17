@@ -14,12 +14,17 @@ class Convocatoria extends CI_Controller {
     }
 
 	public function index() {
-		$data['contenido'] = 'Convocatoria/index';
+
+		$data['contenido'] = 'convocatoria/index';
 		$data['titulo'] = 'Convocatoria';
 		$data['query'] = $this->Model_Convocatoria->all();
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
+		
+		$this->load->view('layout_index/head');
+		$this->load->view('layout_index/header');
+		$this->load->view('layout_index/navbar');
+		$this->load->view('inicio2',$data);
+	
+		$this->load->view('layout_index/footer');
 	}
 
 
