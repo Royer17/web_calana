@@ -8,6 +8,7 @@
 
         </div>
       </div>
+     
       <div class="col s12 m3">
 
         <div class="z-depth-2 modernizacion-municipal">
@@ -62,8 +63,8 @@
                 <p>ACUERDOS DE CONCEJO</p>
               </a>
             </div>
-          </div>
-          <div class="row">
+         
+         
             <div class="col s12">
               <a class=" waves-effect waves-light hoverable boton-modernizacion" href="#!">
                
@@ -120,6 +121,7 @@
       		
           </div>
         </div>
+
 
       </div>
 

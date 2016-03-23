@@ -1,9 +1,11 @@
  <section class="container">
     <div class="row">
       <div class="col s12 m9">
+
+        <h3 class="titulo">ULTIMAS NOTICIAS</h3>
+
         <div class="container z-depth-2 ultimas-noticias">
-          <h3 class="titulo">ULTIMAS NOTICIAS</h3>
-          
+                    
             <?= $this->load->view($contenido) ?>
 
         </div>
@@ -102,3 +104,52 @@
       </div>
     </div>
   </section>
+
+  <section>
+    <div class="your-class">
+      <div>your content</div>
+      <div>your content</div>
+      <div>your content</div>
+    </div>
+  </section>
+
+<!-- script de slide -->
+<script>
+
+    $('.responsive').slick({
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+
+</script>

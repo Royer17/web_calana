@@ -10,13 +10,15 @@ class Servicios extends CI_Controller {
 
 	public function seguridad_ciudadana() {
 
-		$data['contenido'] = 'servicios/seguridad_ciudadana';
+		$data['contenido'] = 'servicios/seguridadciudadana';
 		$data['titulo'] = 'Servicios';
 	
 		
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
+		$this->load->view('layout_index/head');
+		$this->load->view('layout_index/header');
+		$this->load->view('layout_index/navbar');
+		$this->load->view('inicio2',$data);
+		$this->load->view('layout_index/footer');
 	}
 
 

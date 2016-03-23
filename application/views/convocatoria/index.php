@@ -15,11 +15,11 @@
 					</div>
 	
 					<?php $i=1; ?>
-					<div class="row as">
+					<div class="row ">
 						<!-- contenido -->
 			
 							<!--  table -->
-							<table id="tabla_convoca" class="table table-bordered" cellspacing="0" width="80%">
+							<table id="tabla_convoca" class="table table-bordered" cellspacing="0" width="300">
 								<thead>
 									<tr>
 										<th>Nº</th>
@@ -85,7 +85,7 @@
 
 					<script>
 						$(document).ready(function() {
-						    $('#tabla_convoca').DataTable( {
+						    $('#tabla_convoca').dataTable( {
 						        "language": {
 						            "lengthMenu": "Visualizando _MENU_ Registros por Página",
 						            "zeroRecords": "Ningun Registro Encontrado",
@@ -96,6 +96,3 @@
 						    } );
 						} );
 					</script>
-					
-
-

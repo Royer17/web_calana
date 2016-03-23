@@ -12,10 +12,10 @@
 								
 								<div id="owl-demo">
           
-								  <div class="item"><img src="img/seguridad/001.jpg" class="img-thumbnail" alt="seguridad"></div>
-								  <div class="item"><img src="img/seguridad/002.jpg" class="img-thumbnail" alt="seguridad"></div>
-								  <div class="item"><img src="img/seguridad/003.jpg" class="img-thumbnail" alt="seguridad"></div>
-								  <div class="item"><img src="img/seguridad/004.jpg" class="img-thumbnail" alt="seguridad"></div>
+								  <div class="item"><img src="<?= base_url('img/seguridad/001.jpg')?>" class="responsive-img z-depth-1 hoverable materialboxed" alt="seguridad"></div>
+								  <div class="item"><img src="<?= base_url('img/seguridad/002.jpg')?>" class="responsive-img z-depth-1 hoverable materialboxed" alt="seguridad"></div>
+								  <div class="item"><img src="<?= base_url('img/seguridad/003.jpg')?>" class="responsive-img z-depth-1 hoverable materialboxed" alt="seguridad"></div>
+								  <div class="item"><img src="<?= base_url('img/seguridad/004.jpg')?>" class="responsive-img z-depth-1 hoverable materialboxed" alt="seguridad"></div>
 								 
 								 
 								</div>
@@ -52,8 +52,7 @@
 								  <div class="item"><img src="img/seguridad/006.jpg" class="img-thumbnail" alt="seguridad"></div>
 								  <div class="item"><img src="img/seguridad/007.jpg" class="img-thumbnail" alt="seguridad"></div>
 								  <div class="item"><img src="img/seguridad/008.jpg" class="img-thumbnail" alt="seguridad"></div>
-								 
-								 
+								 								 
 								</div>
 
 									

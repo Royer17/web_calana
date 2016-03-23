@@ -1,13 +1,7 @@
-
-
-
 <script>
 
 	$(document).ready(function(){
-	
-
 		$( "#myModal2" ).click(function(){}
-
 	});
 </script>
 

@@ -23,7 +23,6 @@ class Convocatoria extends CI_Controller {
 		$this->load->view('layout_index/header');
 		$this->load->view('layout_index/navbar');
 		$this->load->view('inicio2',$data);
-	
 		$this->load->view('layout_index/footer');
 	}
 
