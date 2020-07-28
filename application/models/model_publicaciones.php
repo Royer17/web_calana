@@ -7,11 +7,12 @@ class Model_Publicaciones extends CI_Model {
     }
 
     function all() {
+        $this->db->order_by('norma.fechaemi','desc');
         $query = $this->db->get('norma');
-    
+        
         return $query->result();
 
-        $this->db->order_by('norma.fechaemi','desc');
+     
 
     }
 
@@ -35,8 +36,8 @@ class Model_Publicaciones extends CI_Model {
         }
     }
 
-    function find($idnor) {
-        $this->db->where('idnor', $idnor);
+    function find($id) {
+        $this->db->where('idnor', $id);
         return $this->db->get('norma')->row();
     }
 
@@ -52,8 +53,8 @@ class Model_Publicaciones extends CI_Model {
         $this->db->update('norma');
     }
 
-    function delete($idnor) {
-        $this->db->where('idnor', $idnor);
+    function delete($id) {
+        $this->db->where('idnor', $id);
         $this->db->delete('norma');
     }
 

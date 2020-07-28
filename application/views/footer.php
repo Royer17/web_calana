@@ -1,10 +1,3 @@
-<script>
-
-	$(document).ready(function(){
-		$( "#myModal2" ).click(function(){}
-	});
-</script>
-
 
 
 <script>
@@ -17,14 +10,13 @@
 			}, 1000);
 		});
 	 
-	$(window).scroll(function(){
+		$(window).scroll(function(){
 			if( $(this).scrollTop() > 0 ){
 				$('.ir-arriba').slideDown(000);
 			} else {
 				$('.ir-arriba').slideUp(1000);
 			}
 		});
-
 
 
 
@@ -50,6 +42,46 @@
     });
 
 </script>
+
+		<script>
+			// Source: http://www.backalleycoder.com/2011/03/20/link-tag-css-stylesheet-load-event/
+			var loadCSS = function(url, callback){
+				var link = document.createElement('link');
+				link.type = 'text/css';
+				link.rel = 'stylesheet';
+				link.href = url;
+				link.id = 'theme-style';
+
+				document.getElementsByTagName('head')[0].appendChild(link);
+
+				var img = document.createElement('img');
+				img.onerror = function(){
+					if(callback) callback(link);
+				}
+				img.src = url;
+			}
+
+			$(document).ready(function() {
+				var initEditor = function() {
+					$("textarea").sceditor({
+						plugins: 'bbcode',
+						style: "./minified/jquery.sceditor.default.min.css"
+					});
+				};
+
+				$("#theme").change(function() {
+					var theme = "./minified/themes/" + $(this).val() + ".min.css";
+
+					$("textarea").sceditor("instance").destroy();
+					$("link:first").remove();
+					$("#theme-style").remove();
+
+					loadCSS(theme, initEditor);
+				});
+
+				initEditor();
+			});
+		</script>
 
 <script>
 	$(document).ready(function() {
@@ -97,64 +129,70 @@
 
 		  $("#owl-demo5").owlCarousel({
 		 
+		      autoPlay: 5000, //Set AutoPlay to 3 seconds
+		 		
+		      items : 1,
+		      itemsDesktop : [1199,3],
+		      itemsDesktopSmall : [979,3]
+		      
+		 
+		  });
+
+		 $("#owl-demo6").owlCarousel({
+		 
 		      autoPlay: 9000, //Set AutoPlay to 3 seconds
 		 
 		      items : 1,
 		      itemsDesktop : [1199,3],
 		      itemsDesktopSmall : [979,3]
 		 
+		  });	
+		  $("#owl-demo7").owlCarousel({
+		 
+		      autoPlay: 5000, //Set AutoPlay to 3 seconds
+		 
+		      items : 1,
+		      itemsDesktop : [1199,3],
+		      itemsDesktopSmall : [400,3]
+		 
 		  });
 		 
 	});
 </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.slick').slick({
-        slidesToShow: 3,
-		  slidesToScroll: 1,
-		  autoplay: true,
-		  autoplaySpeed: 2000,
-      });
-
-    });
-
-  </script>
-
-
 
 <footer>
-	<div clasS="contenedor-footer">
+	<div clasS="contenedor-footer bg">
 		<div class="row">
-			<div class="col-md-12 col-sm-12 col-xs-12"> 
+			<div class="col-md-12 "> 
 
 				<div class="row as foot">
 
-					<div class="col-md-2 col-sm-2 col-xs-12">
+					<div class="col-md-2">
 
-						<img class="logo-footer" src="img/logo4.png" hight="40" width="100" alt="">
+						<img class="logo-footer" src="<?= base_url('') ?>img/logo4.png" hight="10" width="100" alt="">
 					
 					</div>
 
-					<div class="col-md-10 col-sm-10 col-xs-12">	
-													
+					<div class="col-md-10">	
+													<br><br>
 						<strong class="title-foot">
-							Honorable Municipalidad Distrital de Ciudad Nueva   <br>
+							Municipalidad Distrital de Calana   <br>
 						</strong>
 						
 							<div class="as">
 								<strong>
 									Dirección : 
 								</strong>
-									" Calle Manuel Lorenzo de Vidaure Nº 448 " |  
+									" Av. General Varela s/n - Calana " |  
 								<strong>
 									Email :
 								</strong>
-									"webmaster@municiudadnueva.gob.pe " | <br>
+									"info@municalana.gob.pe " | <br>
 								<strong>
 									Central Telefónica : 
 								</strong>
-									(052) 310642   |  
+									990099036   |  
 								<strong>
 									Departamento : 
 								</strong>
@@ -163,23 +201,24 @@
 									Provincia : 
 								</strong>
 									Tacna |  <br>
+									<!-- 
 								<strong>
 									Linea Gratuita Seguridad Ciudadana
 
 								</strong>
-									0800-13926 -- 
+									990099036 
 
 
 								<strong>
 									Seguridad Ciudadana
 								</strong>
-								   (052)-310441 | <br><br>
-
+								   990099036  | <br><br>
+									-->
 							</div>
 
 							<div class="body-foot">
 								
-									© 2015 Sub Gerencia de Tecnologias de la Información, Todos los derechos reservados
+									© 2019 © www.municalana.gob.pe , Todos los derechos reservados
 								
 							</div>
 					</div>

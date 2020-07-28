@@ -7,8 +7,12 @@ class Model_Slide extends CI_Model {
     }
 
     function all() {
+  
+
+        $this->db->order_by('id_slide','desc');
         $query = $this->db->get('slide');
-        return $query->result();
+        return $resultado = $query->result();
+
     }
 
     function cinco_ultimos() {
@@ -20,7 +24,6 @@ class Model_Slide extends CI_Model {
         return $query->result();
        // return $this->db->get('slide')->row();
     }
-
 
     function allFiltered($field, $value) {
         $this->db->like($field, $value);

@@ -97,7 +97,7 @@
 		                            		<td>
 		                            		<b>Programa</b>
 			                           		</td>
-			                           		<td style="color:#2980b9 !important;">  <?= $registro->programa ?> </a>
+			                           		<td style="color:#004F00 !important;">  <?= $registro->programa ?> </a>
 			                           		</td>
 			                           	</tr>
 

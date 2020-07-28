@@ -30,10 +30,27 @@ if ( ! function_exists('autentificar')) {
 			'distrito/historia',
 			'modernizacion/tributos',
 			'modernizacion/licencias_edificaciones',
-			'licencias_funcionamiento',
+			'modernizacion/licencias_funcionamiento',
 			'modernizacion/reclamaciones',
-			'servicios/seguridad_ciudadana',
-			'servicios/vaso_leche',
+			'servicios/seguridadciudadana',
+			'servicios/vasoleche',
+			'servicios/codisec',
+			'servicios/demuna',
+			'servicios/deportes',
+			'servicios/defensacivil',
+			'servicios/registrocivil',
+			'servicios/itse',
+			'servicios/sisfoh',
+			'publicaciones/',
+			'publicaciones/ordenanzas',
+			'publicaciones/acuerdos',
+			'publicaciones/resoluciones_alcaldia',
+			'publicaciones/resoluciones_gerencia_municipal',
+			'publicaciones/decretos_alcaldia',
+			'convocatoria/',
+			'noticias/',
+
+
 			
 
 

@@ -1,6 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Usuario extends CI_Controller {
+include_once (dirname(__FILE__) . "/check_authentication_controller.php");
+
+class Usuario extends Check_Authentication_Controller {
 
 	// Constructor de la clase
 	function __construct() {
@@ -12,25 +14,27 @@ class Usuario extends CI_Controller {
 		$this->form_validation->set_message('required', 'Debe ingresar campo %s');
         $this->form_validation->set_message('valid_email', 'Campo %s no es un eMail valido');
         $this->form_validation->set_message('my_validation', 'Existe otro registro con el mismo nombre');
+
+		$this->data = $this->validate_session('usuario', 
+			['index', 'search', 'create', 'insert', 'edit', 'update', 'delete']);
     }
 
+  
 	public function index() {
-		$data['contenido'] = 'usuario/index';
-		$data['titulo'] = 'Usuarios';
-		$data['query'] = $this->Model_Usuario->all();
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
+		$this->data['contenido'] = 'usuario/index';
+		$this->data['titulo'] = 'Usuario';
+		$this->data['query'] = $this->Model_Usuario->all();
+
+		$this->loadSsAdminViews();
 	}
 
 	public function search() {
-		$data['contenido'] = 'usuario/index';
-		$data['titulo'] = 'Usuarios';
+		$this->data['contenido'] = 'usuario/index';
+		$this->data['titulo'] = 'Usuario';
 		$value = $this->input->post('buscar');
-		$data['query'] = $this->Model_Usuario->allFiltered('usuario.name', $value);
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
+		$this->data['query'] = $this->Model_Usuario->allFiltered('usuario.name', $value);
+		
+		$this->loadSsAdminViews();
 	}
 
 	public function my_validation() {
@@ -38,12 +42,11 @@ class Usuario extends CI_Controller {
 	}
 
 	public function create() {
-		$data['contenido'] = 'usuario/create';
-		$data['titulo'] = 'Crear Usuario';
-		$data['perfiles'] = $this->Model_Usuario->get_perfiles(); /* Lista de los Perfiles */
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
+		$this->data['contenido'] = 'usuario/create';
+		$this->data['titulo'] = 'Crear Usuario';
+		$this->data['perfiles'] = $this->Model_Usuario->get_perfiles(); /* Lista de los Perfiles */
+		
+		$this->loadSsAdminViews();
 	}
 
 	public function insert() {
@@ -67,13 +70,11 @@ class Usuario extends CI_Controller {
 
 	public function edit($id) {
 		// $id = $this->uri->segment(3);
-		$data['contenido'] = 'usuario/edit';
-		$data['titulo'] = 'Actualizar Usuario';
-		$data['registro'] = $this->Model_Usuario->find($id);
-		$data['perfiles'] = $this->Model_Usuario->get_perfiles(); /* Lista de los Perfiles */
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
+		$this->data['contenido'] = 'usuario/edit';
+		$this->data['titulo'] = 'Actualizar Usuario';
+		$this->data['registro'] = $this->Model_Usuario->find($id);
+		$this->data['perfiles'] = $this->Model_Usuario->get_perfiles(); /* Lista de los Perfiles */
+		$this->loadSsAdminViews();
 	}
 
 	public function update() {

@@ -2,3 +2,8 @@
 node_modules/
 user_guide/
 thumbs
+/application/config/
+/application/cache/
+/system/
+/images/
+/img/

@@ -1,94 +1,59 @@
-					<div class="row as">
-						
-						<ol class="miga breadcrumb">
-						  <li><a href="http://www.municiudadnueva.gob.pe/">Inicio</a></li>
-						  <li class="active"><?= $titulo ?></li>
-						</ol>
-					
-
-						<div class="article pull-left">
-							<div class="article-title">
-								Reseña Histórica del Distrito
-							</div>
-						</div>
-					
-					</div>
-					
-
-					<div class="row as">
-						<!-- contenido -->
-						
-					</div>
+<section id="bloque_txt-wrapper">
 
 
+	<div class="cont_titulo">Reseña Histórica del Distrito</div>
 
 
-							<div class="parrafodf">
-								<p align="justify" style="margin: 0px; padding: 0px; line-height:150%">
-													<font face="Arial" size="2" color="#484848">
-													La presión migratoria en la 
-													ciudad de Tacna se 
-													intensifica en los años 70s, 
-													ocupando diversos espacios 
-													aledaños al área urbana de 
-													Tacna, especialmente la 
-													parte norte. Por esta razón 
-													la Dirección Regional de 
-													Vivienda y Construcción 
-													elabora en el año 1979 un 
-													proyecto de vivienda de 
-													621,433.84 m2 denominado 
-													&quot;Asentamiento A&quot;, ubicado en 
-													el cono norte como 
-													continuación del distrito 
-													Alto de la Alianza, incluido 
-													dentro del plan regulador 
-													como &quot;área de expansión 
-													urbana&quot;.<br>
-													&nbsp;</font><p style="margin: 0px; padding: 0px; line-height:150%">
-													<font face="Arial" size="2" color="#484848">
-													
-
-													<div>
-														<img class="img" src="http://www.municiudadnueva.gob.pe/HISTORIA1.png" width="100%" />
-															
-													</div>
-						
+	<div id="bloque_txt" class="padding">
 
 
-													<font color="#484848"><font face="Arial" size="2"><br>
-													A partir de setiembre de 
-													1980, mediante sorteo se 
-													inicia el proceso de 
-													adjudicación de lotes para 
-													vivienda en las áreas 
-													correspondientes a los 
-													actuales Comités 1 y 2, 
-													posteriormente 28 de Junio 
-													de 1981 se aprobó el nombre 
-													de Asentamiento Ciudad 
-													Nueva.<br>
-													<br>
-													El año 1984 se aprueba el 
-													Plano de Lotización 
-													Perimétrica, considerándose 
-													en la Memoria Descriptiva 
-													áreas destinadas para la 
-													construcción de obras de 
-													importancia como mercados 
-													Centros Educativos, Iglesia, 
-													Puesto Policial y Local 
-													Comunal.<br>
-													<br>
-													Para el año 1986 se le 
-													otorga la categoría de 
-													Centro Poblado Menor y en 
-													1990 se inician los trámites 
-													de reconocimiento como 
-													Distrito, aprobándose este 
-													el 6 de noviembre de 1992 y 
-													publicándose el 20 de 
-													noviembre del mismo año, en 
-													el gobierno del Presidente 
-													Alberto Fujimori.<br>
-							</div>
+		<div style="text-align: justify;">
+
+
+		<div style="font-family: Arial, Verdana, sans-serif; text-align: center;">
+
+		</div>
+
+
+		<div style="font-size: 11.45px; font-family: Arial, Verdana, sans-serif; text-align: center;"><span style="font-family: Arial; font-size: large;"><br></span></div>
+
+
+		<div class="parrafodf">
+<p align="justify" style="margin: 0px; padding: 0px; line-height:150%">
+<font face="Arial" size="2" color="#484848">
+Calana, distrito tacneño situado a 850 m. s. n. m., es un pequeño envuelto en una atrayente campiña con extraordinaria mistura de arboles y variadas hortalizas. En su margen derecho conjugado el verdor característico de su campiña, se halla el cauce del rio Caplina. La antigua parroquia que data de la época colonial se venera la imagen de su patrona Virgen del Rosario. Es el segundo distrito que sube al valle viejo, la campiña tacneña a unos 17 Kilómetros de distancia. Su nombre, deriva de las voces aymaras. “Kaala hana”, lugar con abrigo de piedras, también conocido como amontonamiento de piedras o lugar pedregoso. En el Virreynato y más aun en los años de la República, fue un centro importante, con motivo del arriaje que se engrandeció por el comercio desarrollado por los comarcas venidas del altiplano Boliviano y Peruano. Era un ligar bastante poblado de residencia de familias descendientes de conquistadores. La calle principal del poblado era una sucesión de tambos, hospederías, talleres de herrería, peluquería y tiendas de comercio.</font><p style="margin: 0px; padding: 0px; line-height:150%">
+<font face="Arial" size="2" color="#484848">
+
+
+<div>
+<img class="img" src="<?= base_url() ?>img/imagen-calana.jpg" width="100%" />
+
+</div>
+
+
+
+<font color="#484848"><font face="Arial" size="2"><br>
+LEY DE CREACION DEL DISTRITO DE CALANA 
+
+JOSE SIMEON TEJADA
+PRESIDENTE DEL CONGRESO DEL PERU
+Por cuanto: El congreso ha dado la siguiente ley:
+EL CONGRESO DE LA REPUBLICA PERUANA
+CONSIDERANDO:
+Siendo Presidente del Perú Manuel Pardo y Valle Que está aprobada la necesidad de decidir el distrito De Pachia de la Provincia del cercado de Tacna.
+
+HA DADO LA LEY SIGUIENTE:
+
+ARTICULO UNICO:
+
+Divididas en dos distrito de Pachia: Uno denominada Calana, que tendrá por limites los pueblos vecinos comprendidos desde PIEDRA BLANCA hasta el CERCADO y otro nombrado Pachia, que se comprenderá de PACHIA, CALIENTES, TOCUCO, CALLATA, TACORA, Y CASAPILLA. Comuníquese al Poder Ejecutivo para que disponga lo necesario a su cumplimiento.
+CASA DE CONGRESO, EN LIMA A 20 DE AGOSTO DE 1872
+JOSE SIMEON TEJADA, Presidente
+JOSE M. GONZALES, Secretario
+BERNARDINO COLQUE, Secretario.
+</div>
+
+
+
+
+<div style="font-size: 11.45px; font-family: Arial, Verdana, sans-serif;"><br></div></div></div></section>

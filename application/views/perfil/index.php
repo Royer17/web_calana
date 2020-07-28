@@ -1,37 +1,64 @@
-<div class="page-header">
-	
-	<h1>Perfiles <small>Mantenimiento de Registros</small></h1>
+<div class="row">
+	<div class="col-md-3 ">
+		<form action="<?= base_url('perfil/search') ?>" method="post">
+
+			<div class="input-group">
+			    <input type="text" name="buscar" id="buscar" placeholder="Buscar" class="form-control">
+			    <span class="input-group-addon"> <button type="submit" ><i class="glyphicon glyphicon-search"> </i> </button></span>
+			</div>
+		</form>
+	</div>
+	<div class="col-md-3 ">
+		<?= anchor('perfil/create', 'Agregar', array('class'=>'btn btn-primary')); ?>
+	</div>
 </div>
-	<?= form_open('perfil/search', array('class'=>'form-search')); ?>
-		<?= form_input(array('type'=>'text', 'name'=>'buscar', 'id'=>'buscar', 'placeholder'=>'Buscar por Nombre...', 'class'=>'input-medium search-query')); ?>
-		<?= form_button(array('type'=>'submit', 'content'=>'<i class="icon-search"></i>', 'class'=>'btn btn-primary')); ?>
-		<?= anchor('perfil/create','Agregar',array('class'=>'btn'))?>
-	<?= form_close();?>
+	
 
+<div class="row">
+        <div class="col-md-12 ">
+          <div class="box">
+            <div class="box-header with-border">
+              <h3 class="box-title"> Mantenimiento de Registros</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table class="table table-bordered">
+                <tr>
+                  <th >ID</th>
+                  <th>Nombre</th>
+                  <th >Editar</th>
+                  <th >Eliminar</th>
+                 
 
-<table class="table table-condensed table-bordered" >
-	<thead>
-		<tr>
-			<th>ID</th>
-			<th>Nombre</th>
-			<th>Creado</th>
-			<th>Modificado</th>
-			
-		</tr>
-	</thead>	
+                </tr>
 
-	<tbody>
-		<?php foreach ($query as $registro): ?>
-		<tr>
-			<td><?= anchor('perfil/edit/'.$registro->id,$registro->id) ; ?></td>
-			<td><?= $registro->name ?></td>
-			<td><?= date("d/m/Y - H:i ", strtotime($registro->created)); ?></td>
-			<td><?= date("d/m/Y - H:i ", strtotime($registro->updated)); ?></td>
-			
-		</tr>
-		<?php endforeach; ?>
-	</tbody>
-		
+                <?php foreach ($query as $registro): ?>
+                <tr>
+                  <td><?= anchor('perfil/edit/'.$registro->id, $registro->id); ?></td>
+                  <td><?= $registro->name ?></td>
 
+                                
+                  
 
-</table>
+                  <td>
+
+                  	<?= anchor('perfil/edit/'.$registro->id, 'Actualizar', array('class'=>'btn btn-info')); ?></i>  </button>
+
+                  </td>
+
+                  <td>
+                  	
+                  	<?= anchor('perfil/delete/'.$registro->id, 'Eliminar', array('class'=>'btn btn-danger', 'onClick'=>"return confirm('¿Está Seguro?')")); ?>
+                  </td>
+                </tr>
+                <?php endforeach; ?>
+
+              </table>
+            </div>
+            <!-- /.box-body -->
+                <div class="box-footer">
+                   <?= anchor('ssadmin/index', '<i class="fa fa-circle"></i> Regresar', array('class'=>'btn btn-info')); ?>
+                                  
+              </div>
+          </div>
+          <!-- /.box -->

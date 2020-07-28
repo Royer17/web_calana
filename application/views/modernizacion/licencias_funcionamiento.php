@@ -1,7 +1,7 @@
 				<div class="row as">
 						
 						<ol class="miga breadcrumb">
-						  <li><a href="http://www.municiudadnueva.gob.pe/">Inicio</a></li>
+						  <li><a href="<?php echo base_url(); ?>">Inicio</a></li>
 						  <li class="active">Modernización</li>
 						  <li class="active">Licencia de Funcionamiento</li>
 						</ol>
@@ -42,7 +42,7 @@
 															<img border="0" src="<?= base_url('img/pdf.png') ?>" width="30" height="29"></td>
 															<td>
 															<font face="Calibri" size="2" color="#2D2D2D">
-															&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span></font><a title="Ver Documento" target="_blank" href="http://www.municiudadnueva.gob.pe/documentos/archivo1031841878.pdf"><font color="#2D2D2D" face="Calibri" size="2">FORMULARIO 
+															&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span></font><a title="Ver Documento" target="_blank" href="<?php echo base_url(); ?>documentos/archivo1031841878.pdf"><font color="#2D2D2D" face="Calibri" size="2">FORMULARIO 
 															DE SOLICITUD PARA LA OBTENCION DE 
 															LICENCIA DE FUNCIONAMIENTO</font></a></td>
 														</tr>
@@ -51,7 +51,7 @@
 															<img border="0" src="<?= base_url('img/pdf.png') ?>" width="30" height="29"></td>
 															<td>
 															<font color="#2D2D2D" face="Calibri" size="2">
-															&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><a title="Ver Documento" target="_blank" href="http://www.municiudadnueva.gob.pe/documentos/archivo1116306082.pdf"><font color="#2D2D2D">DECLARACION 
+															&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><a title="Ver Documento" target="_blank" href="<?php echo base_url(); ?>documentos/archivo1116306082.pdf"><font color="#2D2D2D">DECLARACION 
 															JURADA DE CONDICIONES BASICAS DE 
 															SEGURIDAD</font></a></font></td>
 														</tr>
@@ -60,7 +60,7 @@
 															<img border="0" src="<?= base_url('img/pdf.png') ?>" width="30" height="29"></td>
 															<td>
 															<font color="#2D2D2D" face="Calibri" size="2">
-															&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><a title="Ver Documento" target="_blank" href="http://www.municiudadnueva.gob.pe/documentos/LF_llenar_form.pdf"><font color="#2D2D2D">INDICACIONES 
+															&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><a title="Ver Documento" target="_blank" href="<?php echo base_url(); ?>documentos/LF_llenar_form.pdf"><font color="#2D2D2D">INDICACIONES 
 															PARA EL LLENADO DEL FORMULARIO DE 
 															LICENCIA DE FUNCIONAMIENTO</font></a></font></td>
 														</tr>
@@ -75,7 +75,7 @@
 															<img border="0" src="<?= base_url('img/pdf.png') ?>" width="30" height="29"></td>
 															<td width="816">
 															<font color="#2D2D2D" face="Calibri" size="2">
-															&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><a title="Ver Documento" target="_blank" href="http://www.municiudadnueva.gob.pe/documentos/archivo761096870.pdf"><font color="#2D2D2D">LEY 
+															&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><a title="Ver Documento" target="_blank" href="<?php echo base_url(); ?>documentos/archivo761096870.pdf"><font color="#2D2D2D">LEY 
 															N-28976, LEY MARCO DE LICENCIA DE 
 															FUNCIONAMIENTO</font></a></font></td>
 														</tr>
@@ -84,7 +84,7 @@
 															<img border="0" src="<?= base_url('img/pdf.png') ?>" width="30" height="29"></td>
 															<td width="816">
 															<font color="#2D2D2D" face="Calibri" size="2">
-															&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><a title="Ver Documento" target="_blank" href="http://www.municiudadnueva.gob.pe/documentos/archivo396487345.pdf"><font color="#2D2D2D">ORDENANZA 
+															&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><a title="Ver Documento" target="_blank" href="<?php echo base_url(); ?>documentos/archivo396487345.pdf"><font color="#2D2D2D">ORDENANZA 
 															N-003-2008-MDCN-T &quot;REGULA EL 
 															OTORGAMIENTO DE LICENCIA DE 
 															FUNCIONAMIENTO&quot;</font></a></font></td>
@@ -100,7 +100,7 @@
 															<img border="0" src="<?= base_url('img/pdf.png') ?>" width="30" height="29"></td>
 															<td>
 															<font color="#2D2D2D" face="Calibri" size="2">
-															&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><a title="Ver Documento" target="_blank" href="http://www.municiudadnueva.gob.pe/documentos/LF_requisitos.pdf"><font color="#2D2D2D">REQUISITOS 
+															&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><a title="Ver Documento" target="_blank" href="<?php echo base_url(); ?>documentos/LF_requisitos.pdf"><font color="#2D2D2D">REQUISITOS 
 															PARA OBTENER LA LICENCIA DE 
 															FUNCIONAMIENTO</font></a></font></td>
 														</tr>
@@ -109,7 +109,7 @@
 															<img border="0" src="<?= base_url('img/pdf.png') ?>" width="30" height="29"></td>
 															<td>
 															<font color="#2D2D2D" face="Calibri" size="2">
-															&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><a title="Ver Documento" target="_blank" href="http://www.municiudadnueva.gob.pe/documentos/archivo964058459.pdf"><font color="#2D2D2D">PROCEDIMIENTO 
+															&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><a title="Ver Documento" target="_blank" href="<?php echo base_url(); ?>documentos/archivo964058459.pdf"><font color="#2D2D2D">PROCEDIMIENTO 
 															PARA OBTENER LA LICENCIA DE 
 															FUNCIONAMIENTO</font></a></font></td>
 														</tr>
@@ -118,7 +118,7 @@
 															<img border="0" src="<?= base_url('img/pdf.png') ?>" width="30" height="29"></td>
 															<td>
 															<font color="#2D2D2D" face="Calibri" size="2">
-															&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><a title="Ver Documento" target="_blank" href="http://www.municiudadnueva.gob.pe/documentos/archivo591618653.pdf"><font color="#2D2D2D">TIPOS 
+															&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><a title="Ver Documento" target="_blank" href="<?php echo base_url(); ?>documentos/archivo591618653.pdf"><font color="#2D2D2D">TIPOS 
 															DE INSPECCION DE SEGURIDAD Y CRITERIOS 
 															DE EVALUACION</font></a></font></td>
 														</tr>
@@ -127,7 +127,7 @@
 															<img border="0" src="<?= base_url('img/pdf.png') ?>" width="30" height="29"></td>
 															<td>
 															<font color="#2D2D2D" face="Calibri" size="2">
-															&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><a title="Ver Documento" target="_blank" href="http://www.municiudadnueva.gob.pe/documentos/costosyplazoslic.htm"><font color="#2D2D2D">COSTOS 
+															&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><a title="Ver Documento" target="_blank" href="<?php echo base_url(); ?>documentos/costosyplazoslic.htm"><font color="#2D2D2D">COSTOS 
 															Y PLAZOS PARA OBTENER LA LICENCIA DE 
 															FUNCIONAMIENTO</font></a></font></td>
 														</tr>

@@ -1,127 +1,81 @@
-					<div class="row as">
-						
-						<ol class="miga breadcrumb">
-						  <li><a href="http://www.municiudadnueva.gob.pe/">Inicio</a></li>
-						  <li><a href="#">Noticias</a></li>
-						  <li class="active">Notas de Prensa</li>
-						</ol>
-						<button value="create">
-							<a style="color:#2980b9 !important;font-weight:bold;" >
-							<?= anchor('noticias/create/') ; ?></a> 
+<div id="" class="efecto body_content_int">
+  <section id="not-wrapper"><div class="cont_titulo">NOTAS DE PRENSA</div>
 
-						</button>
-		
-						<div class="article pull-left">
-							<div class="article-title">
-								 Nuestras Notas de Prensa
-							</div>
-						</div>
 
-										
-					</div>
+
+
+<div id="">
 	
+		<table id="tabla_noticia" class="table table-responsive" cellspacing="0" style ="width:100%;">
+			<thead>
+				<tr>
+					<th>NOTICIAS </th>
 
-					<div class="row as">
-						<!-- contenido 
-						<?php foreach ($query as $registro): ?>
+				</tr>
+			</thead>
+			<tbody>
+	
+			<tr>
+				<td>
+					<div style="text-align:center" >
+							<?php foreach ($query as $registro): ?>
+						<a href=<?= base_url('noticias/detalle/'.$registro->in_id_informacion ); ?> > 
+						<div style="font-size: 15px ; font-weight: bold; text-transform:uppercase; font-family:Arial Black"><?= $registro->vc_titulo_informacion ?></div>
+						<div class=" ">
 
-						<div class="col-sm-16 col-md-8" style="visibility:visible; animation-delay:0.5s ; animation-name: fadeInDown">
-							<a href="" title="">
-								<?= anchor('noticias/detalle/'.$registro->id,$registro->vc_titulo_informacion) ; ?>
-								<img class="img-thumbnail" src=<?= base_url('img/noticia/'.$registro->foto ); ?> >
+							<img style="witdh:200px; height:250px; border: green 1px solid;" src="<?= base_url('img/noticia/'.$registro->foto ); ?>"></div>
 							</a>
-							
-						</div>
+						<div ><i class="fa fa-calendar" aria-hidden="true"></i> Fecha :   <?= $registro->dia ?> / <?= $registro->mes ?> / <?= $registro->ano ?></div>
+						<div></div>
+						<div style="font-size: 12px ; font-family:Comic Sans MS cursive, sans-serif" ><?= $registro->vc_resumen_informacion ?></div>
+						<br><br>
 
-						<?php endforeach; ?> 
-
-						-->
-
-						<?php foreach ($query as $registro): ?>
-			
-							<table style="font-size:12px;font-family:Verdana;width:600px" class="cardprofile">
-	                            <tbody>                                        
-	                                <tr>
-	                                	<td height="15" colspan="4" style="border-bottom: 1px solid #2980b9;">
-										</td>
-									</tr>
-									<tr>
-										<td width="15" style="border-bottom: 1px solid #2980b9;padding-top:10px">	
-										</td>
-										<td valign="top">
-											<b></b>
-											<div style="text-align:justify;margin-right:10px;">
-												<b>	<span style="color:#2980b9;font-family:Verdana;font-size:12px;">
-												<a style="color:#2980b9 !important;font-weight:bold;" >
-													<?= anchor('noticia/detalle/'.$registro->in_id_informacion,$registro->vc_titulo_informacion) ; ?></a> 
-												</span></b>
-											</div>
-											<br>
-											<span style="font-size:11px;">
-												<div style="text-align:justify">
-
-													<table>
-														<tbody>
-															<tr>
-																<td>
-																	<i><b>titulo</b></i>
-																</td>
-																<td>:
-																	<i><?= $registro->in_id_informacion ?></i>
-
-																	<i><?= $registro->vc_titulo_informacion ?></i>
-																</td>
-																<td width="15">														
-																</td>
-																<td><b><i>Inicio</i></b>
-																</td>
-																<td>: <?= $registro->dt_fecha_informacion ?></a></td>
-															</tr>
-															<tr>
-																<td><i><b>Categoría</b></i>
-																</td>
-																<td>:
-																 <i><?= $registro->tipo ?></i></td><td width="15"></td><td><b>
-																 <!-- <i>Inicio </i></b></td><td>:03 de marzo 2015 -->
-																</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-											</span>
-											<span style="float:right;margin-right:20px">
-												<a style="color:#2980b9 !important;font-weight:bold;" ><?= anchor('noticias/detalle/'.$registro->in_id_informacion,"Ver Más") ; ?> </a>
-											</span>
-
-											</td>
-
-											<td style="border-bottom: 1px solid #2980b9;">
-										 
-											 <img class="sombra" style="margin:5px" width="181" height="121" src=<?= base_url('img/noticia/'.$registro->foto ); ?> >
-											</td>
-
-										 <td style="border-bottom: 1px solid #2980b9;" width="10" align="center">
-										 	
-										 </td>
-
-										</tr>
-										<tr>
-																			
-											</td>
-
-											<div style="text-align:justify;margin-right:10px;"><b>
-										</tr>
-								</tbody>
-	                        </table>
-
-                        <?php endforeach; ?>
+					
+					<?php endforeach; ?>
 
 
 
-                       				
-			
-					</div>
+					</div>	
+				</td>
+			</tr>
 
-					<div class="row as">
+		
+</tbody>
 
-					</div>
+		 </table>
+
+	
+</div>
+</section>	
+
+</div>
+
+
+<script>
+	$(document).ready(function() {
+		$('#tabla_noticia').dataTable( {
+			 
+			"language": {
+						"lengthMenu": "Visualizando _MENU_ Registros por Página",
+						"zeroRecords": "Ningun Registro Encontrado",
+						"info": "Mostrando Páginas _PAGE_ de _PAGES_",
+						"infoEmpty": "No hay registros disponibles",
+						"infoFiltered": "(filtrado de _MAX_ total de registros)",
+						"infoFiltered": "(filtrado de _MAX_ total de registros)",
+						"search":"Buscar",
+						"paginate": {
+						      "first": "Primera",
+						      "previous": "Anterior",
+						      "next": "Siguiente"
+						    }
+
+						},
+
+
+			"pagingType": "full_numbers" 
+		} );
+	}
+
+
+	 );
+</script>

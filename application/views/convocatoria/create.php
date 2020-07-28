@@ -1,52 +1,78 @@
-<?= form_open_multipart('convocatoria/insert', array('class'=>'form-horizontal')); ?>
-	<legend> Crear Nuevo conovocatoria y Infraestructuras  </legend>
-	<?php 
-		if (isset($error)) {
-			echo $error ;
-			# code...
-		}
-	?>
-	 
-	<?= my_validation_errors(validation_errors()); ?>
+<!-- right column -->
+<div class="col-md-12">
+<!-- Horizontal Form -->
+  <div class="box box-info">   </div>
+  <div class="box-header with-border">
+     <h3 class="box-title">Nuevo Registro</h3>
 
-		<div class="control-group">
-		<?= form_label('referencia', 'referencia', array('class'=>'control-label')); ?>
-		<?= form_input(array('type'=>'text','name'=>'referencia','id'=>'referencia','placeholder'=>'referencia....', 'value'=>set_value('referencia'))); ?>
-		</div>
+  </div>
 
-		<div class="control-group">
-		<?= form_label('unidad', 'unidad', array('class'=>'control-label')); ?>
-		<?= form_input(array('type'=>'text','name'=>'unidad','id'=>'unidad','placeholder'=>'unidad....', 'value'=>set_value('unidad'))); ?>
-		</div>
+  <!-- /.box-header -->
+  <!-- form start -->
+  <?= form_open_multipart('convocatoria/insert', array('class'=>'form-horizontal')); ?>
 
-		<div class="control-group">
-		<?= form_label('fecha', 'fecha', array('class'=>'control-label')); ?>
-		<?= form_input(array('type'=>'date','name'=>'fecha','id'=>'fecha','placeholder'=>'fecha....', 'value'=>set_value('fecha'))); ?>
-		</div>
+  <div class="box-body">
 
-		<div class="control-group">
-		<?= form_label('Bases', 'nomfile', array('class'=>'control-label')); ?>
-		<?= form_input(array('type'=>'file','name'=>'userfile','id'=>'nomfile','placeholder'=>'nomfile....', 'value'=>set_value('nomfile'))); ?>
-		</div>
+    <div class="form-group">
+    <label for="referencia" class="col-sm-2 control-label" >Referencia</label>
+    <div class="col-sm-10">
+    <input type="text" name="referencia" class="form-control" id="referencia" value="">
+    </div>
+    </div>
 
-		<div class="control-group">
-		<?= form_label('Aptos', 'aptos', array('class'=>'control-label')); ?>
-		<?= form_input(array('type'=>'file','name'=>'userfile','id'=>'aptos','placeholder'=>'aptos....', 'value'=>set_value('aptos'))); ?>
-		</div>
-
-		<div class="control-group">
-		<?= form_label('Resultados', 'nomfile2', array('class'=>'control-label')); ?>
-		<?= form_input(array('type'=>'file','name'=>'userfile','id'=>'nomfile2','placeholder'=>'nomfile2....', 'value'=>set_value('nomfile2'))); ?>
-		</div>
-			
-		<br>
-		
-		<div class="form-actions">
-		<?= form_button(array('type'=>'submit', 'content'=>'Aceptar', 'class'=>'btn btn-primary')); ?>
-
-		
-		<?= anchor('convocatoria/', 'Cancelar', array('class'=>'btn btn-success')); ?>
-		</div>
+    <div class="form-group">
+    <label for="unidad" class="col-sm-2 control-label" >Unidad</label>
+    <div class="col-sm-10">
+    <input type="text" name="unidad" class="form-control" id="unidad" value="">
+    </div>
+    </div>
 
 
-<?= form_close(); ?>
+    <div class="form-group">
+    <label for="fecha" class="col-sm-2 control-label" >Fecha</label>
+    <div class="col-sm-10">
+    <input type="date" name="fecha" class="form-control" id="fecha" value="">
+    </div>
+    </div>
+
+    <div class="form-group">
+    <label for="Bases" class="col-sm-2 control-label">Bases</label>
+    <div class="col-sm-10">
+
+    <?= form_input(array('type'=>'file','name'=>"bases",'id'=>'nomfile','placeholder'=>'nomfile....', 'value'=>set_value('foto'))); ?>
+    <p class="help-block">Archivo debe estar en formato ".jpg" y no debe exceder 10Mb </p>
+    </div>                 
+    </div>
+
+    <div class="form-group">
+    <label for="aptos" class="col-sm-2 control-label">Aptos</label>
+    <div class="col-sm-10">
+
+    <?= form_input(array('type'=>'file','name'=>"aptos",'id'=>'aptos','placeholder'=>'aptos....', 'value'=>set_value('foto'))); ?>
+    <p class="help-block">Archivo debe estar en formato ".jpg" y no debe exceder 10Mb </p>
+    </div>                 
+    </div>                
+
+    <div class="form-group">
+      <label for="nomfile2" class="col-sm-2 control-label">Resultados</label>
+      <div class="col-sm-10">
+
+      <?= form_input(array('type'=>'file','name'=>"nomfile2",'id'=>'nomfile2','placeholder'=>'foto....', 'value'=>set_value('foto'))); ?>
+      <p class="help-block">Archivo debe estar en formato ".jpg" y no debe exceder 10Mb </p>
+      </div>                 
+    </div>
+
+    </div>
+    <!-- /.box-body -->
+    <div class="box-footer">
+    <?= anchor('convocatoria/index2', '<i class="fa fa-circle"></i> Regresar', array('class'=>'btn btn-info')); ?>
+    <?= form_button(array('type'=>'submit', 'content'=>'<i class="fa fa-save"></i> Guardar Cambios', 'class'=>'btn btn-success pull-right')); ?>
+
+    </div>
+    <!-- /.box-footer -->
+    <?= form_close(); ?>
+ 
+</div>
+<!-- /.box -->
+
+

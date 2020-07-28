@@ -1,6 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Perfil extends CI_Controller {
+include_once (dirname(__FILE__) . "/check_authentication_controller.php");
+
+class Perfil extends Check_Authentication_Controller {
 
 	// Constructor de Clase
 	function __construct() {
@@ -10,37 +12,34 @@ class Perfil extends CI_Controller {
 		$this->load->library('perfilLib');
 		$this->form_validation->set_message('required', 'Debe ingresar un valor para %s');
 		$this->form_validation->set_message('norep', 'Existe un registro con el mismo %s');
+
+		$this->data = $this->validate_session('perfil', 
+			['index', 'search', 'create', 'insert', 'edit', 'update', 'delete']);
 	}
 
 	public function index() {
-		$data['contenido'] = 'perfil/index';
-		$data['titulo'] = 'Perfiles';
-		$data['query'] = $this->Model_Perfil->all();	
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
+		$this->data['contenido'] = 'perfil/index';
+		$this->data['titulo'] = 'Perfiles';
+		$this->data['query'] = $this->Model_Perfil->all();	
+		$this->loadSsAdminViews();	
 	}
 
 
 	public function search() {
-		$data['contenido'] = 'perfil/index';
-		$data['titulo'] = 'Perfiles';
+		$this->data['contenido'] = 'perfil/index';
+		$this->data['titulo'] = 'Perfiles';
 		$value = $this->input->post('buscar');
-		$data['query'] = $this->Model_Perfil->allfiltered('name',$value);	
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
+		$this->data['query'] = $this->Model_Perfil->allfiltered('name',$value);	
+		$this->loadSsAdminViews();	
 	}
 
 
 	public function create(){
 		//$id = $this->uri->segment(3);
-		$data['contenido'] = 'perfil/create';
-		$data['titulo'] = 'Crear Perfil';
+		$this->data['contenido'] = 'perfil/create';
+		$this->data['titulo'] = 'Crear Perfil';
 		//$data['registro'] = $this->Model_Perfil->find($id);
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
+		$this->loadSsAdminViews();	
 	}
 
 	public function insert(){
@@ -62,13 +61,10 @@ class Perfil extends CI_Controller {
 
 	public function edit($id){
 		//$id = $this->uri->segment(3);
-		$data['contenido'] = 'perfil/edit';
-		$data['titulo'] = 'Actualizar Perfil';
-		$data['registro'] = $this->Model_Perfil->find($id);
-
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
+		$this->data['contenido'] = 'perfil/edit';
+		$this->data['titulo'] = 'Actualizar Perfil';
+		$this->data['registro'] = $this->Model_Perfil->find($id);
+		$this->loadSsAdminViews();	
 	}
 
 	public function update(){

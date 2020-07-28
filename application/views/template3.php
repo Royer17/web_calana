@@ -13,7 +13,9 @@
 	</div>
 	<div class="bg ">
 		<div>
-		<!-- <base href="http://www.municiudadnueva.gob.pe/" /> -->
+		<!-- <base href="http://
+www.municalana.gob.pe
+/" /> -->
 		<?php include("parte-marque.php"); ?>
 
 		</div>	

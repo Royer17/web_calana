@@ -47,6 +47,30 @@
 											
 										</div>
 						</div>
+						<div class="col col-sm-12 col-md-12">
+									
+						<div class="col col-lg-12 col-sm-12 col-md-12">
+								<a class="" target="_blank" href="<?= base_url();?>servicios/codisec">
+									<div class="vid-box">
+										<img class=" img-responsive" src="<?= base_url();?>img/plan2.png" alt="">
+									</div>
+								</a>
+							</div>									
+
+						</div>
+
+						<div class="col col-sm-12 col-md-12">
+									
+							<div class="col col-lg-12 col-sm-12 col-md-12">
+								<a class="" target="_blank" href="<?= base_url();?>documentos/ZONIFICACION_Y_EQUIPAMIENTO_URBANO.pdf">
+									<div class="vid-box">
+										<img class=" img-responsive" src="<?= base_url();?>img/plan3.png" alt="">
+									</div>
+								</a>
+							</div>									
+
+						</div>
+
 						<div class="col col-sm-12 col-md-12 col-xs-12">
 
 							<div class="article pull-left margin-top">

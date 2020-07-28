@@ -1,108 +1,170 @@
- <section class="container">
-    <div class="row">
-      <div class="col s12 m9">
-        <div class="container z-depth-2 ultimas-noticias">
-          <h3 class="titulo">ULTIMAS NOTICIAS</h3>
-          <div class="row noticia">
-            <h4 class="titulo">350 MENORES DE EDAD RECIBIRÁN DNI GRATUITO EN EL DISTRITO DE CIUDAD NUEVA</h4>
-            <div class="col s12 m4">
-              <img class="responsive-img z-depth-1 hoverable materialboxed" src="https://scontent-mia1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/1186912_1688543931433688_1292899946868305588_n.jpg?oh=0177712cd8e1b63fc19d948821c3bce5&oe=5771B076" alt="">
-            </div>
-            <div class="col s12 m8">
-              <p class="fecha"><i class="icon-calendar"></i>18 de febrero del 2016</p>
-              <p class="descripcion">Ciudad Nueva.- La municipalidad distrital de Ciudad Nueva en coordinación con el Registro Nacional de Identificación y Estado Civil (RENIEC), relaizarán este miércoles 24 de febrero de 09:00 a.m. a 1:00 p.m. la entrega de 350 DNI a todos los padres de familia que posteriormente hayan realizado el tramite gratuito documentario de sus menores hijos durante el año 2015.</p>
-              <a class="right waves-effect waves-teal" href="#!"><i class="icon-enlace left"></i>VER MÁS</a>
-            </div>
-          </div>
+<div class="bordered">
+	<div class="row as">
+		<div class="article pull-left">
+			<div class="article-title">
+				noticias
+			</div>
+		</div>															
+		<div class="row as">	<!-- contenido de noticias -->	
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<ul class="list-unstyled">
 
-          <div class="divider"></div>
+					<li class="contenedor-noticias">
+						<div class="row">
+										
+								<div class="col-sm-12 col-md-12 col-xs-12">
+									<div class="text-title">
+										PRACTICA DE TRANSITO Y SEGURIDAD VIAL
+									</div>
+									<div class="fecha text ancla">
+										<span class="glyphicon glyphicon-calendar">
+											
+										</span>
+										17 de Marzo del 2016
+									</div>
+									<!-- <img class="img-thumbnail" src="img/noticia/noticia4.png" alt="" width="300" height="200" > -->
+									<img class="img-thumbnail" src="https://scontent-mia1-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/944389_1697672747187473_6780572756424040761_n.jpg?oh=4b9c44ffb2298d43e95e923b2e9c9ab5&oe=574B9BEE" alt="" width="300" height="200" >
+									
+									<h6 class="text-none">
+									
+									Ciudad Nueva.- Con la finalidad de resguardar la vida de los estudiantes del distrito y dentro del cumplimiento de metas del Plan de Seguridad Ciudadana 2016, se realizó el día jueves 17 de Marzo a las 7:30 a.m., la práctica de Tránsito y Seguridad Vial, en los exteriores de la Institución Educativa (I.E.) Mariscal Cáceres, con la presencia de Regidor Nicolás Mamani Mamani, Presidente de la Comisión de Tránsito, Vialidad Transporte y miembros de Seguridad Ciudadana del Distrito de Ciudad Nueva.
+									<a class="noticias" href="https://www.facebook.com/media/set/?set=a.1697672593854155.1073742206.1521070898180993&type=3" target="_blank">
+										<div class="text-ancla">
+											ver mas ... 
+										</div>
+									</a>
+									</h6>	
+								</div>		
+																
+								
+						</div>										
+					</li>
 
-          <div class="row noticia">
-            <h4 class="titulo">350 MENORES DE EDAD RECIBIRÁN DNI GRATUITO EN EL DISTRITO DE CIUDAD NUEVA</h4>
-            <div class="col s12 m4">
-              <img class="responsive-img z-depth-1 hoverable materialboxed" src="https://scontent-mia1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/1186912_1688543931433688_1292899946868305588_n.jpg?oh=0177712cd8e1b63fc19d948821c3bce5&oe=5771B076" alt="">
-            </div>
-            <div class="col s12 m8">
-              <p class="fecha"><i class="icon-calendar"></i>18 de febrero del 2016</p>
-              <p class="descripcion">Ciudad Nueva.- La municipalidad distrital de Ciudad Nueva en coordinación con el Registro Nacional de Identificación y Estado Civil (RENIEC), relaizarán este miércoles 24 de febrero de 09:00 a.m. a 1:00 p.m. la entrega de 350 DNI a todos los padres de familia que posteriormente hayan realizado el tramite gratuito documentario de sus menores hijos durante el año 2015.</p>
-              <a class="right waves-effect waves-teal" href="#!"><i class="icon-enlace left"></i>VER MÁS</a>
-            </div>
-          </div>
+					<li class="contenedor-noticias">
+						<div class="row">
+										
+								<div class="col-sm-12 col-md-12 col-xs-12">
+									<div class="text-title">
+										COLOCACIÓN DE BADENES EN EL DISTRITO
+									</div>
+									<div class="fecha text ancla">
+										<span class="glyphicon glyphicon-calendar">
+											
+										</span>
+										16 de Marzo del 2016
+									</div>
+									<!-- <img class="img-thumbnail" src="img/noticia/noticia1.png" alt="" width="300" height="200" > -->
+									<img class="img-thumbnail" src="https://scontent-mia1-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/922904_1697188540569227_8093096626529040645_n.jpg?oh=f2c52ac22a375a93a59ca853e4c79a0b&oe=5793E35A" alt="" width="300" height="200" >
+									
+									<h6 class="text-none">
+									Ciudad Nueva.- Con el objetivo de resguardar la seguridad y la vida de la población del Distrito de Ciudad Nueva, el día miércoles 16 de marzo, a las 9:00 a.m., el regidor Nicolás Mamani Mamani, presidente de la Comisión de Tránsito Vialidad Transporte Público y Defensa Civil, realizó la inspección en la puesta y pintado de los dos badenes en las intersecciones de la Av. Mariano Necochea con Daniel Alcides Carrión. 
 
-          <div class="divider"></div>
+									
+									<a class="noticias" href="https://www.facebook.com/media/set/?set=a.1697188233902591.1073742205.1521070898180993&type=3" target="_blank">
+										<div class="text-ancla">
+											ver mas ... 
+										</div>
+									</a>
+									</h6>	
+								</div>
+						</div>										
+					</li>
 
-          <div class="row noticia">
-            <h4 class="titulo">350 MENORES DE EDAD RECIBIRÁN DNI GRATUITO EN EL DISTRITO DE CIUDAD NUEVA</h4>
-            <div class="col s12 m4">
-              <img class="responsive-img z-depth-1 hoverable materialboxed" src="https://scontent-mia1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/1186912_1688543931433688_1292899946868305588_n.jpg?oh=0177712cd8e1b63fc19d948821c3bce5&oe=5771B076" alt="">
-            </div>
-            <div class="col s12 m8">
-              <p class="fecha"><i class="icon-calendar"></i>18 de febrero del 2016</p>
-              <p class="descripcion">Ciudad Nueva.- La municipalidad distrital de Ciudad Nueva en coordinación con el Registro Nacional de Identificación y Estado Civil (RENIEC), relaizarán este miércoles 24 de febrero de 09:00 a.m. a 1:00 p.m. la entrega de 350 DNI a todos los padres de familia que posteriormente hayan realizado el tramite gratuito documentario de sus menores hijos durante el año 2015.</p>
-              <a class="right waves-effect waves-teal" href="#!"><i class="icon-enlace left"></i>VER MÁS</a>
-            </div>
-          </div>
 
-          <div class="divider"></div>
+					<li class="contenedor-noticias">
+						<div class="row ">
+										
+								<div class="col-sm-12 col-md-12 col-xs-12">
+									<div class="text-title">
+										MUNICIPIO APRUEBA ORDENANZA PARA REGULAR PROPAGANDA ELECTORAL
+									</div>
+									<div class="fecha text ancla">
+										<span class="glyphicon glyphicon-calendar">
+											
+										</span>
+										14 de Marzo del 2016
+									</div>
+									<img class="img-thumbnail" 
+									 src="https://scontent-mia1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/1923824_1696219637332784_5112558229670381347_n.jpg?oh=3d0102860e187c0e17ef3761a322bd2e&oe=57582AEF" 
+									 alt="" width="300" height="200">
 
-          <div class="row noticia">
-            <h4 class="titulo">350 MENORES DE EDAD RECIBIRÁN DNI GRATUITO EN EL DISTRITO DE CIUDAD NUEVA</h4>
-            <div class="col s12 m4 foto">
-              <img class="responsive-img z-depth-1 hoverable materialboxed" src="https://scontent-mia1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/1186912_1688543931433688_1292899946868305588_n.jpg?oh=0177712cd8e1b63fc19d948821c3bce5&oe=5771B076" alt="">
-            </div>
-            <div class="col s12 m8">
-              <p class="fecha"><i class="icon-calendar"></i>18 de febrero del 2016</p>
-              <p class="descripcion">Ciudad Nueva.- La municipalidad distrital de Ciudad Nueva en coordinación con el Registro Nacional de Identificación y Estado Civil (RENIEC), relaizarán este miércoles 24 de febrero de 09:00 a.m. a 1:00 p.m. la entrega de 350 DNI a todos los padres de familia que posteriormente hayan realizado el tramite gratuito documentario de sus menores hijos durante el año 2015.</p>
-              <a class="right waves-effect waves-teal" href="#!"><i class="icon-enlace left"></i>VER MÁS</a>
-            </div>
-          </div>
+									 <h6 class="text-none">
+										Ciudad Nueva.- Con el objetivo de resguardar la tranquilidad de la población dentro de la jurisdicción evitando la contaminación sonora y visual, el día lunes 14 de marzo a las 10:00 a.m., se aprobó la Ordenanza Municipal Nº 006-2016 “Reglamento que Regula la Propaganda Electoral en el Distrito de Ciudad Nueva” mediante sesión de Concejo Municipal. 
+										<a class="noticias "href="https://www.facebook.com/media/set/?set=a.1696219607332787.1073742204.1521070898180993&type=3" target="_blank">
+											<div class="text-ancla" >
+												ver mas ... 
+											</div>
+										</a>
+									</h6>
+								
+								</div>	
+						</div>										
+					</li>
 
-          <div class="divider"></div>
 
-        </div>
-      </div>
-      <div class="col s12 m3">
+					<li class="contenedor-noticias">
+						<div class="row">
+										
+								<div class="col-sm-12 col-md-12 col-xs-12">
+									
+									<div class="fecha text ancla">
+										
+											<div class="text-title">
+										MUNICIPIO DE CIUDAD NUEVA OCUPA EL PRIMER LUGAR EN EL RANKING DE CUMPLIMIENTO DE METAS PARA EL PLAN DE INCENTIVOS 2015 A NIVEL REGIONAL
+									</div>
+									<span class="glyphicon glyphicon-calendar">
+										</span>
+										14 de Marzo del 2016
+									</div>
+									<img class="img-thumbnail" src="https://scontent-mia1-1.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/1933820_1696213150666766_2788542227593643257_n.jpg?oh=89b9377ef9570d9e5176c1195e51cb15&oe=57923A2A" alt="" width="300" height="200" >
+									
+									<h6 class="text-none">
+									Ciudad Nueva.- A nivel de la región de Tacna dentro de la clasificación municipal CPB, la Municipalidad Distrital de Ciudad Nueva ocupa el primer lugar en el ranking en cumplimiento de metas, ello enmarcado dentro del Plan de Incentivos a la Mejora de la Gestión y Modernización Municipal en el año 2015.
+									<a class="noticias" href="https://www.facebook.com/media/set/?set=a.1696213130666768.1073742203.1521070898180993&type=3" target="_blank">
+										<div class="text-ancla">
+											ver mas ... 
+										</div>
+									</a>
+									</h6>	
+								</div>		
+						</div>										
+					</li>
 
-        <div class="alcalde z-depth-2">
-          <h3 class="titulo">NUESTRO ALCALDE</h3>
-          <img class="responsive-img" src="<?php echo(base_url()); ?>dist/img/alcalde.png">
-          <a href="#!"><p class="mensaje">Estimados vecinos: Quiero expresarles mis más cordiales saludos y reiterar el sentimiento que hoy nos une, que es sacar adelante al distrito ... VER MÁS</p></a>
-          <!-- <p class="nombre">MED. EDGAR ROGELIO CONCORI COAQUIRA</p> -->
-          <p class="nombre">ING. JOSÉ GREGORIO ROQUE MAMANI</p>
-        </div>
+					<a class="noticias" href="https://www.facebook.com/muniCiudadNueva/" target="_blank">
+						<div class="text-ancla">
+								ver Todas ... 
+						</div>
+					</a>
 
-        <div class="z-depth-2 modernizacion-municipal">
-          <h3 class="titulo">MODERNIZACIÓN MUNICIPAL</h3>
-          <div class="row">
-            <div class="col s6">
-              <a class="center waves-effect waves-light hoverable boton-modernizacion" href="#!">
-                <i class="icon-tributos"></i>
-                <p>TRIBUTOS MUNICIPALES</p>
-              </a>
-            </div>
-            <div class="col s6">
-              <a class="center waves-effect waves-light hoverable boton-modernizacion" href="#!">
-                <i class="icon-tienda"></i>
-                <p>LICENCIA DE FUNCIONAMIENTO</p>
-              </a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col s6">
-              <a class="center waves-effect waves-light hoverable boton-modernizacion" href="#!">
-                <i class="icon-edificios"></i>
-                <p>LICENCIA DE EDIFICACIONES</p>
-              </a>
-            </div>
-            <div class="col s6">
-              <a class="center waves-effect waves-light hoverable boton-modernizacion" href="#!">
-                <i class="icon-book"></i>
-                <p>LIBRO DE RECLAMACIONES</p>
-              </a>
-            </div>
-          </div>
-        </div>
+				
+				</ul>							
+			</div>
+		</div><!--termina contenido de noticias	-->		
+	</div>
 
-      </div>
-    </div>
-  </section>
+	<div class="row as">
+		<div class="article pull-left">
+			<div class="article-title" >
+				videos
+			</div>
+
+		</div>
+		<div class="row"><!-- comienza  videos -->
+			<!-- contenido de videos -->
+			<div class="col col-md-12 col-sm-12">
+				<div class="contenedor-videos">												
+					
+					<iframe width="340" height="190" src="https://www.youtube.com/embed/rSdYBqGt0nk?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<a class="noticias" href="https://www.youtube.com/channel/UCjNJlPotdUA_zf0SRF1Qdzg
+				" target="_blank">
+					<div class="text-ancla" style="color:red">
+						ver Todos ... 
+					</div>
+				</a>	
+			</div>
+
+			
+		</div><!-- termina videos -->
+	</div>
+</div>	

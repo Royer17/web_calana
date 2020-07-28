@@ -1,5 +1,5 @@
-<?= form_open_multipart('create/insert', array('class'=>'form-horizontal')); ?>
-	<legend> Crear Nuevo conovocatoria y Infraestructuras  </legend>
+<?= form_open_multipart('publicaciones/insert', array('class'=>'form-horizontal')); ?>
+	<legend> Crear Nueva Publicaciòn </legend>
 	<?php 
 		if (isset($error)) {
 			echo $error ;
@@ -7,16 +7,19 @@
 		}
 	?>
 
-	<?php $tipodocumento=array('Ordenanza Municipal'=>'Ordenanza Municipal',
-							'Acuerdo de Concejo'=>'Acuerdo de Concejo',
-							'Decreto de Alcaldia'=>'Decreto de Alcaldia',		 
-							'Resolución de Alcaldia'=>'Resolución de Alcaldia',		 
-							'Resolución de Gerencia Municipal'=>'Resolución de Gerencia Municipal');		 
+	<?php $tipodocumento=array('Ordenanza Municipal'=>'Ordenanza_Municipal',
+							'Acuerdo de Concejo'=>'Acuerdo_de_Concejo',
+							'Decreto de Alcaldia'=>'Decreto_de_Alcaldia',		 
+							'Resolución de Alcaldia'=>'Resolución_de_Alcaldia',		 
+							'Resolución de Gerencia Municipal'=>'Resolución_de_Gerencia_Municipal');		 
 			  ?>
 	 
 	<?= my_validation_errors(validation_errors()); ?>
 
-		<div class="control-group">
+
+
+	
+		<div class="control-group row as">
 		<?= form_label('tipodocu', 'tipodocu', array('class'=>'control-label')); ?>
 		<?= form_dropdown('tipodocu',$tipodocumento,array('class'=>'control-label')); ?>
 		</div>
@@ -44,16 +47,16 @@
 
 		<div class="control-group">
 		<?= form_label('Subir archivo', 'nomfile', array('class'=>'control-label')); ?>
-		<?= form_input(array('type'=>'file','name'=>'userfile','id'=>'nomfile','placeholder'=>'nomfile....', 'value'=>set_value('nomfile'))); ?>
+		<?= form_input(array('type'=>'file','name'=>'nomfile','id'=>'nomfile','placeholder'=>'nomfile....', 'value'=>set_value('nomfile'))); ?>
 		</div>
 			
 		<br>
 		
 		<div class="form-actions">
 		<?= form_button(array('type'=>'submit', 'content'=>'Aceptar', 'class'=>'btn btn-primary')); ?>
-
+		<?= anchor('publicaciones/index2', '<i class="fa fa-circle"></i> Regresar', array('class'=>'btn btn-info')); ?>
 		
-		<?= anchor('create/', 'Cancelar', array('class'=>'btn btn-success')); ?>
+	
 		</div>
 
 

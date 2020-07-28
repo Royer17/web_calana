@@ -14,9 +14,9 @@ class Transparencia extends CI_Controller {
 		$data['titulo'] = 'transparencia';
 	
 		
-		$this->load->view('header', $data);
-		$this->load->view('template3', $data);
-		$this->load->view('footer', $data);	
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
 	}
 
 
@@ -26,9 +26,9 @@ class Transparencia extends CI_Controller {
 		$data['titulo'] = 'transparencia';
 	
 		
-		$this->load->view('header', $data);
-		$this->load->view('template3', $data);
-		$this->load->view('footer', $data);	
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
 	}
 
 
@@ -39,9 +39,9 @@ class Transparencia extends CI_Controller {
 		$data['titulo'] = 'informacion_presupuestal';
 	
 		
-		$this->load->view('header', $data);
-		$this->load->view('template3', $data);
-		$this->load->view('footer', $data);	
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
 	}
 
 	public function proyectos_e_inversiones() {
@@ -50,9 +50,9 @@ class Transparencia extends CI_Controller {
 		$data['titulo'] = 'proyectos_e_inversiones';
 	
 		
-		$this->load->view('header', $data);
-		$this->load->view('template3', $data);
-		$this->load->view('footer', $data);	
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
 	}
 
 	public function participacion_ciudadana() {
@@ -61,9 +61,9 @@ class Transparencia extends CI_Controller {
 		$data['titulo'] = 'participacion_ciudadana';
 	
 		
-		$this->load->view('header', $data);
-		$this->load->view('template3', $data);
-		$this->load->view('footer', $data);	
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
 	}
 
 	public function informacion_de_personal() {
@@ -72,9 +72,9 @@ class Transparencia extends CI_Controller {
 		$data['titulo'] = 'informacion_de_personal';
 	
 		
-		$this->load->view('header', $data);
-		$this->load->view('template3', $data);
-		$this->load->view('footer', $data);	
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
 	}
 
 	public function informacion_contrataciones() {
@@ -83,9 +83,9 @@ class Transparencia extends CI_Controller {
 		$data['titulo'] = 'informacion_contrataciones';
 	
 		
-		$this->load->view('header', $data);
-		$this->load->view('template3', $data);
-		$this->load->view('footer', $data);	
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
 	}
 
 	public function actividades_oficiales() {
@@ -94,9 +94,9 @@ class Transparencia extends CI_Controller {
 		$data['titulo'] = 'actividades_oficiales';
 	
 		
-		$this->load->view('header', $data);
-		$this->load->view('template3', $data);
-		$this->load->view('footer', $data);	
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
 	}
 
 	public function informacion_adicional() {
@@ -105,9 +105,9 @@ class Transparencia extends CI_Controller {
 		$data['titulo'] = 'informacion_adicional';
 	
 		
-		$this->load->view('header', $data);
-		$this->load->view('template3', $data);
-		$this->load->view('footer', $data);	
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
 	}
 
 	public function info_obras() {
@@ -116,9 +116,9 @@ class Transparencia extends CI_Controller {
 		$data['titulo'] = 'info_obras';
 	
 		
-		$this->load->view('header', $data);
-		$this->load->view('template3', $data);
-		$this->load->view('footer', $data);	
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
 	}
 
 

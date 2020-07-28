@@ -41,10 +41,11 @@ class Model_Obras extends CI_Model {
         $this->db->insert('obra');
     }
 
-    function update($registro) {
-        $this->db->set($registro);
-        $this->db->where('id', $registro['id']);
-        $this->db->update('obra');
+    function update($registro,$where) {
+
+        $this->db->where($where);
+        $this->db->update('obra',$registro);
+        return TRUE;
     }
 
     function delete($id) {
@@ -52,5 +53,25 @@ class Model_Obras extends CI_Model {
         $this->db->delete('obra');
 
     }
+
+    function capturarImagen($id){
+        $this->db->select("foto");
+        $this->db->where("id", $id);
+        $this->db->from("obra");
+        $resultado = $this->db->get();
+        return $resultado->row();
+    }
+
+    function actualizar($id,$registro){
+        $this->db->where('id', $id);
+        $this->db->update('obra', $registro); 
+        if ($this->db->affected_rows() > 0) {
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
 
 }

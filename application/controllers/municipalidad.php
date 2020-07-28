@@ -14,9 +14,9 @@ class Municipalidad extends CI_Controller {
 		$data['titulo'] = 'Municipalidad';
 	
 		
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
 	}
 
 
@@ -26,9 +26,9 @@ class Municipalidad extends CI_Controller {
 		$data['titulo'] = 'Municipalidad';
 	
 		
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
 	}
 
 	public function funcionarios() {
@@ -37,9 +37,9 @@ class Municipalidad extends CI_Controller {
 		$data['titulo'] = 'Municipalidad';
 	
 		
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
 	}
 
 	public function comisiones() {
@@ -48,20 +48,20 @@ class Municipalidad extends CI_Controller {
 		$data['titulo'] = 'Municipalidad';
 	
 		
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
 	}
 
 	public function vision_mision() {
 
-		$data['contenido'] = 'default/estamos_trabajando';
+		$data['contenido'] = 'municipalidad/vision_mision'	;
 		$data['titulo'] = 'Municipalidad';
 	
 		
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
 	}
 
 

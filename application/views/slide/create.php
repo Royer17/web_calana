@@ -1,96 +1,79 @@
-<?= form_open_multipart('noticias/insert', array('class'=>'form-horizontal')); ?>
-	<legend> Crear Nuevas Noticias  </legend>
-	<?php 
-		if (isset($error)) {
-			echo $error ;
-			# code...
-		}
-	?>
-	 
-	<?= my_validation_errors(validation_errors()); ?>
+        <!-- right column -->
+        <div class="col-md-12">
+          <!-- Horizontal Form -->
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">Nuevo Registro</h3>
 
-		<div class="control-group row as">
-		<?= form_label('TITULO', 'titulo_slide', array('class'=>'control-label')); ?>
-		<?= form_input(array('type'=>'text','name'=>'titulo_slide','id'=>'titulo_slide','placeholder'=>'titulo_slide....', 'value'=>set_value('titulo_slide'))); ?>
-		</div>
+              	<?php
+					if (isset($error)) {
+						echo $error ;
+						# code...
+					}
+				?>
 
-		<div class="control-group row as">
-		<?= form_label('Orden Slide', 'orden_slide', array('class'=>'control-label')); ?>
-		<?= form_input(array('type'=>'text','name'=>'orden_slide','id'=>'orden_slide','placeholder'=>'orden_slide....', 'value'=>set_value('orden_slide'))); ?>
-		</div>
+                  <?= my_validation_errors(validation_errors()); ?>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <?= form_open_multipart('slide/insert', array('class'=>'form-horizontal')); ?>
+            
+              <div class="box-body">
 
-		<div class="control-group row as">
-		<?= form_label('Hora', 'hora', array('class'=>'control-label')); ?>
-		<?= form_input(array('type'=>'text','name'=>'hora',	'id'=>'hora',
-		'placeholder'=>'hora....', 'value'=>set_value('hora'))); ?>
-		
-		</div>
+                <div class="form-group">
+                  <label for="Titulo" class="col-sm-2 control-label" >Titulo</label>
+                  <div class="col-sm-10">
+                    <input type="text" name="titulo_slide" class="form-control" id="titulo_slide" value="">
+                  </div>
+                </div>
 
-		<div class="control-group row as">
-		<?= form_label('DIA', 'dia', array('class'=>'control-label')); ?>
-		<?= form_input(array('type'=>'text','name'=>'dia','id'=>'dia','placeholder'=>'dia....', 'value'=>set_value('dia'))); ?>
-		</div>
-	
-		<div class="control-group row as">
-		<?= form_label('MES', 'mes', array('class'=>'control-label')); ?>
-		<?= form_input(array('type'=>'text','name'=>'mes','id'=>'mes','placeholder'=>'mes....', 'value'=>set_value('mes'))); ?>
-		</div>
-
-		<div class="control-group row as">
-		<?= form_label('AÑO', 'anno', array('class'=>'control-label')); ?>
-		<?= form_input(array('type'=>'text','name'=>'anno','id'=>'anno','placeholder'=>'anno....', 'value'=>set_value('anno'))); ?>
-
-		</div>
-
-		<div class="control-group row as">
-		<?= form_label('imagen slide', 'img_slide', array('class'=>'control-label')); ?>
-		<?= form_input(array('type'=>'file','name'=>"userfile[0]",'id'=>'img_slide','placeholder'=>'img_slide....', 'value'=>set_value('img_slide'))); ?>
-		</div>
+                <div class="form-group">
+                  <label for="DIA" class="col-sm-2 control-label" >Dia</label>
+                  <div class="col-sm-10">
+                    <input type="text" name="dia" class="form-control" id="dia" value="<?= date("j"); ?>">
+                  </div>
+                </div>
 
 
-		<div class="control-group row as">
-		<?= form_label('Enlace', 'enlace', array('class'=>'control-label')); ?>
-		<?= form_input(array('type'=>'text','name'=>'enlace','id'=>'enlace','placeholder'=>'enlace....', 'value'=>set_value('enlace'))); ?>
-		</div>
+                <div class="form-group">
+                  <label for="Mes" class="col-sm-2 control-label" >Mes</label>
+                  <div class="col-sm-10">
+                    <input type="text" name="mes" class="form-control" id="mes" value="<?=date("m"); ?>">
 
-		<!--div class="control-group row as">
-		<?= form_label('foto nº2', 'foto1', array('class'=>'control-label')); ?>
-		<?= form_input(array('type'=>'file','name'=>"userfile[1]",'id'=>'foto1','placeholder'=>'foto1....', 'value'=>set_value('foto1'))); ?>
-		</div>
-
-		<div class="control-group row as">
-		<?= form_label('foto nº3', 'foto2', array('class'=>'control-label')); ?>
-		<?= form_input(array('type'=>'file','name'=>"userfile[2]",'id'=>'foto2','placeholder'=>'foto2....', 'value'=>set_value('foto2'))); ?>
-		</div>
-
-		<div class="control-group row as">
-		<?= form_label('foto nº4', 'foto3', array('class'=>'control-label')); ?>
-		<?= form_input(array('type'=>'file','name'=>"userfile[3]",'id'=>'foto3','placeholder'=>'foto3....', 'value'=>set_value('foto3'))); ?>
-		</div>
+                   </div>
+                </div>
 
 
-		<div class="control-group row as">
-		<?= form_label('foto nº5', 'foto4', array('class'=>'control-label')); ?>
-		<?= form_input(array('type'=>'file','name'=>"userfile[4]",'id'=>'foto4','placeholder'=>'foto4....', 'value'=>set_value('foto4'))); ?>
-		</div>
+                <div class="form-group">
+                  <label for="Año" class="col-sm-2 control-label" >Año</label>
+                  <div class="col-sm-10">
+                    <input type="text" name="anno" class="form-control" id="anno" value="<?= date("Y"); ?>">
+                  </div>
+                </div>
 
-		<div class="control-group row as">
-		<?= form_label('DIA', 'dia', array('class'=>'control-label')); ?>
-		<?= form_input(array('type'=>'text','name'=>'dia','id'=>'dia','placeholder'=>'dia....', 'value'=>set_value('dia'))); ?>
-		</div>
+                <div class="form-group">
+                  <label for="foto" class="col-sm-2 control-label">Foto</label>
+                  <div class="col-sm-10">
+                  	<!-- <input type="file" name="userfile[0]" id="foto">  -->
+                  	<?= form_input(array('type'=>'file','name'=>"userfile[0]",'id'=>'foto','placeholder'=>'foto....', 'value'=>set_value('foto'))); ?>
+                  	 <p class="help-block">Archivo debe estar en formato ".jpg" y no debe exceder 10Mb </p>
+                  </div>
+                 
+                </div>
 
-		<input type="file" id="prueba" onChange="cargar_otro_file()"-->
-		<div id="loader"></div>
-		<input id="agregar" type="button" value="agregar otro archivo" onclick="carga_otro_file()"> 
-		<div class="form-actions">
-		<?= form_button(array('type'=>'submit', 'content'=>'Aceptar', 'class'=>'btn btn-primary')); ?>
+              </div>
+              <!-- /.box-body -->
+              <div class="box-footer">
+                   <?= anchor('slide/index', '<i class="fa fa-circle"></i> Regresar', array('class'=>'btn btn-info')); ?>
+                    <?= form_button(array('type'=>'submit', 'content'=>'<i class="fa fa-save"></i> Guardar Cambios', 'class'=>'btn btn-success pull-right')); ?>
+               
+              </div>
+              <!-- /.box-footer -->
+            <?= form_close(); ?>
+          </div>
+        </div>
+          <!-- /.box -->
 
-		
-		<?= anchor('noticias/index', 'Cancelar', array('class'=>'btn')); ?>
-		</div>	
-
-
-<?= form_close(); ?>
 
 <script>
 

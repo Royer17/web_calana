@@ -14,8 +14,9 @@
 			<th> ID </th>
 			<th> Menú </th>
 			<th> Perfil </th>
-			<th> Creado </th>
-			<th> Modificado </th>
+			<th> Editar </th>
+			<th> Eliminar </th>
+
 		</tr>
 	</thead>
 
@@ -25,8 +26,9 @@
 			<td> <?= anchor('menu_perfil/edit/'.$registro->id, $registro->id); ?> </td>
 			<td> <?= $registro->menu_name ?> </td>
 			<td> <?= $registro->perfil_name ?> </td>
-			<td> <?= date("d/m/Y - H:i", strtotime($registro->created)); ?> </td>
-			<td> <?= date("d/m/Y - H:i", strtotime($registro->updated)); ?> </td>
+			<td><?= anchor('menu_perfil/edit/'.$registro->id, 'Actualizar', array('class'=>'btn btn-green')); ?></i>  </button></td>
+			<td> <?= anchor('menu_perfil/delete/'.$registro->id, 'Eliminar', array('class'=>'btn btn-red', 'onClick'=>"return confirm('¿Está Seguro?')")); ?></td>
+	
 		</tr>
 		<?php endforeach; ?>
 	</tbody>

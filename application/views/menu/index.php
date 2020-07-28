@@ -17,8 +17,8 @@
 			<th> Acción </th>
 			<th> URL </th>
 			<th> Orden </th>
-			<th> Creado </th>
-			<th> Modificado </th>
+			<th> Editar </th>
+			<th> Eliminar </th>
 			
 		</tr>
 	</thead>
@@ -32,8 +32,8 @@
 			<td> <?= $registro->accion ?> </td>
 			<td> <?= $registro->url ?> </td>
 			<td> <?= $registro->orden ?> </td>
-			<td> <?= date("d/m/Y - H:i", strtotime($registro->created)); ?> </td>
-			<td> <?= date("d/m/Y - H:i", strtotime($registro->updated)); ?> </td>
+			<td><?= anchor('menu/edit/'.$registro->id, 'Actualizar', array('class'=>'btn btn-green')); ?></i>  </button></td>
+			<td> <?= anchor('menu/delete/'.$registro->id, 'Eliminar', array('class'=>'btn btn-red', 'onClick'=>"return confirm('¿Está Seguro?')")); ?></td>
 			<td> <?= anchor('menu/menu_perfiles/'.$registro->id, '<i class="icon-lock"></i>'); ?> </td>
 		
 		</tr>

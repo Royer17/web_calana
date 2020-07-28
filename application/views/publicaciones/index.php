@@ -1,14 +1,16 @@
 					<div class="row as">
 						
 						<ol class="miga breadcrumb">
-						  <li><a href="http://www.municiudadnueva.gob.pe/">Inicio</a></li>
+						  <li><a href="http://
+www.municalana.gob.pe
+/">Inicio</a></li>
 						  <li><a href="publicaciones/">Publicaciones Emitidas</a></li>	
 						  <li class="active"> <?= $titulo ?> </li>		
 						</ol>
 			
 						<div class="article pull-left">
-							<div class="article-title">
-								 Publicaciones Emitidas 
+							<div class="cont_titulo">
+								 <?= $titulo ?>
 							</div>
 						</div>
 
@@ -20,10 +22,10 @@
 						<!-- contenido -->
 			
 							<!--  table -->
-							<table id="tabla_pub" class="table table-bordered" cellspacing="0" width="100%">
+							<table id="tabla_pub" class="table table-bordered table-responsive " cellspacing="0" width="100%">
 								<thead>
 									<tr>
-										<th>Edit</th>
+									
 										<th>Nº</th>
 										<th>Nombre</th>
 										<th>Resumen</th>
@@ -36,9 +38,9 @@
 								<tbody>
 									<?php foreach ($query as $registro): ?>
 									<tr>
-										<td>
+										<!-- <td>
 											<a href=<?= base_url('publicaciones/edit/'.$registro->idnor) ?>  >   <span class="glyphicon glyphicon-edit"></span> </a>
-										</td>
+										</td> -->
 										<td>
 										
 										 <?= $i ?> 
@@ -56,7 +58,7 @@
 											<?= $registro->fechaemi ?>	
 										</td>										
 										<td>
-											<a target="_blank" href="<?= base_url('documentos/'.$registro->nomfile ); ?>">
+											<a target="_blank" href="<?= base_url('portaltransparencia/publicaciones/'.$registro->nomfile ); ?>">
 												<img class="img-responsive" src="<?= base_url('img/pdf.png') ?>" width="50px">
 
 											</a>

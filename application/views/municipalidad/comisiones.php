@@ -1,395 +1,301 @@
-					<div class="row as">
-						
-						<ol class="miga breadcrumb">
-						  <li><a href="http://www.municiudadnueva.gob.pe/">Inicio</a></li>
-						  <li class="active">Municipalidad</li>
-						  <li class="active">Comisión de Regidores</li>
-						</ol>
-					
+                        
+<br><br>
+<section class="entry-box">
+<header>
+<h2 style="font-size: 16px;
+    line-height: 28px;
+    border-left: 3px solid #004f00;
+    padding-left: 10px;
+    margin-bottom: 10px;"> <a href="<?= base_url('')?>"> Inicio </a> /Comisiones</h2>
 
-						<div class="article pull-left">
-							<div class="article-title">
-								Comisión de Regidores
-							</div>
-						</div>
-					
-					</div>
-					
+</header>
+<div class="entry-content clearfix">
+<p>
+	<span style="color:#0f62ac;"><strong><span style="font-family: Verdana,Geneva,sans-serif; line-height: 20px;">LISTADO DE COMISIONES ORDINARIAS Y ESPECIALES :</span></strong></span></p>
+<p>
+	<span style="color:#0f62ac;"><strong><u>COMISIONES ORDINARIAS 2019</u>:</strong></span></p>
+<table align="left" border="0" cellpadding="0" cellspacing="1" height="75" style="margin-left: 40px;" width="631">
+	
+		<tbody><tr>
+			<td colspan="4">
+				<span style="color:#0f62ac;"><strong>01.&nbsp; COMISIÓN DE ECONOMÍA, ADMINISTRACIÓN y PRESUPUESTO</strong></span></td>
+		</tr>
+		<tr>
+			<td>
+				<span style="color:#000000;">&nbsp; &nbsp; &nbsp;</span></td>
+			<td>
+				<span style="color:#000000;"><strong>Presidente</strong></span></td>
+			<td>
+				<span style="color:#000000;">:</span></td>
+			<td>
+				<span style="color:#000000;">&nbsp;&nbsp;</span>Reg. Magdalena del Rosario Mena Caipa</td>
+		</tr>
+		<tr>
+			<td>
+				&nbsp;</td>
+			<td>
+				<span style="color:#000000;"><strong>Vicepresidente&nbsp; </strong></span></td>
+			<td>
+				<span style="color:#000000;">:</span></td>
+			<td>
+				<span style="color:#000000;">&nbsp;&nbsp;</span>Reg. Cristian Joao Victor Barrientos Tintaya</td>
+		</tr>
+		<tr>
+			<td>
+				&nbsp;</td>
+			<td>
+				<span style="color:#000000;"><strong>Vocal</strong></span></td>
+			<td>
+				<span style="color:#000000;">:</span></td>
+			<td>
+				<span style="color:#000000;">&nbsp;&nbsp;</span>Reg. Estela Gamero López</td>
+		</tr>
+	
+</tbody></table>
+<p style="margin-left: 80px;">
+	&nbsp;</p>
+<p style="margin-left:36.0pt;">
+	&nbsp;</p>
+<p style="margin-left:36.0pt;">
+	&nbsp;</p>
+<table align="left" border="0" cellpadding="0" cellspacing="1" height="75" style="margin-left: 40px;" width="627">
+	
+		<tbody><tr>
+			<td colspan="4">
+				<span style="color:#0f62ac;"><strong>02.&nbsp; COMISIÓN DE SERVICIOS MUNICIPALES Y GESTIÓN AMBIENTAL</strong></span></td>
+		</tr>
+		<tr>
+			<td>
+				<span style="color:#000000;">&nbsp; &nbsp; &nbsp;</span></td>
+			<td>
+				<span style="color:#000000;"><strong>Presidente</strong></span></td>
+			<td>
+				<span style="color:#000000;">:</span></td>
+			<td>
+				Reg. Cristian Joao Victor Barrientos Tintaya</td>
+		</tr>
+		<tr>
+			<td>
+				&nbsp;</td>
+			<td>
+				<span style="color:#000000;"><strong>Vicepresidente</strong></span></td>
+			<td>
+				<span style="color:#000000;">:</span></td>
+			<td>
+				Reg. Pedro Augusto López Espinoza</td>
+		</tr>
+		<tr>
+			<td>
+				&nbsp;</td>
+			<td>
+				<span style="color:#000000;"><strong>Vocal</strong></span></td>
+			<td>
+				<span style="color:#000000;">:</span></td>
+			<td>
+				Reg. Elena Peralta Callacondo</td>
+		</tr>
+	
+</tbody></table>
+<p style="margin-left:36.0pt;">
+	&nbsp;</p>
+<p style="margin-left:36.0pt;">
+	&nbsp;</p>
+<p style="margin-left: 40px;">
+	&nbsp;</p>
+<table align="left" border="0" cellpadding="0" cellspacing="1" height="90" style="margin-left: 40px;" width="633">
+	
+		<tbody><tr>
+			<td colspan="4">
+				<span style="color:#0f62ac;"><strong>03.&nbsp; COMISIÓN DE INFRAESTRUCTURA Y OBRAS</strong></span></td>
+		</tr>
+		<tr>
+			<td>
+				<span style="color:#000000;">&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+			<td>
+				<span style="color:#000000;"><strong>Presidente</strong></span></td>
+			<td>
+				<span style="color:#000000;">:</span></td>
+			<td>
+				Reg. Estela Gamero López</td>
+		</tr>
+		<tr>
+			<td>
+				&nbsp;</td>
+			<td>
+				<span style="color:#000000;"><strong>Vicepresidente</strong></span></td>
+			<td>
+				<span style="color:#000000;">:</span></td>
+			<td>
+				Reg. Magdalena del Rosario Mena Caipa</td>
+		</tr>
+		<tr>
+			<td>
+				&nbsp;</td>
+			<td>
+				<span style="color:#000000;"><strong>Vocal</strong></span></td>
+			<td>
+				<span style="color:#000000;">:</span></td>
+			<td>
+				Reg. Pedro Augusto López Espinoza</td>
+		</tr>
+	
+</tbody></table>
+<p style="margin-left: 40px;">
+	&nbsp;</p>
+<p style="margin-left: 40px;">
+	&nbsp;</p>
+<p style="margin-left: 40px;">
+	&nbsp;</p>
+<table align="left" border="0" cellpadding="0" cellspacing="1" height="75" style="margin-left: 40px;" width="632">
+	
+		<tbody><tr>
+			<td colspan="4">
+				<span style="color:#0f62ac;"><strong>04.&nbsp; COMISIÓN DE CULTURA, RECREACIÓN Y DEPORTE</strong></span></td>
+		</tr>
+		<tr>
+			<td>
+				<span style="color:#000000;"><strong>&nbsp;</strong>&nbsp; &nbsp;&nbsp;</span></td>
+			<td>
+				<span style="color:#000000;"><strong>Presidente</strong></span></td>
+			<td>
+				<span style="color:#000000;">:</span></td>
+			<td>
+				Reg. Estela Gamero López</td>
+		</tr>
+		<tr>
+			<td>
+				&nbsp;</td>
+			<td>
+				<span style="color:#000000;"><strong>Vicepresidente&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></span></td>
+			<td>
+				<span style="color:#000000;">:</span></td>
+			<td>
+				Reg. Cristian Joao Victor Barrientos Tintaya</td>
+		</tr>
+		<tr>
+			<td>
+				&nbsp;</td>
+			<td>
+				<span style="color:#000000;"><strong>Vocal</strong></span></td>
+			<td>
+				<span style="color:#000000;">:</span></td>
+			<td>
+				Reg. Elena Peralta Callacondo</td>
+		</tr>
+	
+</tbody></table>
+<p style="margin-left: 40px;">
+	&nbsp;</p>
+<p style="margin-left: 40px;">
+	&nbsp;</p>
+<p style="margin-left: 40px;">
+	&nbsp;</p>
 
-					<div class="row as">
-						<!-- contenido -->
-						<tr>
-							<td>
-							<table border="0" width="00%" cellspacing="0" cellpadding="0">
+<table align="left" border="0" cellpadding="0" cellspacing="1" height="75" style="margin-left: 40px;" width="632">
+	
+		<tbody><tr>
+			<td colspan="4">
+				<span style="color:#0f62ac;"><strong>05.&nbsp; COMISIÓN DE DESARROLLO AGROPECUARIO</strong></span></td>
+		</tr>
+		<tr>
+			<td>
+				<span style="color:#000000;"><strong>&nbsp;</strong>&nbsp; &nbsp;&nbsp;</span></td>
+			<td>
+				<span style="color:#000000;"><strong>Presidente</strong></span></td>
+			<td>
+				<span style="color:#000000;">:</span></td>
+			<td>
+				Reg. Pedro Augusto López Espinoza</td>
+		</tr>
+		<tr>
+			<td>
+				&nbsp;</td>
+			<td>
+				<span style="color:#000000;"><strong>Vicepresidente&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></span></td>
+			<td>
+				<span style="color:#000000;">:</span></td>
+			<td>
+				Reg. Elena Peralta Callacondo</td>
+		</tr>
+		<tr>
+			<td>
+				&nbsp;</td>
+			<td>
+				<span style="color:#000000;"><strong>Vocal</strong></span></td>
+			<td>
+				<span style="color:#000000;">:</span></td>
+			<td>
+				Reg. Estela Gamero López</td>
+		</tr>
+	
+</tbody></table>
+<p style="margin-left: 40px;">
+	&nbsp;</p>
+<p style="margin-left: 40px;">
 
-								<tr>
-									<td valign="top">
-									<div align="left">
-										<table border="0" width="100%" cellspacing="6" cellpadding="5">
-										
-											<tr>
-												<td>
-												<div align="left" style="margin: 0px; padding: 0px; color: rgb(41, 41, 41); font-family: Arial, 'Arial Unicode MS', Helvetica, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: -webkit-left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
-													<table width="600" border="0" cellpadding="6" cellspacing="1" style="font-size: 11px; font-family: Arial, Helvetica, sans-serif; font-weight: normal; font-style: normal; color: rgb(102, 102, 102); font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; float: left; clear: left; margin-left: 14px; background-color: rgb(204, 204, 204);">
-													
-														<tr>
-															<td valign="top" bgcolor="#FFFFFF">
-															<div style="margin: 0px; padding: 0px;">
-																<table border="0" cellpadding="5" cellspacing="0" width="100%" style="font-size: 13px; font-family: Arial, 'Arial Unicode MS', Helvetica, sans-serif; font-weight: normal; font-style: normal; border: 1px solid rgb(239, 239, 239);">
-																	<tr>
-																		<th width="35%" bgcolor="#efefef">
-																		<font size="2">COMISIÓN</font></th>
-																		<th width="32%" bgcolor="#efefef">
-																		<font size="2">PRESIDENTE</font></th>
-																		<th width="33%" bgcolor="#efefef">
-																		<font size="2">MIEMBROS</font></th>
-																	</tr>
-																	<tr>
-																		<td rowspan="2" align="left" valign="middle" style="border-right-width: 1px; border-right-style: solid; border-right-color: rgb(239, 239, 239);">
-																		<div align="left" style="margin: 0px; padding: 0px;">
-																			<strong><font size="2">
-																			COMISIÓN PERMANENTE DE 
-																			INGENIERÍA Y DESARROLLO 
-																			URBANO</font></strong></div>
-																		</td>
-																		<td rowspan="2" align="left" valign="middle" style="border-right-width: 1px; border-right-style: solid; border-right-color: rgb(239, 239, 239);">
-																		<strong><font size="2">
-																		Antolín Gómez Carita</font></strong></td>
-																		<td align="left" valign="middle" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239);">
-																		<p style="margin: 0px; padding: 0px;">
-																		<b><font size="2">Secretaria</font></b></p>
-																		<p style="margin: 0px; padding: 0px;">
-																		<font size="2">Edwin 
-																		Vizcarra Ancco</font></td>
-																	</tr>
-																	<tr>
-																		<td align="left" valign="middle" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239);">
-																		<p style="margin: 0px; padding: 0px;">
-																		<font size="2"><b>Vocal</b></font></p>
-																		<p style="margin: 0px; padding: 0px;">
-																		<font size="2">René Mamani 
-																		Charca</font></td>
-																	</tr>
-																</table>
-																<font size="2"><br>
-																<font color="#FFFFFF">MDI</font></font><table border="0" cellpadding="5" cellspacing="0" width="100%" style="font-size: 13px; font-family: Arial, 'Arial Unicode MS', Helvetica, sans-serif; font-weight: normal; font-style: normal; border: 1px solid rgb(239, 239, 239);">
-																	<tr>
-																		<th width="35%" bgcolor="#efefef">
-																		<font size="2">COMISIÓN</font></th>
-																		<th width="32%" bgcolor="#efefef">
-																		<font size="2">PRESIDENTE</font></th>
-																		<th width="33%" bgcolor="#efefef">
-																		<font size="2">MIEMBROS</font></th>
-																	</tr>
-																	<tr>
-																		<td rowspan="2" align="left" valign="middle" style="border-right-width: 1px; border-right-style: solid; border-right-color: rgb(239, 239, 239);">
-																		<div align="left" style="margin: 0px; padding: 0px;">
-																			<strong><font size="2">
-																			COMISIÓN PERMANENTE DE 
-																			ECONOMÍA PRESUPUESTO Y 
-																			FINANZAS</font></strong></div>
-																		</td>
-																		<td rowspan="2" align="left" valign="middle" style="border-right-width: 1px; border-right-style: solid; border-right-color: rgb(239, 239, 239);">
-																		<strong><font size="2">Oscar 
-																		Onque Calizaya</font></strong></td>
-																		<td align="left" valign="middle" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239);">
-																		<p style="margin: 0px; padding: 0px;">
-																		<b><font size="2">Secretario</font></b></p>
-																		<p style="margin: 0px; padding: 0px;">
-																		<font size="2">Nicolás 
-																		Mamani Mamani</font></td>
-																	</tr>
-																	<tr>
-																		<td align="left" valign="middle" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239);">
-																		<p style="margin: 0px; padding: 0px;">
-																		<font size="2"><b>Vocal</b></font></p>
-																		<p style="margin: 0px; padding: 0px;">
-																		<strong style="font-weight: 400;">
-																		<font size="2">Germán 
-																		Chambilla Cutipa</font></strong></td>
-																	</tr>
-																</table>
-																<font color="#FFFFFF" size="2">MDI</font><font size="2"><br>
-																<font color="#FFFFFF">MDI</font></font><table border="0" cellpadding="5" cellspacing="0" width="100%" style="font-size: 13px; font-family: Arial, 'Arial Unicode MS', Helvetica, sans-serif; font-weight: normal; font-style: normal; border: 1px solid rgb(239, 239, 239);">
-																	<tr>
-																		<th width="35%" bgcolor="#efefef">
-																		<font size="2">COMISIÓN</font></th>
-																		<th width="32%" bgcolor="#efefef">
-																		<font size="2">PRESIDENTE</font></th>
-																		<th width="33%" bgcolor="#efefef">
-																		<font size="2">MIEMBROS</font></th>
-																	</tr>
-																	<tr>
-																		<td rowspan="2" align="left" valign="middle" style="border-right-width: 1px; border-right-style: solid; border-right-color: rgb(239, 239, 239);">
-																		<div align="left" style="margin: 0px; padding: 0px;">
-																			<strong><font size="2">
-																			COMISIÓN PERMANENTE DE 
-																			SANEAMIENTO AMBIENTAL, 
-																			FERIAS Y MERCADOS</font></strong></div>
-																		</td>
-																		<td rowspan="2" align="left" valign="middle" style="border-right-width: 1px; border-right-style: solid; border-right-color: rgb(239, 239, 239);">
-																		<b><font size="2">Eva 
-																		Escobar Gómez</font></b></td>
-																		<td align="left" valign="middle" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239);">
-																		<p style="margin: 0px; padding: 0px;">
-																		<b><font size="2">Secretario</font></b></p>
-																		<p style="margin: 0px; padding: 0px;">
-																		<strong style="font-weight: 400;">
-																		<font size="2">Nicolás 
-																		Mamani Mamani</font></strong></td>
-																	</tr>
-																	<tr>
-																		<td align="left" valign="middle" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239);">
-																		<p style="margin: 0px; padding: 0px;">
-																		<font size="2"><b>Vocal</b></font></p>
-																		<p style="margin: 0px; padding: 0px;">
-																		<font size="2">Antolin Gomez 
-																		Carita</font></td>
-																	</tr>
-																</table>
-																<font size="2"><br>
-																<font color="#FFFFFF">MDI</font></font><table border="0" cellpadding="5" cellspacing="0" width="100%" style="font-size: 13px; font-family: Arial, 'Arial Unicode MS', Helvetica, sans-serif; font-weight: normal; font-style: normal; border: 1px solid rgb(239, 239, 239);">
-																	<tr>
-																		<th width="35%" bgcolor="#efefef">
-																		<font size="2">COMISIÓN</font></th>
-																		<th width="32%" bgcolor="#efefef">
-																		<font size="2">PRESIDENTE</font></th>
-																		<th width="33%" bgcolor="#efefef">
-																		<font size="2">MIEMBROS</font></th>
-																	</tr>
-																	<tr>
-																		<td rowspan="2" align="left" valign="middle" style="border-right-width: 1px; border-right-style: solid; border-right-color: rgb(239, 239, 239);">
-																		<div align="left" style="margin: 0px; padding: 0px;">
-																			<strong><font size="2">
-																			COMISION PERMANENTE DE 
-																			SERVICIOS SOCIALES, 
-																			PARTICIPACION VECINAL</font></strong></div>
-																		</td>
-																		<td rowspan="2" align="left" valign="middle" style="border-right-width: 1px; border-right-style: solid; border-right-color: rgb(239, 239, 239);">
-																		<p style="margin: 0px; padding: 0px;">
-																		<b><font size="2">René 
-																		Mamani Charca</font></b></td>
-																		<td align="left" valign="middle" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239);">
-																		<p style="margin: 0px; padding: 0px;">
-																		<b><font size="2">Secretario</font></b></p>
-																		<p style="margin: 0px; padding: 0px;">
-																		<strong style="font-weight: 400;">
-																		<font size="2">Eva Escobar 
-																		Gómez</font></strong></td>
-																	</tr>
-																	<tr>
-																		<td align="left" valign="middle" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239);">
-																		<p style="margin: 0px; padding: 0px;">
-																		<font size="2"><b>Vocal</b></font></p>
-																		<p style="margin: 0px; padding: 0px;">
-																		<font size="2">Edwin 
-																		Vizcarra Ancco</font></td>
-																	</tr>
-																</table>
-																<font size="2"><br>
-																&nbsp;<font color="#FFFFFF">MDI</font></font>&nbsp;<table border="0" cellpadding="5" cellspacing="0" width="100%" style="font-size: 13px; font-family: Arial, 'Arial Unicode MS', Helvetica, sans-serif; font-weight: normal; font-style: normal; border: 1px solid rgb(239, 239, 239);">
-																	<tr>
-																		<th width="35%" bgcolor="#efefef">
-																		<font size="2">COMISIÓN</font></th>
-																		<th width="32%" bgcolor="#efefef">
-																		<font size="2">PRESIDENTE</font></th>
-																		<th width="33%" bgcolor="#efefef">
-																		<font size="2">MIEMBROS</font></th>
-																	</tr>
-																	<tr>
-																		<td rowspan="2" align="left" valign="middle" style="border-right-width: 1px; border-right-style: solid; border-right-color: rgb(239, 239, 239);">
-																		<div align="left" style="margin: 0px; padding: 0px;">
-																			<strong><font size="2">
-																			COMISIÓN PERMANENTE DE 
-																			ASUNTOS LEGALES 
-																			SEGURIDAD Y DISCIPLINA</font></strong></div>
-																		</td>
-																		<td rowspan="2" align="left" valign="middle" style="border-right-width: 1px; border-right-style: solid; border-right-color: rgb(239, 239, 239);">
-																		<p style="margin: 0px; padding: 0px;">
-																		<b><font size="2">Germán 
-																		Chambilla Cutipa</font></b></td>
-																		<td align="left" valign="middle" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239);">
-																		<p style="margin: 0px; padding: 0px;">
-																		<b><font size="2">Secretario</font></b></p>
-																		<strong style="font-weight: 400;">
-																		<font size="2">Oscar Onque 
-																		Calizaya</font></strong></td>
-																	</tr>
-																	<tr>
-																		<td align="left" valign="middle" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239);">
-																		<p style="margin: 0px; padding: 0px;">
-																		<font size="2"><b>Vocal</b></font></p>
-																		<p style="margin: 0px; padding: 0px;">
-																		<strong style="font-weight: 400;">
-																		<font size="2">Eva Escobar 
-																		Gómez</font></strong></td>
-																	</tr>
-																</table>
-																<p style="margin: 0px; padding: 0px;">
-																&nbsp;</p>
-																<p style="margin: 0px; padding: 0px;">
-																&nbsp;</p>
-																<table border="0" cellpadding="5" cellspacing="0" width="100%" style="font-size: 13px; font-family: Arial, 'Arial Unicode MS', Helvetica, sans-serif; font-weight: normal; font-style: normal; border: 1px solid rgb(239, 239, 239);">
-																	<tr>
-																		<th width="35%" bgcolor="#efefef">
-																		<font size="2">COMISIÓN</font></th>
-																		<th width="32%" bgcolor="#efefef">
-																		<font size="2">PRESIDENTE</font></th>
-																		<th width="33%" bgcolor="#efefef">
-																		<font size="2">MIEMBROS</font></th>
-																	</tr>
-																	<tr>
-																		<td rowspan="2" align="left" valign="middle" style="border-right-width: 1px; border-right-style: solid; border-right-color: rgb(239, 239, 239);">
-																		<div align="left" style="margin: 0px; padding: 0px;">
-																			<strong><font size="2">
-																			COMISIÓN PERMANENTE DE 
-																			ADQUISICIONES Y 
-																			COTIZACIÓN</font></strong></div>
-																		</td>
-																		<td rowspan="2" align="left" valign="middle" style="border-right-width: 1px; border-right-style: solid; border-right-color: rgb(239, 239, 239);">
-																		<p style="margin: 0px; padding: 0px;">
-																		<b><font size="2">Edwin 
-																		Vizcarra Ancco</font></b></td>
-																		<td align="left" valign="middle" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239);">
-																		<p style="margin: 0px; padding: 0px;">
-																		<b><font size="2">Secretario</font></b></p>
-																		<strong style="font-weight: 400;">
-																		<font size="2">Antolin Gomez 
-																		Carita</font></strong></td>
-																	</tr>
-																	<tr>
-																		<td align="left" valign="middle" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239);">
-																		<p style="margin: 0px; padding: 0px;">
-																		<font size="2"><b>Vocal</b></font></p>
-																		<p style="margin: 0px; padding: 0px;">
-																		<strong style="font-weight: 400;">
-																		<font size="2">Oscar Onque 
-																		Calizaya</font></strong></td>
-																	</tr>
-																</table>
-																<p style="margin: 0px; padding: 0px;">
-																&nbsp;</p>
-																<p style="margin: 0px; padding: 0px;">
-																&nbsp;</p>
-																<table border="0" cellpadding="5" cellspacing="0" width="100%" style="font-size: 13px; font-family: Arial, 'Arial Unicode MS', Helvetica, sans-serif; font-weight: normal; font-style: normal; border: 1px solid rgb(239, 239, 239);">
-																	<tr>
-																		<th width="35%" bgcolor="#efefef">
-																		<font size="2">COMISIÓN</font></th>
-																		<th width="32%" bgcolor="#efefef">
-																		<font size="2">PRESIDENTE</font></th>
-																		<th width="33%" bgcolor="#efefef">
-																		<font size="2">MIEMBROS</font></th>
-																	</tr>
-																	<tr>
-																		<td rowspan="2" align="left" valign="middle" style="border-right-width: 1px; border-right-style: solid; border-right-color: rgb(239, 239, 239);">
-																		<div align="left" style="margin: 0px; padding: 0px;">
-																			<strong><font size="2">
-																			COMISIÓN PERMANENTE DE 
-																			TRANSITO VIALIDAD 
-																			TRANSPORTE PÚBLICO Y 
-																			DEFENSA CIVIL</font></strong></div>
-																		</td>
-																		<td rowspan="2" align="left" valign="middle" style="border-right-width: 1px; border-right-style: solid; border-right-color: rgb(239, 239, 239);">
-																		<p style="margin: 0px; padding: 0px;">
-																		<b><font size="2">Nicolás 
-																		Mamani Mamani</font></b></td>
-																		<td align="left" valign="middle" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239);">
-																		<p style="margin: 0px; padding: 0px;">
-																		<b><font size="2">Secretario</font></b></p>
-																		<strong style="font-weight: 400;">
-																		<font size="2">René Mamani 
-																		Charca</font></strong></td>
-																	</tr>
-																	<tr>
-																		<td align="left" valign="middle" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239);">
-																		<p style="margin: 0px; padding: 0px;">
-																		<font size="2"><b>Vocal</b></font></p>
-																		<p style="margin: 0px; padding: 0px;">
-																		<strong style="font-weight: 400;">
-																		<font size="2">Germán 
-																		Chambilla Cutipa</font></strong></td>
-																	</tr>
-																</table>
-																<p style="margin: 0px; padding: 0px;">
-																&nbsp;</p>
-																<table border="0" cellpadding="5" cellspacing="0" width="100%" style="font-size: 13px; font-family: Arial, 'Arial Unicode MS', Helvetica, sans-serif; font-weight: normal; font-style: normal; border: 1px solid rgb(239, 239, 239);">
-																	<tr>
-																		<th width="35%" bgcolor="#efefef">
-																		<font size="2">COMISIÓN</font></th>
-																		<th width="32%" bgcolor="#efefef">
-																		<font size="2">PRESIDENTE</font></th>
-																		<th width="33%" bgcolor="#efefef">
-																		<font size="2">MIEMBROS</font></th>
-																	</tr>
-																	<tr>
-																		<td rowspan="6" align="left" valign="middle" style="border-right-width: 1px; border-right-style: solid; border-right-color: rgb(239, 239, 239);">
-																		<div align="left" style="margin: 0px; padding: 0px;">
-																			<strong><font size="2">
-																			COMISIÓN DE FIESTAS Y 
-																			PROTOCOLOS</font></strong></div>
-																		</td>
-																		<td rowspan="6" align="left" valign="middle" style="border-right-width: 1px; border-right-style: solid; border-right-color: rgb(239, 239, 239);">
-																		<p style="margin: 0px; padding: 0px;">
-																		<b><font size="2">Oscar 
-																		Onque Calizaya</font></b></td>
-																		<td align="left" valign="middle" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239);">
-																		<p style="margin: 0px; padding: 0px;">
-																		<strong style="font-weight: 400;">
-																		<font size="2">Nicolás 
-																		Mamani Mamani</font></strong></td>
-																	</tr>
-																	<tr>
-																		<td align="left" valign="middle" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239);">
-																		<p style="margin: 0px; padding: 0px;">
-																		<strong style="font-weight: 400;">
-																		<font size="2">René Mamani 
-																		Charca</font></strong></td>
-																	</tr>
-																	<tr>
-																		<td align="left" valign="middle" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239);">
-																		<strong style="font-weight: 400;">
-																		<font size="2">Germán 
-																		Chambilla Cutipa</font></strong></td>
-																	</tr>
-																	<tr>
-																		<td align="left" valign="middle" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239);">
-																		<strong style="font-weight: 400;">
-																		<font size="2">Eva Escobar 
-																		Gómez</font></strong></td>
-																	</tr>
-																	<tr>
-																		<td align="left" valign="middle" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239);">
-																		<strong style="font-weight: 400;">
-																		<font size="2">Antolín Gómez 
-																		Carita</font></strong></td>
-																	</tr>
-																	<tr>
-																		<td align="left" valign="middle" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(239, 239, 239);">
-																		<p style="margin: 0px; padding: 0px;">
-																		<strong style="font-weight: 400;">
-																		<font size="2">Edwin 
-																		Vizcarra Ancco</font></strong></td>
-																	</tr>
-																</table>
-																<p style="margin: 0px; padding: 0px;">
-																&nbsp;</div>
-															</td>
-														</tr>
-													</table>
-												</div>
-												<p style="margin: 0px; padding: 0px; color: rgb(41, 41, 41); font-family: Arial, 'Arial Unicode MS', Helvetica, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: -webkit-left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
-												&nbsp;</p>
-												<p>&nbsp;</td>
-											</tr>
-										</table>
-									</div>
-									<p align="left">&nbsp;</p>
-									<p>&nbsp;</td>
-								</tr>
+	
+	&nbsp;</p>
+<p style="margin-left: 40px;">
+	&nbsp;</p>
+<p>
+<p><br>
+<p style="margin-left: 40px;">
+	&nbsp;</p><p style="margin-left: 40px;">
+	&nbsp;</p><p style="margin-left: 40px;">
+	&nbsp;</p>
+<table align="left" border="0" cellpadding="0" cellspacing="1" height="75" style="margin-left: 40px;" width="628">
+	<p>
+	
+		<tbody>
+	
+			<tr>
+		
+			<td colspan="4">
+				<span style="color:#0f62ac;"><strong> COMISIONES ESPECIALES 2019 <br> 01.&nbsp;COMISIÓN ESPECIAL DE FIESTAS</strong></span></td>
+		</tr>
+		<tr>
+			<td>
+				<span style="color:#000000;">&nbsp; &nbsp; &nbsp;</span></td>
+			<td>
+				<span style="color:#000000;"><strong>Presidente</strong></span></td>
+			<td>
+				<span style="color:#000000;">:</span></td>
+			<td>
+				Reg. Magdalena del Rosario Mena Caipa<span style="color:#000000;">&nbsp;&nbsp;</span></td>
+		</tr>
+		<tr>
+			<td>
+				&nbsp;</td>
+			<td>
+				<span style="color:#000000;"><strong>Secretario&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></span></td>
+			<td>
+				<span style="color:#000000;">:</span></td>
+			<td>
+				Reg. Elena Peralta Callacondo</td>
+		</tr>
+		<tr>
+			<td>
+				&nbsp;</td>
+			<td>
+				<span style="color:#000000;"><strong>Integrantes</strong></span></td>
+			<td>
+				<span style="color:#000000;">:</span></td>
+		<td>
+			Reg. Cristian Joao Victor Barrientos Tintaya</td><td>
+			Reg. Estela Gamero López</td><td>
+			Reg. Pedro Augusto López Espinoza</td>
+		</tr>
+	
+</tbody></table>
+<p style="margin-left:36.0pt;">
+	&nbsp;</p>
+<p style="margin-left:36.0pt;">
+	&nbsp;</p>
+<p style="margin-left:36.0pt;">
 
-
-
-							</table>
-							</td>
-						</tr>						
-					</div>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>        
+</div>
+</section>

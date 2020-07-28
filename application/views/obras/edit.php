@@ -6,7 +6,7 @@
 </style>
 
 <div style="margin-left:30px">
-	<?= form_open('obras/update', array('class'=>'form-horizontal')); ?>
+	<?= form_open_multipart('obras/update', array('class'=>'form-horizontal')); ?>
 	<legend> Actualizar Registro </legend>
 	<?php 
 		if (isset($error)) {
@@ -69,29 +69,30 @@
 
 	<div class="form-group">
 		<?= form_label('foto', 'foto', array('class'=>'form-label')); ?>
-		<img width="320px" high="150" src="<?php echo base_url().'img/obra/'.$registro->foto ?> ">
+		<!--img width="320px" high="150" src="<?php echo base_url().'img/obra/'.$registro->foto ?> "-->
+		<?= form_input(array('type'=>'file','name'=>'foto','id'=>'foto')); ?>
 	</div>
 
 	<div class="form-group">
 		<?= form_label('foto1', 'foto1', array('class'=>'form-label')); ?>
-		<?= form_input(array('type'=>'file','name'=>'foto1','id'=>'foto1','value'=>$registro->foto1)); ?>
+		<?= form_input(array('type'=>'file','name'=>'foto1','id'=>'foto1')); ?>
 	</div>
 
 	<div class="form-group">
 		<?= form_label('foto2', 'foto2', array('class'=>'form-label')); ?>
-		<?= form_input(array('type'=>'file','name'=>'foto2','id'=>'foto2','value'=>$registro->foto2)); ?>
+		<?= form_input(array('type'=>'file','name'=>'foto2','id'=>'foto2')); ?>
 	</div>
 
 
 	<div class="form-group">
 		<?= form_label('foto3', 'foto3', array('class'=>'form-label')); ?>
-		<?= form_input(array('type'=>'file','name'=>'foto3','id'=>'foto3','value'=>$registro->foto3)); ?>
+		<?= form_input(array('type'=>'file','name'=>'foto3','id'=>'foto3')); ?>
 	</div>
 
 
 	<div class="form-group">
 		<?= form_label('foto4', 'foto4', array('class'=>'form-label')); ?>
-		<?= form_input(array('type'=>'file','name'=>'foto4','id'=>'foto4','value'=>$registro->foto4)); ?>
+		<?= form_input(array('type'=>'file','name'=>'foto4','id'=>'foto4')); ?>
 	</div>
 	<!--
 

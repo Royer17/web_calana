@@ -1,51 +1,69 @@
- <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Model_Evento extends CI_Model {
 
-	function __construct() {
-		parent::__construct();
+    function __construct() {
+        parent::__construct();
+    }
+
+    function all() {
+  
+
+        $this->db->order_by('id_evento','desc');
+        $query = $this->db->get('evento');
+        return $resultado = $query->result();
 
     }
 
-    function guardar($datos) {
-      	$this->db->insert('evento',$datos);
+    function cinco_ultimos() {
+        $this->db->select('*');
+        $this->db->from('evento');
+        $this->db->order_by('id_evento','desc');
+        $this->db->limit(5);
+        $query=$this->db->get();
+        return $query->result();
+       // return $this->db->get('evento')->row();
     }
 
-    function verTodo(){
-    	$query=$this->db->get('evento');
-    	if($query->num_rows()>0){
-    		return $query;
-    	}else{
-    		return FALSE;
-    	}
+    function allFiltered($field, $value) {
+        $this->db->like($field, $value);
+        $query = $this->db->get('evento');
+        if ($query->result()>0) {
+            return $query->result();
+        }else{
+            return FALSE ; 
+        }    
     }
 
-    function verReg($year){
-
-        // verificar $year
-
-        if ($year == '') {
-            return FALSE;
+    function totalResultados($field, $value) {
+        $this->db->like($field, $value);
+        $query = $this->db->get('evento');
+        if ($query->result()>0) {
+            return $query->num_rows();
+        }else{
+            return FALSE ;
         }
-
-        //Select * from evento where fecha like '$año-%'
-
-        $this->db->like('fecha', $year, 'after');
-        $query = $this->db->get('evento');
-
-        return $query;
-                                         
-//        $query=$this->db->
-//        if($query->num_rows()>0){
-//            return $query;
-//        }else{
-//            return FALSE;
-//        }
     }
 
-    function allFiltered($value2) {
-        $this->db->like('procedencia', $value2);
-        $query = $this->db->get('evento');
-        return $query;
+    function find($id) {
+        $this->db->where('id_evento', $id);
+        return $this->db->get('evento')->row();
     }
+
+    function insert($registro) {
+        $this->db->set($registro);
+        $this->db->insert('evento');
+    }
+
+    function update($registro) {
+        $this->db->set($registro);
+        $this->db->where('id_evento', $registro['id_evento']);
+        $this->db->update('evento');
+    }
+
+    function delete($id) {
+        $this->db->where('id_evento', $id);
+        $this->db->delete('evento');
+    }
+
 }

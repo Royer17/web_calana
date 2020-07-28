@@ -18,9 +18,12 @@ class Menu extends CI_Controller {
 		$data['contenido'] = 'menu/index';
 		$data['titulo'] = 'Menú';
 		$data['query'] = $this->Model_Menu->all();
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
+		$this->load->view('superadmin/head', $data);
+		$this->load->view('superadmin/header', $data);
+		$this->load->view('superadmin/sidebar',$data);
+		$this->load->view('superadmin/index2', $data);		
+		$this->load->view('superadmin/footer', $data);
+
 	}
 
 	public function search() {
@@ -28,9 +31,12 @@ class Menu extends CI_Controller {
 		$data['titulo'] = 'Menú';
 		$value = $this->input->post('buscar');
 		$data['query'] = $this->Model_Menu->allFiltered('name', $value);
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
+		$this->load->view('superadmin/head', $data);
+		$this->load->view('superadmin/header', $data);
+		$this->load->view('superadmin/sidebar',$data);
+		$this->load->view('superadmin/index2', $data);		
+		$this->load->view('superadmin/footer', $data);
+
 	}
 
 	public function my_validation() {
@@ -40,9 +46,12 @@ class Menu extends CI_Controller {
 	public function create() {
 		$data['contenido'] = 'menu/create';
 		$data['titulo'] = 'Crear Menú';
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
+		$this->load->view('superadmin/head', $data);
+		$this->load->view('superadmin/header', $data);
+		$this->load->view('superadmin/sidebar',$data);
+		$this->load->view('superadmin/index2', $data);		
+		$this->load->view('superadmin/footer', $data);
+
 	}
 
 	public function insert() {
@@ -65,9 +74,12 @@ class Menu extends CI_Controller {
 		$data['contenido'] = 'menu/edit';
 		$data['titulo'] = 'Actualizar Menú';
 		$data['registro'] = $this->Model_Menu->find($id);
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
+		$this->load->view('superadmin/head', $data);
+		$this->load->view('superadmin/header', $data);
+		$this->load->view('superadmin/sidebar',$data);
+		$this->load->view('superadmin/index2', $data);		
+		$this->load->view('superadmin/footer', $data);
+
 	}
 
 	public function update() {
@@ -99,9 +111,12 @@ class Menu extends CI_Controller {
 		$data['query_izq'] = $perfiles[0];
 		$data['query_der'] = $perfiles[1];
 
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
+		$this->load->view('superadmin/head', $data);
+		$this->load->view('superadmin/header', $data);
+		$this->load->view('superadmin/sidebar',$data);
+		$this->load->view('superadmin/index2', $data);		
+		$this->load->view('superadmin/footer', $data);
+
 	}
 
 	public function mp_noasig() {

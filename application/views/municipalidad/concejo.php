@@ -1,258 +1,68 @@
-					<div class="row as">
-						
-						<ol class="miga breadcrumb">
-						  <li><a href="http://www.municiudadnueva.gob.pe/">Inicio</a></li>
+                        
+<br><br>
+<section class="entry-box">
+<header>
+<h2 style="font-size: 26px;
+    line-height: 28px;
+    border-left: 3px solid #004f00;
+    padding-left: 10px;
+    margin-bottom: 10px;"> <a href="<?= base_url('')?>"> Inicio </a> /Concejo</h2>
 
-						  <li class="active">Concejo</li>
+</header>
 
-						
-						</ol>
-						
+<div class="entry-content clearfix">
 
-						<div class="article pull-left">
-							<div class="article-title">
-								<?= $titulo ?>
-							</div>
-						</div>
-					
-					</div>
+<p style="text-align: center;">
+	<span style="color:#004f00;"><span style="font-size:20px;"><strong style="margin: 0px; padding: 0px; border: 0px; line-height: 30px; vertical-align: top; text-align: -webkit-center;">CONCEJO PARA EL PERIODO 2019-2022</strong></span>
+<br><br><br>
+<span style="font-size:18px;"><span style="font-family: verdana, geneva, sans-serif;">Alcalde Juan Ramos Arocutipa</span></span>
+	<span style="font-family: Verdana, Geneva, sans-serif; line-height: 20px; text-align: -webkit-center;">&nbsp;</span></span></p> <br>
 
-					<table class="abajo" border="0" cellpadding="0" cellspacing="0" width="100%">
-						  	
-					  	<tr align="left" valign="top">
-					      <td width="*">
-					      				
-					       	<div class="img-thumbnail" >
-								<img hight="450" width="600" src="<?= base_url('img/concejo/concejo.jpg')?>" alt="">
-							</div>
-						  </td>
-					    </tr>
-					   <br>
-							
-					</table>
-					
+<p style="text-align: center;">
+	
+		<img alt="" src="<?= base_url('plugins/img/alcalde.jpg' ); ?>" style="width: 600px; height: 409px; border-width: 5px; border-style: solid; margin: 1px; border-color: #004f00"></p>
 
-					<div class="row as">
-						<!-- contenido -->
+<br><br><br>
 
-						<table width="600" border="0" class="cardprofile">
-						    <tbody class="tcuerpo">
-						    	<tr>
-						            <td width="270" height="250">
-						                <img style="margin-left:15px" class="sombra" src="<?= base_url('img/concejo/Doc2.jpg') ?>" alt="" width="199" height="230" border="0">
-						            </td>
-						            <td style="padding: 0 ">
+<p style="text-align: center;">
+	<span style="font-size:18px;"><span style="font-family: verdana, geneva, sans-serif;">Regidora Dra. Educación Estela Cecilia Gamero Lopez</span></span>
+		<br><br><br><img alt="" src="<?= base_url('plugins/img/reg2.jpg' ); ?>" style="width: 420px; height: 506px; border-width: 5px; border-style: solid; margin: 1px; border-color: #004f00"></p>
 
-						                <table border="0">
-						                    <tbody>
-							                    <tr>
-							                      
-							                        <td  class="text-titulo pull-left" ><b style="color:#2e8ece"> ALCALDE DISTRITAL</b></td>
-							                    </tr>
-							                    <tr>
-							                       <td class="text-titulo pull-left">Med. Edgar Rogelio Concori Coaquira</td>
-							                       
-							                    </tr>
-							                    <tr>
-							                        <td class="text-titulo pull-left">alcaldia@municiudadnueva.gob.pe</td>
-							                        
-							                    </tr>
-						                	</tbody>
-						            	</table>                                                                                        
-						            </td>
-						        </tr>
-						    </tbody>
-						</table>
-						<p style="padding-left: 15px; text-align: justify;"><img src="http://losmisteriosnosmiran.com/wp-content/uploads/2013/08/separador-1.png" alt="" width="600" height="25"></p>
-						<table width="600" border="0" class="cardprofile">
-						    <tbody class="tcuerpo">
-						    	<tr>
-						            <td width="170" height="150">
-						                <img style="margin-left:15px" class="sombra" src="<?= base_url('img/concejo/oscar.jpg') ?>" alt="" width="119" height="140" border="0">
-						            </td>
-						            <td style="padding: 0 ">
+</p>
+<br><br><br>
+<p style="text-align: center;">
+	<span style="font-size:18px;"><span style="font-family: verdana, geneva, sans-serif;">Regidor Ing. Pedro Augusto Lopez</span></span> <br><br><br>
+		<img alt="" src="<?= base_url('plugins/img/reg1.jpg' ); ?>" style="width: 420px; height: 500px; border-width: 5px; border-style: solid; margin: 1px; border-color: #004f00"></p>
 
-						                <table border="0">
-						                    <tbody class="tcuerpo">
-							                    
-							                    <tr>
-							                        <td><b style="color:#2e8ece">Regidor :  </b></td>
-							                        <td>LIC. OSCAR ANTONIO ONQUE CALIZAYA</td>
-							                    </tr>
-							                    <tr>
-							                        <td><b style="font-weight:bold; color:#2e8ece;">Correo Web: </b></td>
-							                        <td>oonque@municiudadnueva.gob.pe</td>
-							                    </tr>
-						                	</tbody>
-						            	</table>                                                                                        
-						            </td>
-						        </tr>
-						    </tbody>
-						</table>
-						<p style="padding-left: 15px; text-align: justify;"><img src="http://losmisteriosnosmiran.com/wp-content/uploads/2013/08/separador-1.png" alt="" width="600" height="25"></p>
-						<table width="600" border="0" class="cardprofile">
-						    <tbody class="tcuerpo">
-						    	<tr>
-						            <td width="170" height="150">
-						                <img style="margin-left:15px" class="sombra " src="<?= base_url('img/concejo/vizcarra.jpg') ?>" alt="" width="119" height="140" border="0">
-						            </td>
-						            <td style="padding: 0 ">
+</p>
 
-						                <table border="0">
-						                    <tbody class="tcuerpo">
-							                    
-							                    <tr>
-							                        <td><b style="color:#2e8ece">Regidor :  </b></td>
-							                        <td>EDWIN VIZCARRA ANCCO</td>
-							                    </tr>
-							                    <tr>
-							                        <td><b style="font-weight:bold; color:#2e8ece;">Correo Web: </b></td>
-							                        <td>evizcarra@municiudadnueva.gob.pe</td>
-							                    </tr>
-						                	</tbody>
-						            	</table>                                                                                        
-						            </td>
-						        </tr>
-						    </tbody>
-						</table>
-						<p style="padding-left: 15px; text-align: justify;"><img src="http://losmisteriosnosmiran.com/wp-content/uploads/2013/08/separador-1.png" alt="" width="600" height="25"></p>
-						<table width="600" border="0" class="cardprofile">
-						    <tbody class="tcuerpo">
-						    	<tr>
-						            <td width="170" height="150">
-						                <img style="margin-left:15px" class="sombra" src="<?= base_url('img/concejo/ANTOLIN.jpg') ?>" alt="" width="119" height="140" border="0">
-						            </td>
-						            <td style="padding: 0 ">
+<br><br><br>
+<p style="text-align: center;">
+	<span style="font-size:18px;"><span style="font-family:verdana,geneva,sans-serif;">Regidor Sr.Cristian Joao Victor Barrientos Tintaya</span></span>
+		<br><br><br><img alt="" src="<?= base_url('plugins/img/reg5.jpg' ); ?>" style="width: 420px; height: 606px; border-width: 5px; border-style: solid; margin: 1px; border-color: #004f00"></p>
 
-						                <table border="0">
-						                    <tbody class="tcuerpo">
-							                    
-							                    <tr>
-							                        <td><b style="color:#2e8ece">Regidor :  </b></td>
-							                        <td> PROF. ANTOLIN GOMEZ CARITA </td>
-							                    </tr>
-							                    <tr>
-							                        <td><b style="font-weight:bold; color:#2e8ece;">Correo Web: </b></td>
-							                        <td> agomez@municiudadnueva.gob.pe</td>
-							                    </tr>
-						                	</tbody>
-						            	</table>                                                                                        
-						            </td>
-						        </tr>
-						    </tbody>
-						</table>
-						<p style="padding-left: 15px; text-align: justify;"><img src="http://losmisteriosnosmiran.com/wp-content/uploads/2013/08/separador-1.png" alt="" width="600" height="25"></p>
-						<table width="600" border="0" class="cardprofile">
-						    <tbody class="tcuerpo">
-						    	<tr>
-						            <td width="170" height="150">
-						                <img style="margin-left:15px" class="sombra" src="<?= base_url('img/concejo/chambilla.jpg') ?>" alt="" width="119" height="140" border="0">
-						            </td>
-						            <td style="padding: 0 ">
+</p>
 
-						                <table border="0">
-						                    <tbody class="tcuerpo">
-							                    
-							                    <tr>
-							                        <td><b style="color:#2e8ece">Regidor :  </b></td>
-							                        <td>GERMAN CHAMBILLA CUTIPA</td>
-							                    </tr>
-							                    <tr>
-							                        <td><b style="font-weight:bold; color:#2e8ece;">Correo Web: </b></td>
-							                        <td>gchambilla@municiudadnueva.gob.pe</td>
-							                    </tr>
-						                	</tbody>
-						            	</table>                                                                                        
-						            </td>
-						        </tr>
-						    </tbody>
-						</table>
-						<p style="padding-left: 15px; text-align: justify;"><img src="http://losmisteriosnosmiran.com/wp-content/uploads/2013/08/separador-1.png" alt="" width="600" height="25"></p>
+<br><br><br>
+<p style="text-align: center;">
+	<span style="font-size:18px;"><span style="font-family:verdana,geneva,sans-serif;">Regidora Sra. Elena Peralta Callacondo</span></span>.
+		<br><br><br><img alt="" src="<?= base_url('plugins/img/reg4.jpg' ); ?>" style="width: 420px; height: 586px; border-width: 5px; border-style: solid; margin: 1px; border-color: #004f00"></p>
 
-						<table width="600" border="0" class="cardprofile">
-						    <tbody class="tcuerpo">
-						    	<tr>
-						            <td width="170" height="150">
-						                <img style="margin-left:15px" class="sombra" src="<?= base_url('img/concejo/eva.jpg') ?>" alt="" width="119" height="140" border="0">
-						            </td>
-						            <td style="padding: 0 ">
+</p>
+<br><br><br>
 
-						                <table border="0">
-						                    <tbody class="tcuerpo">
-							                    
-							                    <tr>
-							                        <td><b style="color:#2e8ece">Regidor :  </b></td>
-							                        <td>EVA ESCOBAR GOMEZ </td>
-							                    </tr>
-							                    <tr>
-							                        <td><b style="font-weight:bold; color:#2e8ece;">Correo Web: </b></td>
-							                        <td>eescobar@municiudadnueva.gob.pe</td>
-							                    </tr>
-						                	</tbody>
-						            	</table>                                                                                        
-						            </td>
-						        </tr>
-						    </tbody>
-						</table>
-						<p style="padding-left: 15px; text-align: justify;"><img src="http://losmisteriosnosmiran.com/wp-content/uploads/2013/08/separador-1.png" alt="" width="600" height="25"></p>
+<p style="text-align: center;">
+	<span style="font-size:18px;"><span style="font-family:verdana,geneva,sans-serif;">Regidora Abg. Magdalena del Rosario Mena Caipa</span>
+<br>
+</span>
+		<br><br><br><img alt="" src="<?= base_url('plugins/img/reg3.jpg' ); ?>" style="width: 420px; height: 619px; border-width: 5px; border-style: solid; margin: 1px; border-color: #004f00"></p>
 
-						<table width="600" border="0" class="cardprofile">
-						    <tbody class="tcuerpo">
-						    	<tr>
-						            <td width="170" height="150">
-						                <img style="margin-left:15px" class="sombra" src="<?= base_url('img/concejo/rene.jpg') ?>" alt="" width="119" height="140" border="0">
-						            </td>
-						            <td style="padding: 0 ">
-
-						                <table border="0">
-						                    <tbody class="tcuerpo">
-							                    
-							                    <tr>
-							                        <td><b style="color:#2e8ece">Regidor :  </b></td>
-							                        <td>RENE MAMANI CHARCA</td>
-							                    </tr>
-							                    <tr>
-							                        <td><b style="font-weight:bold; color:#2e8ece;">Correo Web: </b></td>
-							                        <td>rmamani@municiudadnueva.gob.pe</td>
-							                    </tr>
-						                	</tbody>
-						            	</table>                                                                                        
-						            </td>
-						        </tr>
-						    </tbody>
-						</table>
-						<p style="padding-left: 15px; text-align: justify;"><img src="http://losmisteriosnosmiran.com/wp-content/uploads/2013/08/separador-1.png" alt="" width="600" height="25"></p>
-
-						<table width="600" border="0" class="cardprofile">
-						    <tbody class="tcuerpo">
-						    	<tr>
-						            <td width="170" height="150">
-						                <img style="margin-left:15px" class="sombra" src="<?= base_url('img/concejo/nicolas.jpg') ?>" alt="" width="119" height="140" border="0">
-						            </td>
-						            <td style="padding: 0 ">
-
-						                <table border="0">
-						                    <tbody class="tcuerpo">
-							                    
-							                    <tr>
-							                        <td><b style="color:#2e8ece">Regidor :  </b></td>
-							                        <td>NICOLAS MAMANI MAMANI</td>
-							                    </tr>
-							                    <tr>
-							                        <td><b style="font-weight:bold; color:#2e8ece;">Correo Web: </b></td>
-							                        <td>nmamani@municiudadnueva.gob.pe</td>
-							                    </tr>
-						                	</tbody>
-						            	</table>                                                                                        
-						            </td>
-						        </tr>
-						    </tbody>
-						</table>
-						<p style="padding-left: 15px; text-align: justify;"><img src="http://losmisteriosnosmiran.com/wp-content/uploads/2013/08/separador-1.png" alt="" width="600" height="25"></p>
-
-					</div>
+</p>
 
 
-
-
-							
+<p style="text-align: center;">
+	&nbsp;</p>
+<p style="text-align: center;">
+	&nbsp;</p>        
+</div>
+</section>

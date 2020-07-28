@@ -1,62 +1,28 @@
-					<div class="row as">
-						
-						<ol class="miga breadcrumb">
-						  <li><a href="http://www.municiudadnueva.gob.pe/">Inicio</a></li>
-						  <li><a href="#">Municipalidad</a></li>
-						  <li class="active">Visión y Misión</li>
+                        
+<br><br>
+<section class="entry-box">
+<header>
+<h2 style="font-size: 26px;
+    line-height: 28px;
+    border-left: 3px solid #004f00;
+    padding-left: 10px;
+    margin-bottom: 10px;"> <a href="<?= base_url('')?>"> Inicio </a> /Visión y Misión</h2>
 
-						
-						</ol>
-						
-
-
-					
-					</div>
-					<div class="row as">
-						<div class="article pull-left">
-							<div class="article-title">
-								Vision y Mision
-							</div>
-						</div>
-					
-					</div>
-					
-
-
-
-					<div class="row as">
-						<!-- contenido -->
-
-
-							<div class="text-titulo">
-								VISIÓN
-							</div>
-
-
-						
-							<div class="text-descripcion">
-									La Municipalidad de Ciudad Nueva es el órgano de gobierno local que representa y gestiona los intereses de los vecinos en la jurisdicción, promueve una fuerte gobernabilidad democrática, asegurando la mayor participación ciudadana en la formulación de las políticas  locales de alta calidad, con la mayor eficiencia, haciendo un uso responsable, transparente y estratégico de los recursos públicos, de manera que provoque sinergias con las inversiones de otras instituciones del estado y del sector privado, para mejorar la calidad de vida de los ciudadanos en la jurisdicción.
-									<br>
-							</div>
-
-
-					</div>
-					<br><br>
-
-					<div class="row as">
-						<!-- contenido -->
-
-
-							<div class="text-titulo">
-								MISIÓN
-							</div>
-
-
-						
-							<div class="text-descripcion">
-									El gobierno local de Ciudad Nueva genera condiciones y oportunidades para que los ciudadanos en la comunidad alcancen el más alto nivel en la calidad de vida, en una ciudad moderna, confortable, saludable y segura, donde el desarrollo se promueve de manera integral y sustentable; aprovechando permanentemente las potencialidades locales para el comercio y turismo de alta calidad.
-									<br>
-							</div>
-
-
-					</div>
+</header>
+<div class="entry-content clearfix">
+<p style="text-align: justify;">
+	&nbsp;</p>
+<p style="text-align: justify;">
+	<span style="font-size:20px;"><strong style="margin: 0px; padding: 0px; border: 0px; font-family: Verdana, Geneva, sans-serif; font-stretch: inherit; line-height: 20px; vertical-align: top; color: #0f62ac; text-align: -webkit-center;">Misión</strong></span><br style="color: #0f62ac; font-family: Verdana, Geneva, sans-serif; line-height: 20px; text-align: -webkit-center;">
+	<br style="color: #0f62ac); font-family: Verdana, Geneva, sans-serif; line-height: 20px; text-align: -webkit-center;">
+	<span style="color: rgb(51, 51, 51); font-family: Verdana, Geneva, sans-serif; line-height: 20px; text-align: -webkit-center;">Ejercer el gobierno local basado en una salida convicción democrática, desarrollando participación ciudadana en las acciones municipales. Las políticas públicas locales se forman y evalúan con una decidida participación y concertación con los agentes representativos. La gestión municipal se realiza en base a intensos mecanismos de cooperación entre las instituciones públicas y privadas para alcanzar una mayor productividad y calidad de los bienes y servicios que requiere la población para su desarrollo.&nbsp;</span></p>
+<p style="text-align: justify;">
+	&nbsp;</p>
+<p style="text-align: justify;">
+	<span style="font-size:20px;"><strong style="margin: 0px; padding: 0px; border: 0px; font-family: Verdana, Geneva, sans-serif; font-stretch: inherit; line-height: 20px; vertical-align: top; color: #0f62ac; text-align: -webkit-center;">Visión</strong></span><br style="color: #333333; font-family: Verdana, Geneva, sans-serif; line-height: 20px; text-align: -webkit-center;">
+	<br style="color: rgb(51, 51, 51); font-family: Verdana, Geneva, sans-serif; line-height: 20px; text-align: -webkit-center;">
+	<span style="color: rgb(51, 51, 51); font-family: Verdana, Geneva, sans-serif; line-height: 20px; text-align: -webkit-center;">Promover el desarrollo económico, turístico de la salud integral, educación, deporte y cultura de calidad, liderando un gobierno local democrático y participativo, de gestión honesta, transparente, eficiente y eficaz; La Municipalidad será líder en la comunidad para promover el desarrollo humano integral y sostenible.&nbsp;</span><br style="color: rgb(51, 51, 51); font-family: Verdana, Geneva, sans-serif; line-height: 20px; text-align: -webkit-center;">
+	<br style="color: rgb(51, 51, 51); font-family: Verdana, Geneva, sans-serif; line-height: 20px; text-align: -webkit-center;">
+	&nbsp;</p>        
+</div>
+</section>

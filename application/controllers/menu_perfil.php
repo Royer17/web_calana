@@ -16,9 +16,11 @@ class Menu_Perfil extends CI_Controller {
 		$data['contenido'] = 'menu_perfil/index';
 		$data['titulo'] = 'Accesos';
 		$data['query'] = $this->Model_Menu_Perfil->all();
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);
+		$this->load->view('superadmin/head', $data);
+		$this->load->view('superadmin/header', $data);
+		$this->load->view('superadmin/sidebar',$data);
+		$this->load->view('superadmin/index2', $data);		
+		$this->load->view('superadmin/footer', $data);
 	}
 
 	public function search() {
@@ -26,9 +28,11 @@ class Menu_Perfil extends CI_Controller {
 		$data['titulo'] = 'Accesos';
 		$value = $this->input->post('buscar');
 		$data['query'] = $this->Model_Menu_Perfil->allFiltered('perfil.name', $value);
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);
+		$this->load->view('superadmin/head', $data);
+		$this->load->view('superadmin/header', $data);
+		$this->load->view('superadmin/sidebar',$data);
+		$this->load->view('superadmin/index2', $data);		
+		$this->load->view('superadmin/footer', $data);
 	}
 
 	public function my_validation() {
@@ -40,9 +44,11 @@ class Menu_Perfil extends CI_Controller {
 		$data['titulo'] = 'Crear Acceso';
 		$data['menus'] = $this->Model_Menu_Perfil->get_menus(); /* Lista de los Menu */
 		$data['perfiles'] = $this->Model_Menu_Perfil->get_perfiles(); /* Lista de los Perfiles */
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);
+		$this->load->view('superadmin/head', $data);
+		$this->load->view('superadmin/header', $data);
+		$this->load->view('superadmin/sidebar',$data);
+		$this->load->view('superadmin/index2', $data);		
+		$this->load->view('superadmin/footer', $data);
 	}
 
 	public function insert() {
@@ -68,9 +74,11 @@ class Menu_Perfil extends CI_Controller {
 		$data['registro'] = $this->Model_Menu_Perfil->find($id);
 		$data['menus'] = $this->Model_Menu_Perfil->get_menus(); /* Lista de los Menu */
 		$data['perfiles'] = $this->Model_Menu_Perfil->get_perfiles(); /* Lista de los Perfiles */
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);
+		$this->load->view('superadmin/head', $data);
+		$this->load->view('superadmin/header', $data);
+		$this->load->view('superadmin/sidebar',$data);
+		$this->load->view('superadmin/index2', $data);		
+		$this->load->view('superadmin/footer', $data);
 	}
 
 	public function update() {

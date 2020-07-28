@@ -14,9 +14,9 @@ class Distrito extends CI_Controller {
 		$data['titulo'] = 'Distrito';
 	
 		
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
 	}
 	
 

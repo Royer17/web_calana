@@ -7,11 +7,13 @@ class Model_Convocatoria extends CI_Model {
     }
 
     function all() {
+        $this->db->order_by('idnoti','desc');
         $query = $this->db->get('mw_convoca');
-    
+     
+
         return $query->result();
 
-        $this->db->order_by('mw_convoca.fecha','desc');
+        
 
     }
 

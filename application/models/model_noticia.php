@@ -7,45 +7,55 @@ class Model_Noticia extends CI_Model {
     }
 
     function all() {
+        $this->db->order_by('dt_fecha_informacion','desc');
+        $query = $this->db->get('info_informacion');
+        return $resultado = $query->result();
+    }    
+
+    function all2() {
+      
+        $this->db->select('*');
+        $this->db->from('info_informacion');
         $this->db->order_by('in_id_informacion','desc');
-        $llave = $this->db->get('info_informacion');
-        return $llave->result();
+       
+        $query=$this->db->get();
+        return $resultado =$query->result();
     }
 
     function allFiltered($field, $value) {
         $this->db->like($field, $value);
-        $llave = $this->db->get('info_informacion');
-        if ($llave->result()>0) {
-            return $llave->result();
+        $query = $this->db->get('info_informacion');
+        if ($query->result()>0) {
+            return $resultado = $query->result();
         }else{
-            return FALSE ; 
-        }    
+            return FALSE ;
+        }
     }
 
     function cinco_ultimos() {
         $this->db->select('*');
         $this->db->from('info_informacion');
-        $this->db->order_by('in_id_informacion','desc');
-        $this->db->limit(5);
-        $llave=$this->db->get();
-        return $llave->result();
+        $this->db->order_by('dt_fecha_informacion','desc');
+        $this->db->limit(3);
+        $query=$this->db->get();
+        return $resultado =$query->result();
        // return $this->db->get('info_informacion')->row();
     }
 
    /* $sel = "SELECT * FROM usuarios LIMIT 3";
-    $llave = mysql_llave($sel) or die(mysql_error());
-    while ($row = mysql_fetch_assoc($llave) {
+    $query = mysql_query($sel) or die(mysql_error());
+    while ($row = mysql_fetch_assoc($query) {
     echo $row['nick'];
     }
     */
 
     function totalResultados($field, $value) {
         $this->db->like($field, $value);
-        $llave = $this->db->get('info_informacion');
-        if ($llave->result()>0) {
-            return $llave->num_rows();
+        $query = $this->db->get('info_informacion');
+        if ($query->result()>0) {
+            return $resultado =$query->num_rows();
         }else{
-            return FALSE ; 
+            return FALSE ;
         }
     }
 
@@ -71,8 +81,3 @@ class Model_Noticia extends CI_Model {
     }
 
 }
-
-
-
-
-

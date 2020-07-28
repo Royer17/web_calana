@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-03-2016 a las 22:34:08
+-- Tiempo de generación: 11-04-2016 a las 23:54:46
 -- Versión del servidor: 5.6.21
 -- Versión de PHP: 5.6.3
 
@@ -184,7 +184,7 @@ CREATE TABLE IF NOT EXISTS `info_informacion` (
   `vc_titulo_informacion` varchar(200) COLLATE latin1_spanish_ci NOT NULL,
   `vc_resumen_informacion` text COLLATE latin1_spanish_ci,
   `tx_contenido_informacion` text COLLATE latin1_spanish_ci,
-  `dt_fecha_informacion` datetime DEFAULT NULL,
+  `dt_fecha_informacion` date DEFAULT NULL,
   `in_hits_informacion` int(5) NOT NULL DEFAULT '0',
   `foto1` text COLLATE latin1_spanish_ci NOT NULL,
   `tipo` text COLLATE latin1_spanish_ci NOT NULL,
@@ -199,17 +199,16 @@ CREATE TABLE IF NOT EXISTS `info_informacion` (
   `foto3` text COLLATE latin1_spanish_ci NOT NULL,
   `foto4` text COLLATE latin1_spanish_ci NOT NULL,
   `categoria` text COLLATE latin1_spanish_ci NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=1118 DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=1138 DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `info_informacion`
 --
 
 INSERT INTO `info_informacion` (`in_id_informacion`, `vc_titulo_informacion`, `vc_resumen_informacion`, `tx_contenido_informacion`, `dt_fecha_informacion`, `in_hits_informacion`, `foto1`, `tipo`, `fecha`, `autor`, `dia`, `mes`, `ano`, `video`, `foto`, `foto2`, `foto3`, `foto4`, `categoria`) VALUES
-(1115, 'afasasd', 'dasd', 'dasd', '2016-03-09 00:00:00', 0, '154376.jpg', 'sad', '2016-03-09', 'dasd', '11', '12', '1234', '', '524ac22a5742a.jpg', 'Noticia-42242-uportada.jpg', '6514001.jpg', 'foto8.JPG', ''),
-(1114, 'adsd', 'dasd', 'dasda', '2016-03-09 00:00:00', 0, '', 'asdasd', '2016-03-09', 'asd', '1', '1', '1234', '', '6966congre6.jpg', '', '', '', ''),
-(1116, 'asd', 'dasf', 'fasf', '2016-03-09 00:00:00', 0, '25111.jpg', 'czxc', '2016-03-09', 'dasd', '12', '3', '2016', '', '1543761.jpg', 'jean-paul-santa-maria.jpg', 'images_(1).jpg', 'images.jpg', ''),
-(1117, 'asdasd', 'adasd', 'asdasd', '2016-03-10 00:00:00', 0, '', 'asdas', '2016-03-10', 'asd', '12', '12', '2016', '', '154363.jpg', '', '', '', '');
+(1137, 'MUNICIPALIDAD DE CIUDAD NUEVA PARTICIPA EN SESIÓN EXTRAORDINARIA SOBRE PRESUPUESTO PARTICIPATIVO PROVINCIAL 2017', ' La mañana del lunes 04 de abril se desarrolló en la comuna provincial, la sesión extraordinaria sobre el presupuesto participativo y las actividades a desarrollar a nivel de la provincia de Tacna, reunión en la que participio el alcalde de la Municipalidad Distrital de Ciudad Nueva, Med. Edgar Concori Coaquira, ante la invitación realizada por el alcalde de Tacna, Luis Torres Robledo.', ' La mañana del lunes 04 de abril se desarrolló en la comuna provincial, la sesión extraordinaria sobre el presupuesto participativo y las actividades a desarrollar a nivel de la provincia de Tacna, reunión en la que participio el alcalde de la Municipalidad Distrital de Ciudad Nueva, Med. Edgar Concori Coaquira, ante la invitación realizada por el alcalde de Tacna, Luis Torres Robledo. La reunión se inició al promediar las 09:00 a.m. en los ambientes del salón consistorial, teniendo como agenda: La aprobación y/o ratificación del Reglamento del Proceso de Presupuesto Participativo de la Municipalidad Provincial de Tacna y la Aprobación del Cronograma de Actividades del Proceso del Presupuesto Participativo para el periodo 2017 y su convocatoria. La participación de la autoridad distrital busca conseguir financiamiento para proyectos y obras en beneficio del distrito de Ciudad Nueva. Cabe indicar, que ambos puntos fueron debatidos y aprobados por las autoridades políticas y los representantes de las juntas vecinales, asimismo, de acuerdo al cronograma del Presupuesto Participativo 2017, se tiene previsto la inscripción de los agentes participantes desde el próximo 11 al 22 de abril.', '2016-04-04', 0, '12932607_1708458546108893_5048000455499349468_n.jpg', '', '2016-04-04', '', '04', 'Abril', '2016', '', '12920282_1708458456108902_6191581210035214503_n_(1).jpg', '12961590_1708458452775569_6946998444903729590_n.jpg', '12920365_1708458466108901_3057191366959844681_n.jpg', '12920282_1708458456108902_6191581210035214503_n.jpg', ''),
+(1135, 'COMERCIO Y TRÁNSITO FUE ORDENADO EN OPERATIVO INOPINADO EN FERIA PERÚ-BOLIVIA', ' En un nuevo operativo inopinado realizado el último jueves 07 de abril, la Municipalidad Distrital de Ciudad Nueva ha ordenado el comercio y el tránsito en la Feria Perú - Bolivia, dejando las vías de acceso sin interponer el paso con algún objeto ante posibles accidentes, extinguidor y botiquín, conos de tránsito y tachos para desechos.', 'En un nuevo operativo inopinado realizado el último jueves 07 de abril, la Municipalidad Distrital de Ciudad Nueva ha ordenado el comercio y el tránsito en la Feria Perú - Bolivia, dejando las vías de acceso sin interponer el paso con algún objeto ante posibles accidentes, extinguidor y botiquín, conos de tránsito y tachos para desechos. El operativo municipal comenzó a las 10:00 a.m., prolongándose hasta casi el mediodía, contando con la participación del presidente de la Comisión de Ferias y Mercados, Reg. Rene Mamani Charca, presidente de la Comisión de Tránsito, Transporte Público y Defensa Civil, Reg. Nicolás Mamani Mamani, encargado de Mercados y Comercialización, Sr. Amador Llanque Marca y personal de seguridad. En el lugar se pudo constatar que algunos comerciantes colocaron objetos en medio de las vías, perjudicando el posible ingreso de vehículos de emergencia ante accidentes, asimismo, utilizaron vías no destinadas para el comercio, poniendo en peligro a los moradores del sector. Ante estos hechos y al no cumplirse los acuerdos tomados anteriormente con las diversas asociaciones, los regidores de la municipalidad se entrevistaron con los dirigentes y comerciantes para notificarlos del hecho y emplazarlos a subsanar y levantar las observaciones, por tal motivo se programó una nueva inspección para los siguientes días con el propósito de garantizar el orden y salvaguardar la vida de los comerciantes, moradores y público.', '2016-04-07', 0, '995330_1709794119308669_5101572734532777904_n.jpg', '', '2016-04-07', '', '07', 'Abril', '2016', '', '12974396_1709794149308666_5007596952908245105_n.jpg', '11218964_1709794082642006_7266111438332598677_n.jpg', '12985343_1709794052642009_6953090466551499738_n.jpg', '12961542_1709794252641989_5531369778892723284_n.jpg', ''),
+(1136, 'CONDUCTORES DE EMPRESA DE RADIOTAXI SE INTEGRAN A “TAXI CÍVICO”', 'Con el objetivo contribuir en la seguridad y la paz social, el día miércoles de 06 de abril a las 10:00 a.m. se realizó la capacitación para la conformación de “Taxi Cívico” con la presencia del gerente y socios de la empresa de radiotaxi “Real Impacto” quienes de manera responsable se integran a las actividades del proyecto de Seguridad Ciudadana denominado “Mejoramiento del Servicio de Prevención de la Violencia y los Delitos de la División de Seguridad Ciudadana de la Municipalidad de Ciudad Nueva – Tacna”.', 'Con el objetivo contribuir en la seguridad y la paz social, el día miércoles de 06 de abril a las 10:00 a.m. se realizó la capacitación para la conformación de “Taxi Cívico” con la presencia del gerente y socios de la empresa de radiotaxi “Real Impacto” quienes de manera responsable se integran a las actividades del proyecto de Seguridad Ciudadana denominado “Mejoramiento del Servicio de Prevención de la Violencia y los Delitos de la División de Seguridad Ciudadana de la Municipalidad de Ciudad Nueva – Tacna”. La capacitación se desarrolló en el auditorio municipal (ex comedor) donde se reunieron más de 50 integrantes de la empresa de radiotaxi, quienes fueron capacitados por la Sub Oficial de Tercera, Sarita Choque Apaza, quien estuvo a cargo de la primera Ponencia “Red de Cooperativas”, asimismo, se contó con la presencia del Brigadier, Roberto Caldas Wong con la ponencia “Nuevo reglamento de Tránsito” posteriormente el encargado del Proyecto, Lic. Dámaso Mamani Gutiérrez procedió a dar por finalizada la capacitación. Cabe precisar, que el programa “Taxi Cívico” es parte del segundo componente del proyecto y busca tener como aliados estratégicos a las diferentes empresas de radiotaxis; asociaciones o comités que prestan el servicio especial de transporte (taxi) quienes de forma voluntaria se integrarán al programa para coadyuvar a la seguridad ciudadana del distrito.', '2016-04-06', 0, '12932927_1709309432690471_3933603633944773647_n.jpg', '', '2016-04-06', '', '06', 'Abril', '2016', '', '12920456_1709309206023827_1893923725951107667_n.jpg', '12938142_1709309396023808_3952285269684053914_n.jpg', '10364163_1709309252690489_3638733390478215448_n.jpg', '12920456_1709309206023827_1893923725951107667_n1.jpg', '');
 
 -- --------------------------------------------------------
 
@@ -345,8 +344,8 @@ CREATE TABLE IF NOT EXISTS `mw_convoca` (
   `fecha` date NOT NULL,
   `unidad` varchar(200) NOT NULL,
   `referencia` varchar(200) NOT NULL,
-  `nomfile` varchar(250) NOT NULL,
-  `nomfile2` varchar(250) NOT NULL,
+  `bases` varchar(250) NOT NULL,
+  `resultados` varchar(250) NOT NULL,
   `fechayhora` varchar(50) NOT NULL,
   `ip` varchar(30) NOT NULL,
   `fechayhora2` varchar(50) NOT NULL,
@@ -354,13 +353,13 @@ CREATE TABLE IF NOT EXISTS `mw_convoca` (
   `fechayhora3` varchar(50) NOT NULL,
   `ip3` varchar(30) NOT NULL,
   `aptos` text NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=51 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=52 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `mw_convoca`
 --
 
-INSERT INTO `mw_convoca` (`idnoti`, `fecha`, `unidad`, `referencia`, `nomfile`, `nomfile2`, `fechayhora`, `ip`, `fechayhora2`, `ip2`, `fechayhora3`, `ip3`, `aptos`) VALUES
+INSERT INTO `mw_convoca` (`idnoti`, `fecha`, `unidad`, `referencia`, `bases`, `resultados`, `fechayhora`, `ip`, `fechayhora2`, `ip2`, `fechayhora3`, `ip3`, `aptos`) VALUES
 (25, '2015-03-20', 'Sub Gerencia de Potencial Humano', 'CONVOCATORIA CAS Nº 06-2015-MDCN PARA LA CONTRATACION DE PERSONAL ', 'BASE_CONVOCA6.pdf', 'deciertoCASN06-2015.pdf', '2015-03-20', '', '', '', '', '', 'deciertoCASN06-2015.pdf'),
 (24, '2015-03-05', 'Sub Gerencia de Potencial Humano', 'CONVOCATORIA CAS Nº 05-2015-MDCN PARA LA CONTRATACION', 'BASE_CONVOCA5.pdf', 'RESULTA_CONVOCA5.pdf', '2015-03-05', '190.42.16.8', '', '', '', '', 'APTOS_CONVOCA5.pdf'),
 (23, '2015-02-23', 'Sub Gerencia de Potencial Humano', 'CONVOCATORIA CAS Nº 04-2015-MDCN PARA LA CONTRATACIÓN ADMINISTRATIVA DE SERVICIOS3', 'BASE_CONVOCA4.pdf', 'RESULTA_CONVOCA4.pdf', '2015-02-23', '190.42.16.8', '', '', '', '', 'APTOS_CONVOCA4.pdf'),
@@ -938,16 +937,7 @@ CREATE TABLE IF NOT EXISTS `obra` (
   `foto2` text COLLATE utf8_spanish2_ci NOT NULL,
   `foto3` text COLLATE utf8_spanish2_ci NOT NULL,
   `foto4` text COLLATE utf8_spanish2_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
-
---
--- Volcado de datos para la tabla `obra`
---
-
-INSERT INTO `obra` (`id`, `programa`, `actividad`, `localizacion`, `fechaini`, `plazo`, `fechater`, `responsable`, `inspector`, `descripcion`, `foto`, `foto1`, `foto2`, `foto3`, `foto4`) VALUES
-(1, 'adsd', 'dasd', 'dasd', '2016-03-08', 'asd', '2016-03-08', 'asd', 'das', 'dasdasd', '6966congre.jpg', '6966congre1.jpg', '6966congre2.jpg', '6966congre3.jpg', '6966congre4.jpg'),
-(2, 'asdasd', 'dasd', 'dasd', '2016-03-08', 'adasd', '2016-03-08', 'asdad', 'dasd', 'dasda', '524ac22a5742a1.jpg', '25111.jpg', '154376.jpg', 'Noticia-42242-uportada.jpg', 'descarga1.jpg'),
-(3, 'sdf', 'fsf', 'fs', '2016-03-08', 'asd', '2016-03-08', 'asd', 'dasd', 'dasda', '9205009.jpg', '', '', '', '');
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
 -- --------------------------------------------------------
 
@@ -1071,7 +1061,15 @@ CREATE TABLE IF NOT EXISTS `slide` (
   `mes` text COLLATE utf8_spanish2_ci NOT NULL,
   `dia` text COLLATE utf8_spanish2_ci NOT NULL,
   `hora` text COLLATE utf8_spanish2_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+
+--
+-- Volcado de datos para la tabla `slide`
+--
+
+INSERT INTO `slide` (`id_slide`, `titulo_slide`, `orden_slide`, `img_slide`, `visitas`, `anno`, `mes`, `dia`, `hora`) VALUES
+(1, 'ESTE DOMINGO 09 DE AGOSTO CIUDAD NUEVA “ RECREOVIA 2015 ”', 0, 'slider1_carnaval.jpg', 0, '2016', '04', '01', ''),
+(2, 'DISTRITO DE CIUDAD NUEVA VIBRARON CON EMOCIÓN EN DESFILE CÍVICO POR FIESTAS PATRIAS\r\nPrevious', 0, 'slider5_izamiento.jpg', 0, '2016', '04', '02', '');
 
 -- --------------------------------------------------------
 
@@ -1674,8 +1672,8 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 --
 
 INSERT INTO `usuario` (`id`, `name`, `created`, `updated`, `login`, `password`, `email`, `perfil_id`) VALUES
-(1, 'Administrador', '2014-07-07 10:55:40', '2015-04-20 10:00:00', 'admin', 'munimdcn', 'admin@gmail.com', 1),
-(6, 'Emperatriz', '2014-07-07 22:57:00', '2015-03-27 15:58:00', 'secretaria', 'muni2015', 'emperatriz@gmail.com', 9),
+(1, 'Administrador', '2014-07-07 10:55:40', '2015-04-20 10:00:00', 'admin', 'admin', 'admin@gmail.com', 1),
+(6, 'secre', '2014-07-07 22:57:00', '2015-03-27 15:58:00', 'secre', 'secre', 'emperatriz@gmail.com', 9),
 (8, 'Jefe Imagen', '2015-03-27 15:59:00', '2015-04-16 10:50:00', 'imagen', 'muni2015', 'imagen@mdcn.gob.pe', 18);
 
 -- --------------------------------------------------------
@@ -1996,7 +1994,7 @@ MODIFY `id` int(2) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT de la tabla `info_informacion`
 --
 ALTER TABLE `info_informacion`
-MODIFY `in_id_informacion` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1118;
+MODIFY `in_id_informacion` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1138;
 --
 -- AUTO_INCREMENT de la tabla `matrimonio`
 --
@@ -2016,7 +2014,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=42;
 -- AUTO_INCREMENT de la tabla `mw_convoca`
 --
 ALTER TABLE `mw_convoca`
-MODIFY `idnoti` int(8) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=51;
+MODIFY `idnoti` int(8) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=52;
 --
 -- AUTO_INCREMENT de la tabla `normas`
 --
@@ -2026,7 +2024,7 @@ MODIFY `idnor` int(8) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2309;
 -- AUTO_INCREMENT de la tabla `obra`
 --
 ALTER TABLE `obra`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `obras`
 --
@@ -2051,7 +2049,7 @@ MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=16;
 -- AUTO_INCREMENT de la tabla `slide`
 --
 ALTER TABLE `slide`
-MODIFY `id_slide` int(10) NOT NULL AUTO_INCREMENT;
+MODIFY `id_slide` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de la tabla `tdocumento`
 --

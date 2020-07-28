@@ -8,29 +8,93 @@ class Servicios extends CI_Controller {
 
 	}
 
-	public function seguridad_ciudadana() {
+	public function seguridadciudadana() {
 
 		$data['contenido'] = 'servicios/seguridadciudadana';
 		$data['titulo'] = 'Servicios';
 	
 		
-		$this->load->view('layout_index/head');
-		$this->load->view('layout_index/header');
-		$this->load->view('layout_index/navbar');
-		$this->load->view('inicio2',$data);
-		$this->load->view('layout_index/footer');
-	}
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
+	}	
 
+	public function equipomec() {
 
-	public function vaso_leche() {
-
-		$data['contenido'] = 'servicios/vaso_leche';
+		$data['contenido'] = 'servicios/equipomec';
 		$data['titulo'] = 'Servicios';
 	
 		
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
+	}	
+
+	public function desarrollo_agropecuario() {
+
+		$data['contenido'] = 'servicios/desarrollo_agropecuario';
+		$data['titulo'] = 'Servicios';
+	
+		
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
+	}	
+
+	public function sci() {
+
+		$data['contenido'] = 'servicios/sci';
+		$data['titulo'] = 'Servicios';
+	
+		
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
+	}
+
+	public function codisec() {
+
+		$data['contenido'] = 'servicios/codisec';
+		$data['titulo'] = 'Servicios';
+	
+		
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
+	}
+
+	public function transferencia() {
+
+		$data['contenido'] = 'servicios/transferencia';
+		$data['titulo'] = 'Servicios';
+	
+		
+		$this->load->view('home/header1', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
+	}
+
+	public function itse() {
+
+		$data['contenido'] = 'servicios/itse';
+		$data['titulo'] = 'Servicios';
+	
+		
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
+	}
+
+
+	public function vasoleche() {
+
+		$data['contenido'] = 'servicios/vasoleche';
+		$data['titulo'] = 'Servicios';
+	
+		
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
 	}
 
 
@@ -41,31 +105,53 @@ class Servicios extends CI_Controller {
 		$data['titulo'] = 'demuna';
 	
 		
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
 	}
+
+	public function deportes() {
+
+		$data['contenido'] = 'servicios/deportes';
+		$data['titulo'] = 'sisfoh';
+	
+		
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
+	}
+
+	public function defensacivil() {
+
+		$data['contenido'] = 'servicios/defensacivil';
+		$data['titulo'] = 'omaped';
+	
+		
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
+	}
+
+	public function registrocivil() {
+
+		$data['contenido'] = 'servicios/registrocivil';
+		$data['titulo'] = 'omaped';
+	
+		
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
+	}	
 
 	public function sisfoh() {
 
 		$data['contenido'] = 'servicios/sisfoh';
-		$data['titulo'] = 'sisfoh';
-	
-		
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
-	}
-
-	public function omaped() {
-
-		$data['contenido'] = 'servicios/omaped';
 		$data['titulo'] = 'omaped';
 	
 		
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
+		$this->load->view('home/header', $data);
+		$this->load->view('home/template2', $data);
+		$this->load->view('home/footer', $data);	
 	}
 
 

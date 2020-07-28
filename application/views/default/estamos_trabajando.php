@@ -1,7 +1,7 @@
 					<div class="row as">
 						
 						<ol class="miga breadcrumb">
-						  <li><a href="http://www.municiudadnueva.gob.pe/">Inicio</a></li>
+						  <li><a href="<?= base_url()?>">Inicio</a></li>
 						
 						</ol>
 						

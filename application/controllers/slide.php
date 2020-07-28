@@ -1,6 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Slide extends CI_Controller {
+include_once (dirname(__FILE__) . "/check_authentication_controller.php");
+
+class Slide extends Check_Authentication_Controller {
 	// Constructor de la clase
 	function __construct() {
 		parent::__construct();
@@ -10,25 +12,27 @@ class Slide extends CI_Controller {
 		//$this->form_validation->set_message('required', 'Debe ingresar campo %s');
         //$this->form_validation->set_message('valid_email', 'Campo %s no es un eMail valido');
  		// $this->form_validation->set_message('my_validation', 'Existe otro registro con el mismo nombre');
+		$this->data = $this->validate_session('slide', 
+			['index', 'create', 'insert', 'edit', 'update', 'delete']);
     }
 
 	public function index() {
-		$data['contenido'] = 'slide/index';
-		$data['titulo'] = 'slide';
-		$data['query'] = $this->Model_Slide->all();
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
+		$this->data['contenido'] = 'slide/index';
+		$this->data['titulo'] = 'slide';
+		$this->data['query'] = $this->Model_Slide->all();
+		$this->load->view('ssadmin/head', $this->data);
+		$this->load->view('ssadmin/template', $this->data);
+		$this->load->view('ssadmin/footer', $this->data);	
 	}
 
 	public function inicio() {
 		$data['contenido'] = 'slide/inicio';
-		$data['query'] = $this->Model_Slide->cinco_ultimos();
-		$this->load->view('layout_index/head', $data);
-		$this->load->view('layout_index/header', $data);
-		$this->load->view('layout_index/navbar', $data);
+		$data['query2'] = $this->Model_Slide->cinco_ultimos();
+		$this->load->view('ssadmin/head', $data);
+
+		$this->load->view('ssadmin/template', $data);
 		$this->load->view('inicio', $data);
-		$this->load->view('layout_index/footer', $data);	
+		$this->load->view('ssadmin/footer', $data);	
 	}
 
 	public function detalle($id){
@@ -44,74 +48,67 @@ class Slide extends CI_Controller {
 
 	public function create(){
 		//$id = $this->uri->segment(3);
-		$data['contenido'] ='slide/create';
-		$data['titulo'] = 'Crear slide';
-		//$data['registro'] = $this->Model_Perfil->find($id);
-		$this->load->view('header', $data);
-		$this->load->view('template2',$data);
-		$this->load->view('footer', $data);	
+		$this->data['contenido'] ='slide/create';
+		$this->data['titulo'] = 'Crear slide';
+		//$this->data['registro'] = $this->Model_Perfil->find($id);
+		$this->load->view('ssadmin/head', $this->data);
+		$this->load->view('ssadmin/template', $this->data);
+		$this->load->view('ssadmin/footer', $this->data);	
 	}
 
 	public function edit($id) {
 		// $id = $this->uri->segment(3);
-		$data['contenido'] = 'slide/edit';
-		$data['titulo'] = 'Actualizar slide';
-		$data['registro'] = $this->Model_Slide->find($id);
+		$this->data['contenido'] = 'slide/edit';
+		$this->data['titulo'] = 'Actualizar slide';
+		$this->data['registro'] = $this->Model_Slide->find($id);
 		
-		$this->load->view('header', $data);
-		$this->load->view('template2', $data);
-		$this->load->view('footer', $data);	
+		$this->load->view('ssadmin/head', $this->data);
+		$this->load->view('ssadmin/template', $this->data);
+		$this->load->view('ssadmin/footer', $this->data);	
 	}
 
 	public function update() {
 		$registro = $this->input->post();
 
 		//$registro = $this->input->post();
-		$config['upload_path'] = './img/noticia';
+		$config['upload_path'] = './img/sliderPrincipal';
 		$config['allowed_types'] = 'gif|jpg|png';
 		//$config['max_size']	= '100';
 		//$config['max_width']  = '1024';
 		//$config['max_height']  = '768';
 		
+
+		$id = $this->input->post('id_slide');
 		$this->load->library('upload', $config);
-	
-		if ( ! $this->upload->do_multi_upload('userfile'))
+		$file = $this->input->post('img_slide');
+		//return var_dump($file);
+		if ( ! $this->upload->do_upload('img_slide') )
 		{
-		$data = array('error' => $this->upload->display_errors());
-		$data['contenido'] = 'slide/edit';
-		//$data['titulo'] = 'slide';
-		$data['registro'] = $this->Model_Slide->find($id);
+			$this->data = array('error' => $this->upload->display_errors());
+			$this->data['contenido'] = 'slide/edit';
+			//$this->data['titulo'] = 'slide';
+			$this->data['registro'] = $this->Model_Slide->find($id);
 
-		$this->load->view('template2', $data);
+			$this->load->view('template3', $this->data);
 
-			//echo "error";
+			return var_dump("Error: " . $this->upload->display_errors());
 		}	
 		else
 		{
-			//$data = array('upload_data' => $this->upload->data());
-			$datos_archivo=$this->upload->get_multi_upload_data();
+			$datos_archivo = array('upload_data' => $this->upload->data())["upload_data"];
+			//$datos_archivo=$this->upload->get_multi_upload_data();
 
 			$registro=array(
-					'vc_titulo_informacion'=>$this->input->post('vc_titulo_informacion'),
-					'vc_resumen_informacion'=>$this->input->post('vc_resumen_informacion'),
-					'tx_contenido_informacion'=>$this->input->post('tx_contenido_informacion'),
-					'dt_fecha_informacion'=>$this->input->post('dt_fecha_informacion'),
-					'in_hits_informacion'=>$this->input->post('in_hits_informacion'),
-					'tipo'=>$this->input->post('tipo'),
-					'fecha'=>$this->input->post('fecha'),
-					'autor'=>$this->input->post('autor'),
+					'id_slide'=>$this->input->post('id_slide'),
+					'titulo_slide'=>$this->input->post('titulo_slide'),
 					'dia'=>$this->input->post('dia'),
 					'mes'=>$this->input->post('mes'),
-					'ano'=>$this->input->post('ano'),
-					'foto'=>isset($datos_archivo[0])?$datos_archivo[0]['file_name']:'',
-					'foto1'=>isset($datos_archivo[1])?$datos_archivo[1]['file_name']:'',
-					'foto2'=>isset($datos_archivo[2])?$datos_archivo[2]['file_name']:'',
-					'foto3'=>isset($datos_archivo[3])?$datos_archivo[3]['file_name']:'',
-					'foto4'=>isset($datos_archivo[4])?$datos_archivo[4]['file_name']:'',
-						
-				);
-			//$this->load->view('upload_success', $data);	
+					'anno'=>$this->input->post('anno'),
+					'img_slide' => isset($datos_archivo) ? $datos_archivo['file_name'] : ''				
+			);
+			//$this->load->view('upload_success', $this->data);	
 			$this->Model_Slide->update($registro);
+			//return var_dump($registro);
 			redirect('slide/index');
 		}
 		
@@ -128,7 +125,7 @@ class Slide extends CI_Controller {
 	public function insert() {
 
 		//$registro = $this->input->post();
-		$config['upload_path'] = './img/noticia';
+		$config['upload_path'] = './img/sliderPrincipal';
 		$config['allowed_types'] = 'gif|jpg|png|pdf';
 		//$config['max_size']	= '100';
 		//$config['max_width']  = '1024';
@@ -138,11 +135,11 @@ class Slide extends CI_Controller {
 	
 		if ( ! $this->upload->do_multi_upload('userfile'))
 		{
-			$data = array('error' => $this->upload->display_errors());
+			$this->data = array('error' => $this->upload->display_errors());
 
-			$data['contenido'] ='slide/create';
-			$data['titulo'] = 'Crear slide';
-			$this->load->view('template2', $data);
+			$this->data['contenido'] ='slide/create';
+			$this->data['titulo'] = 'Crear slide';
+			$this->load->view('template3', $this->data);
 		}	
 		else
 		{
@@ -151,22 +148,11 @@ class Slide extends CI_Controller {
 			$datos_archivo=$this->upload->get_multi_upload_data();
 
 			$registro=array(
-					'vc_titulo_informacion'=>$this->input->post('vc_titulo_informacion'),
-					'vc_resumen_informacion'=>$this->input->post('vc_resumen_informacion'),
-					'tx_contenido_informacion'=>$this->input->post('tx_contenido_informacion'),
-					'dt_fecha_informacion'=>$this->input->post('dt_fecha_informacion'),
-					'in_hits_informacion'=>$this->input->post('in_hits_informacion'),
-					'tipo'=>$this->input->post('tipo'),
-					'fecha'=>$this->input->post('fecha'),
-					'autor'=>$this->input->post('autor'),
+					'titulo_slide'=>$this->input->post('titulo_slide'),				
 					'dia'=>$this->input->post('dia'),
 					'mes'=>$this->input->post('mes'),
-					'ano'=>$this->input->post('ano'),					
-					'foto'=>isset($datos_archivo[0])?$datos_archivo[0]['file_name']:'',
-					'foto1'=>isset($datos_archivo[1])?$datos_archivo[1]['file_name']:'',
-					'foto2'=>isset($datos_archivo[2])?$datos_archivo[2]['file_name']:'',
-					'foto3'=>isset($datos_archivo[3])?$datos_archivo[3]['file_name']:'',
-					'foto4'=>isset($datos_archivo[4])?$datos_archivo[4]['file_name']:'',
+					'anno'=>$this->input->post('anno'),					
+					'img_slide'=>isset($datos_archivo[0])?$datos_archivo[0]['file_name']:'',
 				
 				);
 			$this->Model_Slide->insert($registro);

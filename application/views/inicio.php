@@ -103,20 +103,114 @@
 
       </div>
     </div>
-  </section>
+    <div class="row">
+      <div class="col s12 m6">
 
-  <section>
-    <div class="your-class">
-      <div>your content</div>
-      <div>your content</div>
-      <div>your content</div>
+        <h3 class="titulo">ENLACES DE INTERES</h3>
+
+        <div class="container z-depth-2 ultimas-noticias">
+
+          <style type="text/css">
+
+          .carousel-inner .active.left { left: -10% !important; } 
+          .carousel-inner .next        { left:  53% !important; }
+          .carousel-inner .prev        { left: -33% !important ; }
+          .carousel-control.left,.carousel-control.right {background-image:none;}
+          </style>
+            <div class="">
+              <div class="carousel slide" id="myCarousel">
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class=""><a href="#"><img src="http://placehold.it/500/bbbbbb/fff&amp;text=1" class="img-responsive"></a></div>
+                  </div>
+                  <div class="item">
+                    <div class=""><a href="#"><img src="http://placehold.it/500/CCCCCC&amp;text=2" class="img-responsive"></a></div>
+                  </div>
+                  <div class="item">
+                    <div class=""><a href="#"><img src="http://placehold.it/500/eeeeee&amp;text=3" class="img-responsive"></a></div>
+                  </div>
+                  <div class="item">
+                    <div class=""><a href="#"><img src="http://placehold.it/500/f4f4f4&amp;text=4" class="img-responsive"></a></div>
+                  </div>
+                  <div class="item">
+                    <div class=""><a href="#"><img src="http://placehold.it/500/fcfcfc/333&amp;text=5" class="img-responsive"></a></div>
+                  </div>
+                  <div class="item">
+                    <div class=""><a href="#"><img src="http://placehold.it/500/f477f4/fff&amp;text=6" class="img-responsive"></a></div>
+                  </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+      <div class="col s12 m6">
+
+        <div class="alcalde z-depth-2">
+          <h3 class="titulo">FAVORITOS</h3>
+          
+        </div>
+
+        
+
+      </div>
+ 
+
+
+
     </div>
   </section>
 
-<!-- script de slide -->
-<script>
 
-    $('.responsive').slick({
+
+<script type="text/javascript">
+
+ $(document).ready(function() {
+  $('#myCarousel').carousel({
+  interval: 10000
+})
+
+$('.carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+  
+  if (next.next().length>0) {
+    next.next().children(':first-child').clone().appendTo($(this));
+  }
+  else {
+    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+  }
+});
+ 
+
+ 
+});
+ </script>
+
+<!-- script de slide 
+
+
+  $("#owl-demostracion").owlCarousel({
+    items : 4,
+    lazyLoad : true,
+    navigation : true
+  }); s
+
+   $(document).ready(function(){
+ $('.carrusel-robots').slick();
+ });
+
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+     
+      $('.responsive').slick({
       dots: true,
       infinite: false,
       speed: 300,
@@ -150,6 +244,8 @@
         // settings: "unslick"
         // instead of a settings object
       ]
+     });
     });
+  </script>-->
 
-</script>
+

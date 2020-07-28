@@ -22,6 +22,25 @@ class Obras extends CI_Controller {
 		$this->load->view('footer', $data);	
 	}
 
+	
+
+	public function social() {
+		$data['contenido'] = 'default/estamos_trabajando';
+		$data['titulo'] = 'Social';
+	
+		$this->load->view('header', $data);
+		$this->load->view('template2', $data);
+		$this->load->view('footer', $data);	
+	}
+
+	public function economico() {
+		$data['contenido'] = 'default/estamos_trabajando';
+		$data['titulo'] = 'Social';
+	
+		$this->load->view('header', $data);
+		$this->load->view('template2', $data);
+		$this->load->view('footer', $data);	
+	}
 
 	public function detalle($id){
 		$data['contenido'] = 'obras/detalle';
@@ -55,6 +74,7 @@ class Obras extends CI_Controller {
 	}
 
 	public function update() {
+
 		$registro = $this->input->post();
 
 		//$registro = $this->input->post();
@@ -65,7 +85,50 @@ class Obras extends CI_Controller {
 		//$config['max_height']  = '768';
 		
 		$this->load->library('upload', $config);
-	
+
+		$registro = array(
+			'id'			=>	$this->input->post('id'),
+			'programa'		=>	$this->input->post('programa'),
+			'actividad'		=>	$this->input->post('actividad'),
+			'localizacion'	=>	$this->input->post('localizacion'),
+			'fechaini'		=>	$this->input->post('fechaini'),
+			'plazo'			=>	$this->input->post('plazo'),
+			'fechater'		=>	$this->input->post('fechater'),
+			'responsable'	=>	$this->input->post('responsable'),
+			'inspector'		=>	$this->input->post('inspector'),
+			'descripcion'	=>	$this->input->post('descripcion'),
+		);
+
+		for ($i=0; $i<5; $i++)
+		{
+			if ($i==0)
+			{
+				$id = '';
+			}
+			else
+			{
+				$id = $i;
+			}
+
+			if (isset($_FILES['foto'.$id]) && ($_FILES['foto'.$id]['name']!=''))
+			{
+				echo 'si hay foto'.$id;
+				var_dump($_FILES['foto'.$id]);
+				$this->upload->do_upload('foto'.$id);
+				$nuevo_archivo = $this->upload->data();
+				var_dump($nuevo_archivo);
+
+				$registro['foto'.$id] = $nuevo_archivo['file_name'];
+			}
+			else
+			{
+				echo 'no hay foto'.$id;
+			}
+		}
+		
+		$this->Model_Obras->update($registro);
+		//redirect('Obras/index');
+
 		if ( ! $this->upload->do_multi_upload('userfile'))
 		{
 			$data = array('error' => $this->upload->display_errors());
@@ -106,8 +169,6 @@ class Obras extends CI_Controller {
 			foreach ($query->results() as $row) {
 				unlink('./img/obra/'.$row->foto);
 			}
-			$this->Model_Obras->update($registro);
-			redirect('Obras/index');
 		}
 		
 	}
@@ -175,19 +236,72 @@ class Obras extends CI_Controller {
 			$this->Model_Obras->insert($registro);
 			redirect('Obras/index');
 			//$this->load->view('upload_success', $data);
-		}
-		
-
-
-		
-		
-	
-
-		
-        
+		}	
+	        
 	}
 
 
+	public function editar($id) {
+		// $id = $this->uri->segment(3);
+		$data['contenido'] = 'obras/editar';
+		$data['titulo'] = 'Actualizar Obras';
+		$data['registro'] = $this->Model_Obras->find($id);
 
+		$this->load->view('header', $data);
+		$this->load->view('template3', $data);
+		$this->load->view('footer', $data);	
+	}
+
+
+	public function actualizar(){
+
+		$this->load->model('Model_Obras');
+
+		if ($this->input->is_ajax_request()) {
+		
+			$id = $this->input->post("id");
+			$actividad = $this->input->post("actividad");
+			$programa = $this->input->post("programa");
+
+
+			$config = [
+				"upload_path" => "./img/obra",
+				'allowed_types' => "png|jpg"
+			];
+
+			$this->load->library("upload",$config);
+			$this->load->model('Model_Obras');
+			if ($this->upload->do_upload('foto_nueva')) {
+				$this->load->model('Model_obras');
+				$datos= $this->Model_obras->capturarImagen($id);
+
+				@unlink("localhost/webmdcn/img/obra".$datos->foto);
+				$datos2 = array("upload_data" => $this->upload->data());
+				$registro = array(
+					"actividad" => $actividad,
+					"programa" => $programa,					
+					"foto" => $datos2['upload_data']['file_name']
+				);
+
+				if($this->Model_obras->actualizar($id,$registro) == true)
+				{
+					echo "Registro Actualizado";
+				}
+				else{
+					echo "No se pudo actualizar los registro";
+				}
+			}else{
+				echo $this->upload->display_errors();
+			}
+
+
+			
+			
+		}
+		else
+		{
+			show_404();
+		}
+	}
 
 }

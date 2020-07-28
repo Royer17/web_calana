@@ -1,112 +1,100 @@
-					<div class="row as">
-						
-						<ol class="miga breadcrumb">
-						  <li><a href="http://www.municiudadnueva.gob.pe/">Inicio</a></li>
-						  <li class="active">Sliders</li>
-						</ol>
-						<button value="create">
-							<a style="color:#2980b9 !important;font-weight:bold;" >
-							<?= anchor('slide/create/') ; ?></a> 
 
-						</button>
-		
-						<div class="article pull-left">
-							<div class="article-title">
-								 Nuestras Notas de Prensa
-							</div>
-						</div>
+<div class="row">
+	<div class="col-md-6 ">
+     <?= anchor('ssadmin/index', '<i class="fa fa-circle"></i> Regresar', array('class'=>'btn btn-info')); ?>
 
-										
-					</div>
+
+		<?= anchor('slide/create', 'Agregar', array('class'=>'btn btn-primary')); ?>
+	</div>
+</div>
 	
 
-					<div class="row as">
+<div class="row">
+        <div class="col-md-12 ">
+          <div class="box">
+            <div class="box-header with-border">
+              <h3 class="box-title"> Mantenimiento de Registros</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table id="tabla_slide2" class="table table-bordered">
+                <thead>
 
-						<?php foreach ($query as $registro): ?>
-			
-							<table style="font-size:12px;font-family:Verdana;width:600px" class="cardprofile">
-	                            <tbody>                                        
-	                                <tr>
-	                                	<td height="15" colspan="4" style="border-bottom: 1px solid #2980b9;">
-										</td>
-									</tr>
-									<tr>
-										<td width="15" style="border-bottom: 1px solid #2980b9;padding-top:10px">	
-										</td>
-										<td valign="top">
-											<b></b>
-											<div style="text-align:justify;margin-right:10px;">
-												<b>	<span style="color:#2980b9;font-family:Verdana;font-size:12px;">
-												<a style="color:#2980b9 !important;font-weight:bold;" >
-													<?= anchor('noticia/detalle/'.$registro->id_slide,$registro->titulo_slide) ; ?></a> 
-												</span></b>
-											</div>
-											<br>
-											<span style="font-size:11px;">
-												<div style="text-align:justify">
+                  <tr>
+                    <th >ID</th>
+                    <th>Nombre</th>
+                    <th>Imagen</th>
+                    <th >Fecha</th>
+                    <th>Editar</th>
+                    <th>Eliminar</th>
+                   
 
-													<table>
-														<tbody>
-															<tr>
-																<td>
-																	<i><b>titulo</b></i>
-																</td>
-																<td>:
-																	<i><?= $registro->id_slide ?></i>
+                  </tr>
+                </thead>
+                <tbody>
+                <?php foreach ($query as $registro): ?>
+                <tr>
+                  <td><?= anchor('slide/edit/'.$registro->id_slide, $registro->id_slide); ?></td>
+                  <td><?= $registro->titulo_slide ?></td>
+                  
+                  <td>
 
-																	 <i><?= $registro->titulo_slide ?></i>
-																</td>
-																<td width="15">														
-																</td>
-																<td><b><i>Orden</i></b>
-																</td>
-																<td>: <?= $registro->orden_slide ?></a></td>
-															</tr>
-															<tr>
-																<td><i><b>Enlace</b></i>
-																</td>
-																<td>:
-																 <i><?= $registro->enlace ?></i></td><td width="15"></td><td><b>
-																 <!-- <i>Inicio </i></b></td><td>:03 de marzo 2015 -->
-																</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-											</span>
-											<span style="float:right;margin-right:20px">
-												<a style="color:#2980b9 !important;font-weight:bold;" ><?= anchor('slide/detalle/'.$registro->id_slide,"Ver Más") ; ?> </a>
-											</span>
+                  	<img src="<?= base_url('img/sliderPrincipal/'.$registro->img_slide ); ?>" class="img-thumbnail"  style="width:50px">
+                  </td>
+                 
+                      </td>           
+                  <td >
 
-											</td>
+                  	
 
-											<td style="border-bottom: 1px solid #2980b9;">
-										 
-											 <img class="sombra" style="margin:5px" width="181" height="121" src=<?= base_url('img/noticia/'.$registro->foto ); ?> >
-											</td>
+                  		<span class="glyphicon glyphicon-calendar"></span> 
+                  		<?= $registro->dia ?> / <?= $registro->mes ?> / <?= $registro->anno ?>
+			            
+			        
+                  </td>
 
-										 <td style="border-bottom: 1px solid #2980b9;" width="10" align="center">
-										 	
-										 </td>
+                  <td>
 
-										</tr>
-										<tr>
-																			
-											</td>
+                  	<?= anchor('slide/edit/'.$registro->id_slide, 'Actualizar', array('class'=>'btn btn-info')); ?></i>  </button>
 
-											<div style="text-align:justify;margin-right:10px;"><b>
-										</tr>
-								</tbody>
-	                        </table>
+                  </td>
 
-                        <?php endforeach; ?>
+                  <td>
+                  	
+                  	<?= anchor('slide/delete/'.$registro->id_slide, 'Eliminar', array('class'=>'btn btn-danger', 'onClick'=>"return confirm('¿Está Seguro?')")); ?>
+                  </td>
+                </tr>
+                <?php endforeach; ?>
+                </tbody>
+              </table>
+            </div>
+            <!-- /.box-body -->
+                <div class="box-footer">
+                   <?= anchor('ssadmin/index', '<i class="fa fa-circle"></i> Regresar', array('class'=>'btn btn-info')); ?>
+                                  
+              </div>
+          </div>
+          <!-- /.box -->
 
 
 
-                       				
-			
-					</div>
 
-					<div class="row as">
 
-					</div>
+
+
+<script>
+	$(document).ready(function() {
+		$('#tabla_slide2').dataTable( {
+			"language": {
+						"lengthMenu": "Visualizando _MENU_ Registros por Página",
+						"zeroRecords": "Ningun Registro Encontrado",
+						"info": "Mostrando Páginas _PAGE_ de _PAGES_",
+						"infoEmpty": "No hay registros disponibles",
+						"infoFiltered": "(filtrado de _MAX_ total de registros)",
+						"infoFiltered": "(filtrado de _MAX_ total de registros)",
+						"search":"Buscar",
+
+						}
+		} );
+	} );
+</script>
