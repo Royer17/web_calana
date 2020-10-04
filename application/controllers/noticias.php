@@ -197,6 +197,17 @@ class Noticias extends Check_Authentication_Controller {
 	}
 
 
+		public function detalle($id){
+		$data['contenido'] = 'noticias/detalle';
+		$data['titulo'] = 'Noticias Detalle';
+		$data['registro'] = $this->Model_Noticia->find($id);
+
+		$this->load->view('home/header',$data);
+		$this->load->view('home/template2',$data);
+		$this->load->view('home/footer',$data);
+	}
+
+
 	public function delete($id) {
 		$this->Model_Noticia->delete($id);
 		redirect('noticias/index2');
